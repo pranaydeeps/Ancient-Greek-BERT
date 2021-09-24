@@ -1,6 +1,3 @@
----
--
----
 
 # Ancient Greek BERT
 
