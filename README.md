@@ -9,9 +9,9 @@ State-of-the-art post fine-tuning on Part-of-Speech Tagging and Morphological An
 
 Pre-trained weights are made available for a standard 12 layer, 768d BERT-base model.
 
-You can also use the model directly on the HuggingFace Model Hub [here](https://huggingface.co/pranaydeeps/Ancient-Greek-BERT)
+You can also use the model directly on the HuggingFace Model Hub [here](https://huggingface.co/pranaydeeps/Ancient-Greek-BERT).
 
-Please refer to our paper titled: "A Pilot Study for BERT Language Modelling and Morphological Analysis for Ancient and Medieval Greek". In Proceedings of The 5th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature (LaTeCH-CLfL 2021)
+Please refer to our paper titled: "A Pilot Study for BERT Language Modelling and Morphological Analysis for Ancient and Medieval Greek". In Proceedings of The 5th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature (LaTeCH-CLfL 2021).
 
 ## How to use
 
