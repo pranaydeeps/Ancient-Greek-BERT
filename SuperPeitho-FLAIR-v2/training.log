@@ -1,0 +1,2358 @@
+2021-07-07 21:34:21,698 ----------------------------------------------------------------------------------------------------
+2021-07-07 21:34:21,700 Model: "SequenceTagger(
+  (embeddings): StackedEmbeddings(
+    (list_embedding_0): TransformerWordEmbeddings(
+      (model): BertModel(
+        (embeddings): BertEmbeddings(
+          (word_embeddings): Embedding(35000, 768, padding_idx=0)
+          (position_embeddings): Embedding(512, 768)
+          (token_type_embeddings): Embedding(2, 768)
+          (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (encoder): BertEncoder(
+          (layer): ModuleList(
+            (0): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (1): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (2): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (3): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (4): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (5): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (6): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (7): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (8): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (9): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (10): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (11): BertLayer(
+              (attention): BertAttention(
+                (self): BertSelfAttention(
+                  (query): Linear(in_features=768, out_features=768, bias=True)
+                  (key): Linear(in_features=768, out_features=768, bias=True)
+                  (value): Linear(in_features=768, out_features=768, bias=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+                (output): BertSelfOutput(
+                  (dense): Linear(in_features=768, out_features=768, bias=True)
+                  (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                  (dropout): Dropout(p=0.1, inplace=False)
+                )
+              )
+              (intermediate): BertIntermediate(
+                (dense): Linear(in_features=768, out_features=3072, bias=True)
+              )
+              (output): BertOutput(
+                (dense): Linear(in_features=3072, out_features=768, bias=True)
+                (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1, inplace=False)
+              )
+            )
+          )
+        )
+        (pooler): BertPooler(
+          (dense): Linear(in_features=768, out_features=768, bias=True)
+          (activation): Tanh()
+        )
+      )
+    )
+    (list_embedding_1): CharacterEmbeddings(
+      (char_embedding): Embedding(275, 25)
+      (char_rnn): LSTM(25, 25, bidirectional=True)
+    )
+  )
+  (word_dropout): WordDropout(p=0.05)
+  (locked_dropout): LockedDropout(p=0.5)
+  (embedding2nn): Linear(in_features=818, out_features=818, bias=True)
+  (rnn): LSTM(818, 256, batch_first=True, bidirectional=True)
+  (linear): Linear(in_features=512, out_features=1030, bias=True)
+  (beta): 1.0
+  (weights): None
+  (weight_tensor) None
+)"
+2021-07-07 21:34:21,700 ----------------------------------------------------------------------------------------------------
+2021-07-07 21:34:21,700 Corpus: "Corpus: 51161 train + 5684 dev + 6318 test sentences"
+2021-07-07 21:34:21,700 ----------------------------------------------------------------------------------------------------
+2021-07-07 21:34:21,700 Parameters:
+2021-07-07 21:34:21,700  - learning_rate: "0.1"
+2021-07-07 21:34:21,700  - mini_batch_size: "16"
+2021-07-07 21:34:21,700  - patience: "3"
+2021-07-07 21:34:21,700  - anneal_factor: "0.5"
+2021-07-07 21:34:21,700  - max_epochs: "80"
+2021-07-07 21:34:21,700  - shuffle: "True"
+2021-07-07 21:34:21,700  - train_with_dev: "False"
+2021-07-07 21:34:21,700  - batch_growth_annealing: "False"
+2021-07-07 21:34:21,700 ----------------------------------------------------------------------------------------------------
+2021-07-07 21:34:21,700 Model training base path: "SuperPeitho-FLAIR-v2"
+2021-07-07 21:34:21,700 ----------------------------------------------------------------------------------------------------
+2021-07-07 21:34:21,701 Device: cuda:0
+2021-07-07 21:34:21,701 ----------------------------------------------------------------------------------------------------
+2021-07-07 21:34:21,701 Embeddings storage mode: cpu
+2021-07-07 21:34:21,702 ----------------------------------------------------------------------------------------------------
+2021-07-07 21:36:52,383 epoch 1 - iter 319/3198 - loss 68.33997535 - samples/sec: 33.88 - lr: 0.100000
+2021-07-07 21:39:25,367 epoch 1 - iter 638/3198 - loss 54.36202102 - samples/sec: 33.37 - lr: 0.100000
+2021-07-07 21:42:01,825 epoch 1 - iter 957/3198 - loss 47.23402744 - samples/sec: 32.63 - lr: 0.100000
+2021-07-07 21:44:37,534 epoch 1 - iter 1276/3198 - loss 42.88468452 - samples/sec: 32.79 - lr: 0.100000
+2021-07-07 21:47:09,395 epoch 1 - iter 1595/3198 - loss 39.66757283 - samples/sec: 33.62 - lr: 0.100000
+2021-07-07 21:49:43,858 epoch 1 - iter 1914/3198 - loss 37.31337157 - samples/sec: 33.05 - lr: 0.100000
+2021-07-07 21:52:26,460 epoch 1 - iter 2233/3198 - loss 35.49662310 - samples/sec: 31.40 - lr: 0.100000
+2021-07-07 21:55:03,278 epoch 1 - iter 2552/3198 - loss 33.95190186 - samples/sec: 32.55 - lr: 0.100000
+2021-07-07 21:57:42,701 epoch 1 - iter 2871/3198 - loss 32.69628429 - samples/sec: 32.02 - lr: 0.100000
+2021-07-07 22:00:20,326 epoch 1 - iter 3190/3198 - loss 31.64757648 - samples/sec: 32.39 - lr: 0.100000
+2021-07-07 22:00:23,649 ----------------------------------------------------------------------------------------------------
+2021-07-07 22:00:23,649 EPOCH 1 done: loss 31.6197 - lr 0.1000000
+2021-07-07 22:05:38,390 DEV : loss 13.246685028076172 - score 0.8087
+2021-07-07 22:05:38,748 BAD EPOCHS (no improvement): 0
+2021-07-07 22:05:39,655 ----------------------------------------------------------------------------------------------------
+2021-07-07 22:07:25,146 epoch 2 - iter 319/3198 - loss 20.94410506 - samples/sec: 48.41 - lr: 0.100000
+2021-07-07 22:09:11,465 epoch 2 - iter 638/3198 - loss 20.83374167 - samples/sec: 48.03 - lr: 0.100000
+2021-07-07 22:10:56,720 epoch 2 - iter 957/3198 - loss 20.69675632 - samples/sec: 48.52 - lr: 0.100000
+2021-07-07 22:12:40,770 epoch 2 - iter 1276/3198 - loss 20.39409845 - samples/sec: 49.08 - lr: 0.100000
+2021-07-07 22:14:23,987 epoch 2 - iter 1595/3198 - loss 20.20677638 - samples/sec: 49.48 - lr: 0.100000
+2021-07-07 22:16:10,431 epoch 2 - iter 1914/3198 - loss 20.01351865 - samples/sec: 47.98 - lr: 0.100000
+2021-07-07 22:17:55,600 epoch 2 - iter 2233/3198 - loss 19.84366766 - samples/sec: 48.56 - lr: 0.100000
+2021-07-07 22:19:38,709 epoch 2 - iter 2552/3198 - loss 19.66124590 - samples/sec: 49.53 - lr: 0.100000
+2021-07-07 22:21:24,138 epoch 2 - iter 2871/3198 - loss 19.51016861 - samples/sec: 48.44 - lr: 0.100000
+2021-07-07 22:23:12,664 epoch 2 - iter 3190/3198 - loss 19.34659364 - samples/sec: 47.06 - lr: 0.100000
+2021-07-07 22:23:15,157 ----------------------------------------------------------------------------------------------------
+2021-07-07 22:23:15,157 EPOCH 2 done: loss 19.3429 - lr 0.1000000
+2021-07-07 22:27:15,254 DEV : loss 10.434256553649902 - score 0.8379
+2021-07-07 22:27:15,583 BAD EPOCHS (no improvement): 0
+2021-07-07 22:27:16,698 ----------------------------------------------------------------------------------------------------
+2021-07-07 22:29:02,959 epoch 3 - iter 319/3198 - loss 17.71220134 - samples/sec: 48.06 - lr: 0.100000
+2021-07-07 22:30:46,769 epoch 3 - iter 638/3198 - loss 17.44929718 - samples/sec: 49.19 - lr: 0.100000
+2021-07-07 22:32:33,729 epoch 3 - iter 957/3198 - loss 17.39565393 - samples/sec: 47.74 - lr: 0.100000
+2021-07-07 22:34:18,033 epoch 3 - iter 1276/3198 - loss 17.22828484 - samples/sec: 48.96 - lr: 0.100000
+2021-07-07 22:36:03,126 epoch 3 - iter 1595/3198 - loss 17.19764050 - samples/sec: 48.59 - lr: 0.100000
+2021-07-07 22:37:49,954 epoch 3 - iter 1914/3198 - loss 17.15810555 - samples/sec: 47.80 - lr: 0.100000
+2021-07-07 22:39:36,994 epoch 3 - iter 2233/3198 - loss 17.06941280 - samples/sec: 47.71 - lr: 0.100000
+2021-07-07 22:41:23,907 epoch 3 - iter 2552/3198 - loss 16.99750247 - samples/sec: 47.76 - lr: 0.100000
+2021-07-07 22:43:14,736 epoch 3 - iter 2871/3198 - loss 16.92849609 - samples/sec: 46.08 - lr: 0.100000
+2021-07-07 22:45:01,085 epoch 3 - iter 3190/3198 - loss 16.87269679 - samples/sec: 48.02 - lr: 0.100000
+2021-07-07 22:45:03,641 ----------------------------------------------------------------------------------------------------
+2021-07-07 22:45:03,641 EPOCH 3 done: loss 16.8669 - lr 0.1000000
+2021-07-07 22:49:08,058 DEV : loss 9.225699424743652 - score 0.8548
+2021-07-07 22:49:08,400 BAD EPOCHS (no improvement): 0
+2021-07-07 22:49:09,521 ----------------------------------------------------------------------------------------------------
+2021-07-07 22:50:56,626 epoch 4 - iter 319/3198 - loss 15.69833252 - samples/sec: 47.68 - lr: 0.100000
+2021-07-07 22:52:44,824 epoch 4 - iter 638/3198 - loss 15.81438951 - samples/sec: 47.19 - lr: 0.100000
+2021-07-07 22:54:32,197 epoch 4 - iter 957/3198 - loss 15.88141777 - samples/sec: 47.56 - lr: 0.100000
+2021-07-07 22:56:17,422 epoch 4 - iter 1276/3198 - loss 15.83065450 - samples/sec: 48.53 - lr: 0.100000
+2021-07-07 22:58:01,782 epoch 4 - iter 1595/3198 - loss 15.74641642 - samples/sec: 48.93 - lr: 0.100000
+2021-07-07 22:59:51,992 epoch 4 - iter 1914/3198 - loss 15.72874904 - samples/sec: 46.34 - lr: 0.100000
+2021-07-07 23:01:38,125 epoch 4 - iter 2233/3198 - loss 15.68690613 - samples/sec: 48.12 - lr: 0.100000
+2021-07-07 23:03:22,094 epoch 4 - iter 2552/3198 - loss 15.61958033 - samples/sec: 49.12 - lr: 0.100000
+2021-07-07 23:05:11,326 epoch 4 - iter 2871/3198 - loss 15.57612055 - samples/sec: 46.75 - lr: 0.100000
+2021-07-07 23:06:56,164 epoch 4 - iter 3190/3198 - loss 15.53537860 - samples/sec: 48.72 - lr: 0.100000
+2021-07-07 23:06:58,820 ----------------------------------------------------------------------------------------------------
+2021-07-07 23:06:58,820 EPOCH 4 done: loss 15.5364 - lr 0.1000000
+2021-07-07 23:10:54,899 DEV : loss 8.302443504333496 - score 0.866
+2021-07-07 23:10:55,269 BAD EPOCHS (no improvement): 0
+2021-07-07 23:10:56,521 ----------------------------------------------------------------------------------------------------
+2021-07-07 23:12:45,600 epoch 5 - iter 319/3198 - loss 14.73801547 - samples/sec: 46.82 - lr: 0.100000
+2021-07-07 23:14:38,068 epoch 5 - iter 638/3198 - loss 14.73696139 - samples/sec: 45.41 - lr: 0.100000
+2021-07-07 23:16:30,372 epoch 5 - iter 957/3198 - loss 14.77932195 - samples/sec: 45.47 - lr: 0.100000
+2021-07-07 23:18:21,573 epoch 5 - iter 1276/3198 - loss 14.81885876 - samples/sec: 45.92 - lr: 0.100000
+2021-07-07 23:20:12,040 epoch 5 - iter 1595/3198 - loss 14.75788695 - samples/sec: 46.23 - lr: 0.100000
+2021-07-07 23:21:59,877 epoch 5 - iter 1914/3198 - loss 14.75200394 - samples/sec: 47.36 - lr: 0.100000
+2021-07-07 23:23:47,611 epoch 5 - iter 2233/3198 - loss 14.73492924 - samples/sec: 47.40 - lr: 0.100000
+2021-07-07 23:25:35,907 epoch 5 - iter 2552/3198 - loss 14.70216869 - samples/sec: 47.16 - lr: 0.100000
+2021-07-07 23:27:18,958 epoch 5 - iter 2871/3198 - loss 14.66632017 - samples/sec: 49.56 - lr: 0.100000
+2021-07-07 23:29:04,158 epoch 5 - iter 3190/3198 - loss 14.64673933 - samples/sec: 48.55 - lr: 0.100000
+2021-07-07 23:29:06,902 ----------------------------------------------------------------------------------------------------
+2021-07-07 23:29:06,902 EPOCH 5 done: loss 14.6507 - lr 0.1000000
+2021-07-07 23:33:04,243 DEV : loss 7.682676792144775 - score 0.874
+2021-07-07 23:33:04,595 BAD EPOCHS (no improvement): 0
+2021-07-07 23:33:05,694 ----------------------------------------------------------------------------------------------------
+2021-07-07 23:34:51,379 epoch 6 - iter 319/3198 - loss 13.93852563 - samples/sec: 48.32 - lr: 0.100000
+2021-07-07 23:36:38,825 epoch 6 - iter 638/3198 - loss 14.06014647 - samples/sec: 47.53 - lr: 0.100000
+2021-07-07 23:38:23,681 epoch 6 - iter 957/3198 - loss 14.11052114 - samples/sec: 48.70 - lr: 0.100000
+2021-07-07 23:40:08,352 epoch 6 - iter 1276/3198 - loss 14.03974672 - samples/sec: 48.79 - lr: 0.100000
+2021-07-07 23:41:53,284 epoch 6 - iter 1595/3198 - loss 14.01889234 - samples/sec: 48.67 - lr: 0.100000
+2021-07-07 23:43:39,039 epoch 6 - iter 1914/3198 - loss 14.02759706 - samples/sec: 48.29 - lr: 0.100000
+2021-07-07 23:45:22,298 epoch 6 - iter 2233/3198 - loss 14.00629374 - samples/sec: 49.46 - lr: 0.100000
+2021-07-07 23:47:07,818 epoch 6 - iter 2552/3198 - loss 14.02472780 - samples/sec: 48.39 - lr: 0.100000
+2021-07-07 23:48:52,234 epoch 6 - iter 2871/3198 - loss 14.01113186 - samples/sec: 48.91 - lr: 0.100000
+2021-07-07 23:50:37,727 epoch 6 - iter 3190/3198 - loss 14.01314417 - samples/sec: 48.41 - lr: 0.100000
+2021-07-07 23:50:39,861 ----------------------------------------------------------------------------------------------------
+2021-07-07 23:50:39,862 EPOCH 6 done: loss 14.0057 - lr 0.1000000
+2021-07-07 23:54:34,540 DEV : loss 7.458719730377197 - score 0.878
+2021-07-07 23:54:34,873 BAD EPOCHS (no improvement): 0
+2021-07-07 23:54:36,074 ----------------------------------------------------------------------------------------------------
+2021-07-07 23:56:22,284 epoch 7 - iter 319/3198 - loss 13.71709169 - samples/sec: 48.08 - lr: 0.100000
+2021-07-07 23:58:04,178 epoch 7 - iter 638/3198 - loss 13.55095506 - samples/sec: 50.12 - lr: 0.100000
+2021-07-07 23:59:50,058 epoch 7 - iter 957/3198 - loss 13.56364024 - samples/sec: 48.23 - lr: 0.100000
+2021-07-08 00:01:34,177 epoch 7 - iter 1276/3198 - loss 13.55842764 - samples/sec: 49.05 - lr: 0.100000
+2021-07-08 00:03:16,285 epoch 7 - iter 1595/3198 - loss 13.56287837 - samples/sec: 50.01 - lr: 0.100000
+2021-07-08 00:05:00,931 epoch 7 - iter 1914/3198 - loss 13.54551344 - samples/sec: 48.80 - lr: 0.100000
+2021-07-08 00:06:43,777 epoch 7 - iter 2233/3198 - loss 13.55528577 - samples/sec: 49.65 - lr: 0.100000
+2021-07-08 00:08:29,159 epoch 7 - iter 2552/3198 - loss 13.55509315 - samples/sec: 48.46 - lr: 0.100000
+2021-07-08 00:10:14,776 epoch 7 - iter 2871/3198 - loss 13.56134662 - samples/sec: 48.35 - lr: 0.100000
+2021-07-08 00:11:56,566 epoch 7 - iter 3190/3198 - loss 13.52503657 - samples/sec: 50.17 - lr: 0.100000
+2021-07-08 00:11:59,074 ----------------------------------------------------------------------------------------------------
+2021-07-08 00:11:59,075 EPOCH 7 done: loss 13.5230 - lr 0.1000000
+2021-07-08 00:15:48,408 DEV : loss 7.322706699371338 - score 0.8805
+2021-07-08 00:15:48,736 BAD EPOCHS (no improvement): 0
+2021-07-08 00:15:54,031 ----------------------------------------------------------------------------------------------------
+2021-07-08 00:17:37,535 epoch 8 - iter 319/3198 - loss 13.42429410 - samples/sec: 49.34 - lr: 0.100000
+2021-07-08 00:19:22,614 epoch 8 - iter 638/3198 - loss 13.29203548 - samples/sec: 48.59 - lr: 0.100000
+2021-07-08 00:21:05,368 epoch 8 - iter 957/3198 - loss 13.23743831 - samples/sec: 49.70 - lr: 0.100000
+2021-07-08 00:22:49,179 epoch 8 - iter 1276/3198 - loss 13.23188537 - samples/sec: 49.19 - lr: 0.100000
+2021-07-08 00:24:29,729 epoch 8 - iter 1595/3198 - loss 13.16571605 - samples/sec: 50.79 - lr: 0.100000
+2021-07-08 00:26:14,618 epoch 8 - iter 1914/3198 - loss 13.20069861 - samples/sec: 48.68 - lr: 0.100000
+2021-07-08 00:28:00,495 epoch 8 - iter 2233/3198 - loss 13.18736628 - samples/sec: 48.23 - lr: 0.100000
+2021-07-08 00:29:45,928 epoch 8 - iter 2552/3198 - loss 13.20771110 - samples/sec: 48.43 - lr: 0.100000
+2021-07-08 00:31:27,515 epoch 8 - iter 2871/3198 - loss 13.18933023 - samples/sec: 50.27 - lr: 0.100000
+2021-07-08 00:33:11,024 epoch 8 - iter 3190/3198 - loss 13.19915263 - samples/sec: 49.33 - lr: 0.100000
+2021-07-08 00:33:13,603 ----------------------------------------------------------------------------------------------------
+2021-07-08 00:33:13,603 EPOCH 8 done: loss 13.1981 - lr 0.1000000
+2021-07-08 00:37:03,766 DEV : loss 6.851157188415527 - score 0.8865
+2021-07-08 00:37:04,097 BAD EPOCHS (no improvement): 0
+2021-07-08 00:37:05,343 ----------------------------------------------------------------------------------------------------
+2021-07-08 00:38:48,468 epoch 9 - iter 319/3198 - loss 12.65254683 - samples/sec: 49.52 - lr: 0.100000
+2021-07-08 00:40:31,781 epoch 9 - iter 638/3198 - loss 12.71351193 - samples/sec: 49.43 - lr: 0.100000
+2021-07-08 00:42:17,723 epoch 9 - iter 957/3198 - loss 12.94895052 - samples/sec: 48.20 - lr: 0.100000
+2021-07-08 00:43:58,544 epoch 9 - iter 1276/3198 - loss 12.88915317 - samples/sec: 50.65 - lr: 0.100000
+2021-07-08 00:45:45,165 epoch 9 - iter 1595/3198 - loss 12.88127511 - samples/sec: 47.89 - lr: 0.100000
+2021-07-08 00:47:28,782 epoch 9 - iter 1914/3198 - loss 12.89391335 - samples/sec: 49.28 - lr: 0.100000
+2021-07-08 00:49:12,060 epoch 9 - iter 2233/3198 - loss 12.87570116 - samples/sec: 49.44 - lr: 0.100000
+2021-07-08 00:50:55,237 epoch 9 - iter 2552/3198 - loss 12.87261056 - samples/sec: 49.49 - lr: 0.100000
+2021-07-08 00:52:37,879 epoch 9 - iter 2871/3198 - loss 12.84462904 - samples/sec: 49.75 - lr: 0.100000
+2021-07-08 00:54:19,335 epoch 9 - iter 3190/3198 - loss 12.82861277 - samples/sec: 50.33 - lr: 0.100000
+2021-07-08 00:54:21,912 ----------------------------------------------------------------------------------------------------
+2021-07-08 00:54:21,913 EPOCH 9 done: loss 12.8273 - lr 0.1000000
+2021-07-08 00:58:14,358 DEV : loss 6.704794883728027 - score 0.8888
+2021-07-08 00:58:14,700 BAD EPOCHS (no improvement): 0
+2021-07-08 00:58:15,871 ----------------------------------------------------------------------------------------------------
+2021-07-08 00:59:56,502 epoch 10 - iter 319/3198 - loss 12.26380071 - samples/sec: 50.75 - lr: 0.100000
+2021-07-08 01:01:41,995 epoch 10 - iter 638/3198 - loss 12.38830074 - samples/sec: 48.40 - lr: 0.100000
+2021-07-08 01:03:27,589 epoch 10 - iter 957/3198 - loss 12.51830193 - samples/sec: 48.36 - lr: 0.100000
+2021-07-08 01:05:12,126 epoch 10 - iter 1276/3198 - loss 12.52361044 - samples/sec: 48.85 - lr: 0.100000
+2021-07-08 01:06:57,262 epoch 10 - iter 1595/3198 - loss 12.58294160 - samples/sec: 48.57 - lr: 0.100000
+2021-07-08 01:08:43,464 epoch 10 - iter 1914/3198 - loss 12.63504788 - samples/sec: 48.08 - lr: 0.100000
+2021-07-08 01:10:25,954 epoch 10 - iter 2233/3198 - loss 12.61881697 - samples/sec: 49.82 - lr: 0.100000
+2021-07-08 01:12:09,151 epoch 10 - iter 2552/3198 - loss 12.62271196 - samples/sec: 49.48 - lr: 0.100000
+2021-07-08 01:13:53,688 epoch 10 - iter 2871/3198 - loss 12.60353378 - samples/sec: 48.85 - lr: 0.100000
+2021-07-08 01:15:35,328 epoch 10 - iter 3190/3198 - loss 12.57125164 - samples/sec: 50.24 - lr: 0.100000
+2021-07-08 01:15:37,635 ----------------------------------------------------------------------------------------------------
+2021-07-08 01:15:37,635 EPOCH 10 done: loss 12.5710 - lr 0.1000000
+2021-07-08 01:19:34,283 DEV : loss 6.556596279144287 - score 0.891
+2021-07-08 01:19:34,623 BAD EPOCHS (no improvement): 0
+2021-07-08 01:19:35,867 ----------------------------------------------------------------------------------------------------
+2021-07-08 01:21:19,641 epoch 11 - iter 319/3198 - loss 12.42763708 - samples/sec: 49.21 - lr: 0.100000
+2021-07-08 01:23:00,261 epoch 11 - iter 638/3198 - loss 12.30331356 - samples/sec: 50.75 - lr: 0.100000
+2021-07-08 01:24:40,180 epoch 11 - iter 957/3198 - loss 12.23500179 - samples/sec: 51.11 - lr: 0.100000
+2021-07-08 01:26:24,357 epoch 11 - iter 1276/3198 - loss 12.30799780 - samples/sec: 49.02 - lr: 0.100000
+2021-07-08 01:28:06,225 epoch 11 - iter 1595/3198 - loss 12.32505114 - samples/sec: 50.13 - lr: 0.100000
+2021-07-08 01:29:51,474 epoch 11 - iter 1914/3198 - loss 12.36690665 - samples/sec: 48.52 - lr: 0.100000
+2021-07-08 01:31:36,964 epoch 11 - iter 2233/3198 - loss 12.37197345 - samples/sec: 48.40 - lr: 0.100000
+2021-07-08 01:33:19,311 epoch 11 - iter 2552/3198 - loss 12.38762967 - samples/sec: 49.89 - lr: 0.100000
+2021-07-08 01:35:04,990 epoch 11 - iter 2871/3198 - loss 12.40991396 - samples/sec: 48.32 - lr: 0.100000
+2021-07-08 01:36:45,754 epoch 11 - iter 3190/3198 - loss 12.37091648 - samples/sec: 50.68 - lr: 0.100000
+2021-07-08 01:36:48,066 ----------------------------------------------------------------------------------------------------
+2021-07-08 01:36:48,066 EPOCH 11 done: loss 12.3679 - lr 0.1000000
+2021-07-08 01:40:37,441 DEV : loss 6.501192569732666 - score 0.8923
+2021-07-08 01:40:37,775 BAD EPOCHS (no improvement): 0
+2021-07-08 01:40:39,008 ----------------------------------------------------------------------------------------------------
+2021-07-08 01:42:23,876 epoch 12 - iter 319/3198 - loss 12.46377464 - samples/sec: 48.69 - lr: 0.100000
+2021-07-08 01:44:04,754 epoch 12 - iter 638/3198 - loss 12.28405873 - samples/sec: 50.62 - lr: 0.100000
+2021-07-08 01:45:49,478 epoch 12 - iter 957/3198 - loss 12.25334544 - samples/sec: 48.76 - lr: 0.100000
+2021-07-08 01:47:30,199 epoch 12 - iter 1276/3198 - loss 12.15600309 - samples/sec: 50.70 - lr: 0.100000
+2021-07-08 01:49:14,879 epoch 12 - iter 1595/3198 - loss 12.13702985 - samples/sec: 48.78 - lr: 0.100000
+2021-07-08 01:51:01,261 epoch 12 - iter 1914/3198 - loss 12.19324397 - samples/sec: 48.00 - lr: 0.100000
+2021-07-08 01:52:41,631 epoch 12 - iter 2233/3198 - loss 12.18543823 - samples/sec: 50.88 - lr: 0.100000
+2021-07-08 01:54:22,117 epoch 12 - iter 2552/3198 - loss 12.15236379 - samples/sec: 50.82 - lr: 0.100000
+2021-07-08 01:56:06,299 epoch 12 - iter 2871/3198 - loss 12.16968641 - samples/sec: 49.01 - lr: 0.100000
+2021-07-08 01:57:49,951 epoch 12 - iter 3190/3198 - loss 12.18039119 - samples/sec: 49.26 - lr: 0.100000
+2021-07-08 01:57:52,021 ----------------------------------------------------------------------------------------------------
+2021-07-08 01:57:52,021 EPOCH 12 done: loss 12.1762 - lr 0.1000000
+2021-07-08 02:01:51,972 DEV : loss 6.388442039489746 - score 0.8937
+2021-07-08 02:01:52,312 BAD EPOCHS (no improvement): 0
+2021-07-08 02:01:53,573 ----------------------------------------------------------------------------------------------------
+2021-07-08 02:03:34,409 epoch 13 - iter 319/3198 - loss 12.04976704 - samples/sec: 50.64 - lr: 0.100000
+2021-07-08 02:05:17,546 epoch 13 - iter 638/3198 - loss 12.00308090 - samples/sec: 49.51 - lr: 0.100000
+2021-07-08 02:06:59,720 epoch 13 - iter 957/3198 - loss 11.95824569 - samples/sec: 49.98 - lr: 0.100000
+2021-07-08 02:08:41,594 epoch 13 - iter 1276/3198 - loss 11.96979144 - samples/sec: 50.13 - lr: 0.100000
+2021-07-08 02:10:27,810 epoch 13 - iter 1595/3198 - loss 12.02272126 - samples/sec: 48.07 - lr: 0.100000
+2021-07-08 02:12:09,778 epoch 13 - iter 1914/3198 - loss 12.00819686 - samples/sec: 50.08 - lr: 0.100000
+2021-07-08 02:13:53,763 epoch 13 - iter 2233/3198 - loss 12.03637255 - samples/sec: 49.11 - lr: 0.100000
+2021-07-08 02:15:34,691 epoch 13 - iter 2552/3198 - loss 12.03328577 - samples/sec: 50.60 - lr: 0.100000
+2021-07-08 02:17:17,020 epoch 13 - iter 2871/3198 - loss 11.99294502 - samples/sec: 49.90 - lr: 0.100000
+2021-07-08 02:19:01,268 epoch 13 - iter 3190/3198 - loss 12.01508500 - samples/sec: 48.98 - lr: 0.100000
+2021-07-08 02:19:03,837 ----------------------------------------------------------------------------------------------------
+2021-07-08 02:19:03,837 EPOCH 13 done: loss 12.0168 - lr 0.1000000
+2021-07-08 02:22:52,518 DEV : loss 6.250328063964844 - score 0.895
+2021-07-08 02:22:52,852 BAD EPOCHS (no improvement): 0
+2021-07-08 02:22:54,114 ----------------------------------------------------------------------------------------------------
+2021-07-08 02:24:36,440 epoch 14 - iter 319/3198 - loss 11.95200820 - samples/sec: 49.90 - lr: 0.100000
+2021-07-08 02:26:18,049 epoch 14 - iter 638/3198 - loss 11.74078141 - samples/sec: 50.26 - lr: 0.100000
+2021-07-08 02:28:01,792 epoch 14 - iter 957/3198 - loss 11.78545277 - samples/sec: 49.22 - lr: 0.100000
+2021-07-08 02:29:42,995 epoch 14 - iter 1276/3198 - loss 11.75665290 - samples/sec: 50.46 - lr: 0.100000
+2021-07-08 02:31:28,004 epoch 14 - iter 1595/3198 - loss 11.79104600 - samples/sec: 48.63 - lr: 0.100000
+2021-07-08 02:33:14,331 epoch 14 - iter 1914/3198 - loss 11.81620319 - samples/sec: 48.03 - lr: 0.100000
+2021-07-08 02:34:56,923 epoch 14 - iter 2233/3198 - loss 11.79568591 - samples/sec: 49.77 - lr: 0.100000
+2021-07-08 02:36:40,099 epoch 14 - iter 2552/3198 - loss 11.81460736 - samples/sec: 49.49 - lr: 0.100000
+2021-07-08 02:38:23,937 epoch 14 - iter 2871/3198 - loss 11.82137565 - samples/sec: 49.18 - lr: 0.100000
+2021-07-08 02:40:06,074 epoch 14 - iter 3190/3198 - loss 11.82432601 - samples/sec: 49.99 - lr: 0.100000
+2021-07-08 02:40:08,183 ----------------------------------------------------------------------------------------------------
+2021-07-08 02:40:08,184 EPOCH 14 done: loss 11.8249 - lr 0.1000000
+2021-07-08 02:43:59,574 DEV : loss 6.136473178863525 - score 0.8965
+2021-07-08 02:43:59,916 BAD EPOCHS (no improvement): 0
+2021-07-08 02:44:01,069 ----------------------------------------------------------------------------------------------------
+2021-07-08 02:45:45,050 epoch 15 - iter 319/3198 - loss 11.75084274 - samples/sec: 49.11 - lr: 0.100000
+2021-07-08 02:47:29,523 epoch 15 - iter 638/3198 - loss 11.76187089 - samples/sec: 48.88 - lr: 0.100000
+2021-07-08 02:49:13,945 epoch 15 - iter 957/3198 - loss 11.76848826 - samples/sec: 48.90 - lr: 0.100000
+2021-07-08 02:50:56,117 epoch 15 - iter 1276/3198 - loss 11.71141334 - samples/sec: 49.98 - lr: 0.100000
+2021-07-08 02:52:36,734 epoch 15 - iter 1595/3198 - loss 11.65109168 - samples/sec: 50.75 - lr: 0.100000
+2021-07-08 02:54:19,007 epoch 15 - iter 1914/3198 - loss 11.67394891 - samples/sec: 49.93 - lr: 0.100000
+2021-07-08 02:56:01,973 epoch 15 - iter 2233/3198 - loss 11.64958032 - samples/sec: 49.59 - lr: 0.100000
+2021-07-08 02:57:46,726 epoch 15 - iter 2552/3198 - loss 11.67552402 - samples/sec: 48.75 - lr: 0.100000
+2021-07-08 02:59:30,696 epoch 15 - iter 2871/3198 - loss 11.71463903 - samples/sec: 49.11 - lr: 0.100000
+2021-07-08 03:01:13,122 epoch 15 - iter 3190/3198 - loss 11.71133581 - samples/sec: 49.85 - lr: 0.100000
+2021-07-08 03:01:15,339 ----------------------------------------------------------------------------------------------------
+2021-07-08 03:01:15,339 EPOCH 15 done: loss 11.7124 - lr 0.1000000
+2021-07-08 03:05:04,880 DEV : loss 6.101756572723389 - score 0.8968
+2021-07-08 03:05:05,214 BAD EPOCHS (no improvement): 0
+2021-07-08 03:05:06,442 ----------------------------------------------------------------------------------------------------
+2021-07-08 03:06:48,692 epoch 16 - iter 319/3198 - loss 11.61724905 - samples/sec: 49.94 - lr: 0.100000
+2021-07-08 03:08:30,593 epoch 16 - iter 638/3198 - loss 11.62046545 - samples/sec: 50.11 - lr: 0.100000
+2021-07-08 03:10:13,653 epoch 16 - iter 957/3198 - loss 11.63000464 - samples/sec: 49.55 - lr: 0.100000
+2021-07-08 03:12:00,243 epoch 16 - iter 1276/3198 - loss 11.70319905 - samples/sec: 47.91 - lr: 0.100000
+2021-07-08 03:13:41,866 epoch 16 - iter 1595/3198 - loss 11.68457047 - samples/sec: 50.25 - lr: 0.100000
+2021-07-08 03:15:23,971 epoch 16 - iter 1914/3198 - loss 11.66695046 - samples/sec: 50.01 - lr: 0.100000
+2021-07-08 03:17:07,048 epoch 16 - iter 2233/3198 - loss 11.63947567 - samples/sec: 49.54 - lr: 0.100000
+2021-07-08 03:18:50,282 epoch 16 - iter 2552/3198 - loss 11.64729040 - samples/sec: 49.46 - lr: 0.100000
+2021-07-08 03:20:34,290 epoch 16 - iter 2871/3198 - loss 11.64677161 - samples/sec: 49.10 - lr: 0.100000
+2021-07-08 03:22:16,036 epoch 16 - iter 3190/3198 - loss 11.63119505 - samples/sec: 50.19 - lr: 0.100000
+2021-07-08 03:22:18,647 ----------------------------------------------------------------------------------------------------
+2021-07-08 03:22:18,647 EPOCH 16 done: loss 11.6330 - lr 0.1000000
+2021-07-08 03:26:07,353 DEV : loss 6.098045349121094 - score 0.8983
+2021-07-08 03:26:07,682 BAD EPOCHS (no improvement): 0
+2021-07-08 03:26:08,782 ----------------------------------------------------------------------------------------------------
+2021-07-08 03:27:55,911 epoch 17 - iter 319/3198 - loss 11.60717179 - samples/sec: 47.67 - lr: 0.100000
+2021-07-08 03:29:38,627 epoch 17 - iter 638/3198 - loss 11.40419908 - samples/sec: 49.71 - lr: 0.100000
+2021-07-08 03:31:20,475 epoch 17 - iter 957/3198 - loss 11.41510974 - samples/sec: 50.14 - lr: 0.100000
+2021-07-08 03:33:04,277 epoch 17 - iter 1276/3198 - loss 11.41873744 - samples/sec: 49.19 - lr: 0.100000
+2021-07-08 03:34:48,726 epoch 17 - iter 1595/3198 - loss 11.43748178 - samples/sec: 48.89 - lr: 0.100000
+2021-07-08 03:36:34,141 epoch 17 - iter 1914/3198 - loss 11.44963926 - samples/sec: 48.44 - lr: 0.100000
+2021-07-08 03:38:16,383 epoch 17 - iter 2233/3198 - loss 11.46068502 - samples/sec: 49.94 - lr: 0.100000
+2021-07-08 03:40:01,163 epoch 17 - iter 2552/3198 - loss 11.48248740 - samples/sec: 48.73 - lr: 0.100000
+2021-07-08 03:41:45,801 epoch 17 - iter 2871/3198 - loss 11.49721577 - samples/sec: 48.80 - lr: 0.100000
+2021-07-08 03:43:27,228 epoch 17 - iter 3190/3198 - loss 11.50051983 - samples/sec: 50.35 - lr: 0.100000
+2021-07-08 03:43:29,640 ----------------------------------------------------------------------------------------------------
+2021-07-08 03:43:29,640 EPOCH 17 done: loss 11.5020 - lr 0.1000000
+2021-07-08 03:47:23,252 DEV : loss 5.967044353485107 - score 0.8992
+2021-07-08 03:47:23,592 BAD EPOCHS (no improvement): 0
+2021-07-08 03:47:24,731 ----------------------------------------------------------------------------------------------------
+2021-07-08 03:49:08,297 epoch 18 - iter 319/3198 - loss 11.31170695 - samples/sec: 49.31 - lr: 0.100000
+2021-07-08 03:50:54,238 epoch 18 - iter 638/3198 - loss 11.31487077 - samples/sec: 48.20 - lr: 0.100000
+2021-07-08 03:52:37,625 epoch 18 - iter 957/3198 - loss 11.34472896 - samples/sec: 49.39 - lr: 0.100000
+2021-07-08 03:54:20,686 epoch 18 - iter 1276/3198 - loss 11.39297638 - samples/sec: 49.55 - lr: 0.100000
+2021-07-08 03:56:03,042 epoch 18 - iter 1595/3198 - loss 11.40998872 - samples/sec: 49.89 - lr: 0.100000
+2021-07-08 03:57:46,694 epoch 18 - iter 1914/3198 - loss 11.44799025 - samples/sec: 49.27 - lr: 0.100000
+2021-07-08 03:59:28,752 epoch 18 - iter 2233/3198 - loss 11.43391831 - samples/sec: 50.03 - lr: 0.100000
+2021-07-08 04:01:11,228 epoch 18 - iter 2552/3198 - loss 11.41640146 - samples/sec: 49.83 - lr: 0.100000
+2021-07-08 04:02:55,093 epoch 18 - iter 2871/3198 - loss 11.40974000 - samples/sec: 49.16 - lr: 0.100000
+2021-07-08 04:04:36,986 epoch 18 - iter 3190/3198 - loss 11.39069160 - samples/sec: 50.12 - lr: 0.100000
+2021-07-08 04:04:39,245 ----------------------------------------------------------------------------------------------------
+2021-07-08 04:04:39,245 EPOCH 18 done: loss 11.3922 - lr 0.1000000
+2021-07-08 04:08:34,106 DEV : loss 5.933495044708252 - score 0.9003
+2021-07-08 04:08:34,436 BAD EPOCHS (no improvement): 0
+2021-07-08 04:08:35,595 ----------------------------------------------------------------------------------------------------
+2021-07-08 04:10:18,827 epoch 19 - iter 319/3198 - loss 11.15251153 - samples/sec: 49.47 - lr: 0.100000
+2021-07-08 04:12:01,370 epoch 19 - iter 638/3198 - loss 11.14518021 - samples/sec: 49.80 - lr: 0.100000
+2021-07-08 04:13:47,046 epoch 19 - iter 957/3198 - loss 11.24503953 - samples/sec: 48.32 - lr: 0.100000
+2021-07-08 04:15:31,331 epoch 19 - iter 1276/3198 - loss 11.30772057 - samples/sec: 48.96 - lr: 0.100000
+2021-07-08 04:17:16,330 epoch 19 - iter 1595/3198 - loss 11.36193188 - samples/sec: 48.63 - lr: 0.100000
+2021-07-08 04:19:01,202 epoch 19 - iter 1914/3198 - loss 11.37426921 - samples/sec: 48.69 - lr: 0.100000
+2021-07-08 04:20:45,099 epoch 19 - iter 2233/3198 - loss 11.35716107 - samples/sec: 49.15 - lr: 0.100000
+2021-07-08 04:22:26,880 epoch 19 - iter 2552/3198 - loss 11.37063465 - samples/sec: 50.17 - lr: 0.100000
+2021-07-08 04:24:08,283 epoch 19 - iter 2871/3198 - loss 11.36567569 - samples/sec: 50.36 - lr: 0.100000
+2021-07-08 04:25:47,021 epoch 19 - iter 3190/3198 - loss 11.31900491 - samples/sec: 51.72 - lr: 0.100000
+2021-07-08 04:25:49,154 ----------------------------------------------------------------------------------------------------
+2021-07-08 04:25:49,154 EPOCH 19 done: loss 11.3144 - lr 0.1000000
+2021-07-08 04:29:44,198 DEV : loss 5.874678611755371 - score 0.9011
+2021-07-08 04:29:44,537 BAD EPOCHS (no improvement): 0
+2021-07-08 04:29:45,774 ----------------------------------------------------------------------------------------------------
+2021-07-08 04:31:28,355 epoch 20 - iter 319/3198 - loss 11.29708304 - samples/sec: 49.78 - lr: 0.100000
+2021-07-08 04:33:12,329 epoch 20 - iter 638/3198 - loss 11.35980692 - samples/sec: 49.11 - lr: 0.100000
+2021-07-08 04:34:56,726 epoch 20 - iter 957/3198 - loss 11.32894518 - samples/sec: 48.91 - lr: 0.100000
+2021-07-08 04:36:39,788 epoch 20 - iter 1276/3198 - loss 11.34491707 - samples/sec: 49.55 - lr: 0.100000
+2021-07-08 04:38:22,246 epoch 20 - iter 1595/3198 - loss 11.34999422 - samples/sec: 49.84 - lr: 0.100000
+2021-07-08 04:40:06,194 epoch 20 - iter 1914/3198 - loss 11.34968104 - samples/sec: 49.12 - lr: 0.100000
+2021-07-08 04:41:47,775 epoch 20 - iter 2233/3198 - loss 11.31893169 - samples/sec: 50.27 - lr: 0.100000
+2021-07-08 04:43:30,963 epoch 20 - iter 2552/3198 - loss 11.31310382 - samples/sec: 49.49 - lr: 0.100000
+2021-07-08 04:45:14,204 epoch 20 - iter 2871/3198 - loss 11.30843394 - samples/sec: 49.46 - lr: 0.100000
+2021-07-08 04:46:56,306 epoch 20 - iter 3190/3198 - loss 11.29607289 - samples/sec: 50.01 - lr: 0.100000
+2021-07-08 04:46:58,491 ----------------------------------------------------------------------------------------------------
+2021-07-08 04:46:58,492 EPOCH 20 done: loss 11.2916 - lr 0.1000000
+2021-07-08 04:50:50,717 DEV : loss 5.890511989593506 - score 0.8999
+2021-07-08 04:50:51,055 BAD EPOCHS (no improvement): 1
+2021-07-08 04:50:51,055 ----------------------------------------------------------------------------------------------------
+2021-07-08 04:52:33,366 epoch 21 - iter 319/3198 - loss 10.94372973 - samples/sec: 49.91 - lr: 0.100000
+2021-07-08 04:54:17,337 epoch 21 - iter 638/3198 - loss 11.19500975 - samples/sec: 49.11 - lr: 0.100000
+2021-07-08 04:56:01,368 epoch 21 - iter 957/3198 - loss 11.22589758 - samples/sec: 49.09 - lr: 0.100000
+2021-07-08 04:57:47,175 epoch 21 - iter 1276/3198 - loss 11.26107078 - samples/sec: 48.26 - lr: 0.100000
+2021-07-08 04:59:30,226 epoch 21 - iter 1595/3198 - loss 11.27500389 - samples/sec: 49.55 - lr: 0.100000
+2021-07-08 05:01:14,470 epoch 21 - iter 1914/3198 - loss 11.25713986 - samples/sec: 48.98 - lr: 0.100000
+2021-07-08 05:02:56,360 epoch 21 - iter 2233/3198 - loss 11.22116937 - samples/sec: 50.12 - lr: 0.100000
+2021-07-08 05:04:40,211 epoch 21 - iter 2552/3198 - loss 11.20196856 - samples/sec: 49.17 - lr: 0.100000
+2021-07-08 05:06:21,045 epoch 21 - iter 2871/3198 - loss 11.15548466 - samples/sec: 50.64 - lr: 0.100000
+2021-07-08 05:08:05,304 epoch 21 - iter 3190/3198 - loss 11.13834539 - samples/sec: 48.98 - lr: 0.100000
+2021-07-08 05:08:07,724 ----------------------------------------------------------------------------------------------------
+2021-07-08 05:08:07,724 EPOCH 21 done: loss 11.1435 - lr 0.1000000
+2021-07-08 05:12:06,341 DEV : loss 5.798856258392334 - score 0.9009
+2021-07-08 05:12:06,682 BAD EPOCHS (no improvement): 2
+2021-07-08 05:12:06,682 ----------------------------------------------------------------------------------------------------
+2021-07-08 05:13:49,652 epoch 22 - iter 319/3198 - loss 11.18716769 - samples/sec: 49.59 - lr: 0.100000
+2021-07-08 05:15:32,548 epoch 22 - iter 638/3198 - loss 11.16726975 - samples/sec: 49.63 - lr: 0.100000
+2021-07-08 05:17:12,015 epoch 22 - iter 957/3198 - loss 11.05684241 - samples/sec: 51.34 - lr: 0.100000
+2021-07-08 05:18:54,741 epoch 22 - iter 1276/3198 - loss 11.06773475 - samples/sec: 49.71 - lr: 0.100000
+2021-07-08 05:20:37,490 epoch 22 - iter 1595/3198 - loss 11.08528752 - samples/sec: 49.70 - lr: 0.100000
+2021-07-08 05:22:19,915 epoch 22 - iter 1914/3198 - loss 11.08920934 - samples/sec: 49.86 - lr: 0.100000
+2021-07-08 05:24:06,141 epoch 22 - iter 2233/3198 - loss 11.13083378 - samples/sec: 48.07 - lr: 0.100000
+2021-07-08 05:25:52,459 epoch 22 - iter 2552/3198 - loss 11.11165959 - samples/sec: 48.03 - lr: 0.100000
+2021-07-08 05:27:32,791 epoch 22 - iter 2871/3198 - loss 11.08637758 - samples/sec: 50.89 - lr: 0.100000
+2021-07-08 05:29:16,330 epoch 22 - iter 3190/3198 - loss 11.08511522 - samples/sec: 49.32 - lr: 0.100000
+2021-07-08 05:29:18,490 ----------------------------------------------------------------------------------------------------
+2021-07-08 05:29:18,490 EPOCH 22 done: loss 11.0834 - lr 0.1000000
+2021-07-08 05:33:12,494 DEV : loss 5.771000385284424 - score 0.9022
+2021-07-08 05:33:12,830 BAD EPOCHS (no improvement): 0
+2021-07-08 05:33:14,064 ----------------------------------------------------------------------------------------------------
+2021-07-08 05:34:56,118 epoch 23 - iter 319/3198 - loss 11.05648561 - samples/sec: 50.04 - lr: 0.100000
+2021-07-08 05:36:40,884 epoch 23 - iter 638/3198 - loss 11.05531303 - samples/sec: 48.74 - lr: 0.100000
+2021-07-08 05:38:22,606 epoch 23 - iter 957/3198 - loss 10.98489058 - samples/sec: 50.20 - lr: 0.100000
+2021-07-08 05:40:04,290 epoch 23 - iter 1276/3198 - loss 10.99134191 - samples/sec: 50.22 - lr: 0.100000
+2021-07-08 05:41:47,547 epoch 23 - iter 1595/3198 - loss 10.98257537 - samples/sec: 49.45 - lr: 0.100000
+2021-07-08 05:43:30,786 epoch 23 - iter 1914/3198 - loss 11.01020852 - samples/sec: 49.46 - lr: 0.100000
+2021-07-08 05:45:14,180 epoch 23 - iter 2233/3198 - loss 11.01435346 - samples/sec: 49.39 - lr: 0.100000
+2021-07-08 05:46:55,869 epoch 23 - iter 2552/3198 - loss 10.99249564 - samples/sec: 50.22 - lr: 0.100000
+2021-07-08 05:48:42,371 epoch 23 - iter 2871/3198 - loss 11.01488655 - samples/sec: 47.95 - lr: 0.100000
+2021-07-08 05:50:25,021 epoch 23 - iter 3190/3198 - loss 11.02164006 - samples/sec: 49.74 - lr: 0.100000
+2021-07-08 05:50:27,682 ----------------------------------------------------------------------------------------------------
+2021-07-08 05:50:27,682 EPOCH 23 done: loss 11.0273 - lr 0.1000000
+2021-07-08 05:54:19,384 DEV : loss 5.727417945861816 - score 0.903
+2021-07-08 05:54:19,719 BAD EPOCHS (no improvement): 0
+2021-07-08 05:54:20,949 ----------------------------------------------------------------------------------------------------
+2021-07-08 05:56:05,167 epoch 24 - iter 319/3198 - loss 10.64191577 - samples/sec: 49.00 - lr: 0.100000
+2021-07-08 05:57:50,822 epoch 24 - iter 638/3198 - loss 10.79750055 - samples/sec: 48.33 - lr: 0.100000
+2021-07-08 05:59:33,684 epoch 24 - iter 957/3198 - loss 10.90385815 - samples/sec: 49.64 - lr: 0.100000
+2021-07-08 06:01:19,585 epoch 24 - iter 1276/3198 - loss 10.98913589 - samples/sec: 48.22 - lr: 0.100000
+2021-07-08 06:03:00,443 epoch 24 - iter 1595/3198 - loss 10.93958980 - samples/sec: 50.63 - lr: 0.100000
+2021-07-08 06:04:42,137 epoch 24 - iter 1914/3198 - loss 10.93581884 - samples/sec: 50.21 - lr: 0.100000
+2021-07-08 06:06:27,253 epoch 24 - iter 2233/3198 - loss 10.95506582 - samples/sec: 48.58 - lr: 0.100000
+2021-07-08 06:08:07,533 epoch 24 - iter 2552/3198 - loss 10.94806298 - samples/sec: 50.92 - lr: 0.100000
+2021-07-08 06:09:50,455 epoch 24 - iter 2871/3198 - loss 10.94039835 - samples/sec: 49.61 - lr: 0.100000
+2021-07-08 06:11:33,095 epoch 24 - iter 3190/3198 - loss 10.94437664 - samples/sec: 49.75 - lr: 0.100000
+2021-07-08 06:11:35,939 ----------------------------------------------------------------------------------------------------
+2021-07-08 06:11:35,939 EPOCH 24 done: loss 10.9456 - lr 0.1000000
+2021-07-08 06:15:32,129 DEV : loss 5.674938678741455 - score 0.904
+2021-07-08 06:15:32,466 BAD EPOCHS (no improvement): 0
+2021-07-08 06:15:33,711 ----------------------------------------------------------------------------------------------------
+2021-07-08 06:17:18,079 epoch 25 - iter 319/3198 - loss 10.89724916 - samples/sec: 48.93 - lr: 0.100000
+2021-07-08 06:19:01,256 epoch 25 - iter 638/3198 - loss 10.82519451 - samples/sec: 49.49 - lr: 0.100000
+2021-07-08 06:20:46,263 epoch 25 - iter 957/3198 - loss 10.81029664 - samples/sec: 48.63 - lr: 0.100000
+2021-07-08 06:22:30,350 epoch 25 - iter 1276/3198 - loss 10.83716616 - samples/sec: 49.06 - lr: 0.100000
+2021-07-08 06:24:14,046 epoch 25 - iter 1595/3198 - loss 10.84655958 - samples/sec: 49.24 - lr: 0.100000
+2021-07-08 06:25:55,283 epoch 25 - iter 1914/3198 - loss 10.82554291 - samples/sec: 50.44 - lr: 0.100000
+2021-07-08 06:27:37,639 epoch 25 - iter 2233/3198 - loss 10.87014098 - samples/sec: 49.89 - lr: 0.100000
+2021-07-08 06:29:19,538 epoch 25 - iter 2552/3198 - loss 10.89049932 - samples/sec: 50.11 - lr: 0.100000
+2021-07-08 06:31:02,324 epoch 25 - iter 2871/3198 - loss 10.91483336 - samples/sec: 49.68 - lr: 0.100000
+2021-07-08 06:32:43,724 epoch 25 - iter 3190/3198 - loss 10.91365906 - samples/sec: 50.36 - lr: 0.100000
+2021-07-08 06:32:46,668 ----------------------------------------------------------------------------------------------------
+2021-07-08 06:32:46,669 EPOCH 25 done: loss 10.9157 - lr 0.1000000
+2021-07-08 06:36:47,378 DEV : loss 5.667840480804443 - score 0.9044
+2021-07-08 06:36:47,680 BAD EPOCHS (no improvement): 0
+2021-07-08 06:36:48,931 ----------------------------------------------------------------------------------------------------
+2021-07-08 06:38:32,235 epoch 26 - iter 319/3198 - loss 10.86565955 - samples/sec: 49.43 - lr: 0.100000
+2021-07-08 06:40:12,935 epoch 26 - iter 638/3198 - loss 10.82553092 - samples/sec: 50.71 - lr: 0.100000
+2021-07-08 06:41:56,475 epoch 26 - iter 957/3198 - loss 10.89753496 - samples/sec: 49.32 - lr: 0.100000
+2021-07-08 06:43:41,526 epoch 26 - iter 1276/3198 - loss 10.89186103 - samples/sec: 48.61 - lr: 0.100000
+2021-07-08 06:45:24,696 epoch 26 - iter 1595/3198 - loss 10.90336179 - samples/sec: 49.49 - lr: 0.100000
+2021-07-08 06:47:09,483 epoch 26 - iter 1914/3198 - loss 10.91725328 - samples/sec: 48.73 - lr: 0.100000
+2021-07-08 06:48:54,642 epoch 26 - iter 2233/3198 - loss 10.91524962 - samples/sec: 48.56 - lr: 0.100000
+2021-07-08 06:50:35,617 epoch 26 - iter 2552/3198 - loss 10.90664287 - samples/sec: 50.57 - lr: 0.100000
+2021-07-08 06:52:17,978 epoch 26 - iter 2871/3198 - loss 10.88567496 - samples/sec: 49.89 - lr: 0.100000
+2021-07-08 06:54:00,607 epoch 26 - iter 3190/3198 - loss 10.89751413 - samples/sec: 49.76 - lr: 0.100000
+2021-07-08 06:54:02,909 ----------------------------------------------------------------------------------------------------
+2021-07-08 06:54:02,909 EPOCH 26 done: loss 10.8969 - lr 0.1000000
+2021-07-08 06:57:57,311 DEV : loss 5.672886371612549 - score 0.9041
+2021-07-08 06:57:57,648 BAD EPOCHS (no improvement): 1
+2021-07-08 06:57:57,648 ----------------------------------------------------------------------------------------------------
+2021-07-08 06:59:44,714 epoch 27 - iter 319/3198 - loss 11.10726540 - samples/sec: 47.69 - lr: 0.100000
+2021-07-08 07:01:27,000 epoch 27 - iter 638/3198 - loss 10.91826931 - samples/sec: 49.92 - lr: 0.100000
+2021-07-08 07:03:08,801 epoch 27 - iter 957/3198 - loss 10.90683602 - samples/sec: 50.16 - lr: 0.100000
+2021-07-08 07:04:52,873 epoch 27 - iter 1276/3198 - loss 10.86747250 - samples/sec: 49.07 - lr: 0.100000
+2021-07-08 07:06:36,469 epoch 27 - iter 1595/3198 - loss 10.85553543 - samples/sec: 49.29 - lr: 0.100000
+2021-07-08 07:08:19,857 epoch 27 - iter 1914/3198 - loss 10.87319689 - samples/sec: 49.39 - lr: 0.100000
+2021-07-08 07:10:03,890 epoch 27 - iter 2233/3198 - loss 10.85631862 - samples/sec: 49.08 - lr: 0.100000
+2021-07-08 07:11:46,413 epoch 27 - iter 2552/3198 - loss 10.82331298 - samples/sec: 49.81 - lr: 0.100000
+2021-07-08 07:13:29,650 epoch 27 - iter 2871/3198 - loss 10.81741566 - samples/sec: 49.46 - lr: 0.100000
+2021-07-08 07:15:10,800 epoch 27 - iter 3190/3198 - loss 10.80739119 - samples/sec: 50.48 - lr: 0.100000
+2021-07-08 07:15:13,093 ----------------------------------------------------------------------------------------------------
+2021-07-08 07:15:13,093 EPOCH 27 done: loss 10.8093 - lr 0.1000000
+2021-07-08 07:19:04,215 DEV : loss 5.617308139801025 - score 0.9044
+2021-07-08 07:19:04,551 BAD EPOCHS (no improvement): 0
+2021-07-08 07:19:05,813 ----------------------------------------------------------------------------------------------------
+2021-07-08 07:20:47,855 epoch 28 - iter 319/3198 - loss 10.60776264 - samples/sec: 50.04 - lr: 0.100000
+2021-07-08 07:22:30,921 epoch 28 - iter 638/3198 - loss 10.72250961 - samples/sec: 49.55 - lr: 0.100000
+2021-07-08 07:24:14,223 epoch 28 - iter 957/3198 - loss 10.69715216 - samples/sec: 49.43 - lr: 0.100000
+2021-07-08 07:25:57,476 epoch 28 - iter 1276/3198 - loss 10.68169215 - samples/sec: 49.46 - lr: 0.100000
+2021-07-08 07:27:40,270 epoch 28 - iter 1595/3198 - loss 10.69175534 - samples/sec: 49.68 - lr: 0.100000
+2021-07-08 07:29:22,895 epoch 28 - iter 1914/3198 - loss 10.75066390 - samples/sec: 49.76 - lr: 0.100000
+2021-07-08 07:31:08,489 epoch 28 - iter 2233/3198 - loss 10.76901459 - samples/sec: 48.36 - lr: 0.100000
+2021-07-08 07:32:49,036 epoch 28 - iter 2552/3198 - loss 10.72825389 - samples/sec: 50.79 - lr: 0.100000
+2021-07-08 07:34:30,629 epoch 28 - iter 2871/3198 - loss 10.74026689 - samples/sec: 50.26 - lr: 0.100000
+2021-07-08 07:36:13,272 epoch 28 - iter 3190/3198 - loss 10.75499806 - samples/sec: 49.75 - lr: 0.100000
+2021-07-08 07:36:15,619 ----------------------------------------------------------------------------------------------------
+2021-07-08 07:36:15,619 EPOCH 28 done: loss 10.7569 - lr 0.1000000
+2021-07-08 07:40:04,208 DEV : loss 5.587618350982666 - score 0.9054
+2021-07-08 07:40:04,536 BAD EPOCHS (no improvement): 0
+2021-07-08 07:40:05,754 ----------------------------------------------------------------------------------------------------
+2021-07-08 07:41:50,489 epoch 29 - iter 319/3198 - loss 10.72711463 - samples/sec: 48.76 - lr: 0.100000
+2021-07-08 07:43:32,270 epoch 29 - iter 638/3198 - loss 10.66333462 - samples/sec: 50.17 - lr: 0.100000
+2021-07-08 07:45:15,670 epoch 29 - iter 957/3198 - loss 10.69152830 - samples/sec: 49.39 - lr: 0.100000
+2021-07-08 07:46:57,873 epoch 29 - iter 1276/3198 - loss 10.67063876 - samples/sec: 49.96 - lr: 0.100000
+2021-07-08 07:48:41,900 epoch 29 - iter 1595/3198 - loss 10.66281560 - samples/sec: 49.09 - lr: 0.100000
+2021-07-08 07:50:25,190 epoch 29 - iter 1914/3198 - loss 10.66070437 - samples/sec: 49.44 - lr: 0.100000
+2021-07-08 07:52:10,658 epoch 29 - iter 2233/3198 - loss 10.70743093 - samples/sec: 48.42 - lr: 0.100000
+2021-07-08 07:53:51,129 epoch 29 - iter 2552/3198 - loss 10.69295503 - samples/sec: 50.82 - lr: 0.100000
+2021-07-08 07:55:36,643 epoch 29 - iter 2871/3198 - loss 10.71725415 - samples/sec: 48.40 - lr: 0.100000
+2021-07-08 07:57:19,464 epoch 29 - iter 3190/3198 - loss 10.71817738 - samples/sec: 49.66 - lr: 0.100000
+2021-07-08 07:57:22,164 ----------------------------------------------------------------------------------------------------
+2021-07-08 07:57:22,164 EPOCH 29 done: loss 10.7197 - lr 0.1000000
+2021-07-08 08:01:14,929 DEV : loss 5.56289529800415 - score 0.906
+2021-07-08 08:01:15,266 BAD EPOCHS (no improvement): 0
+2021-07-08 08:01:16,396 ----------------------------------------------------------------------------------------------------
+2021-07-08 08:02:59,432 epoch 30 - iter 319/3198 - loss 10.51702956 - samples/sec: 49.56 - lr: 0.100000
+2021-07-08 08:04:43,642 epoch 30 - iter 638/3198 - loss 10.58624009 - samples/sec: 49.00 - lr: 0.100000
+2021-07-08 08:06:25,785 epoch 30 - iter 957/3198 - loss 10.61757514 - samples/sec: 49.99 - lr: 0.100000
+2021-07-08 08:08:09,482 epoch 30 - iter 1276/3198 - loss 10.68915701 - samples/sec: 49.24 - lr: 0.100000
+2021-07-08 08:09:55,691 epoch 30 - iter 1595/3198 - loss 10.72379854 - samples/sec: 48.08 - lr: 0.100000
+2021-07-08 08:11:38,489 epoch 30 - iter 1914/3198 - loss 10.72624675 - samples/sec: 49.67 - lr: 0.100000
+2021-07-08 08:13:18,622 epoch 30 - iter 2233/3198 - loss 10.68737553 - samples/sec: 51.00 - lr: 0.100000
+2021-07-08 08:14:59,143 epoch 30 - iter 2552/3198 - loss 10.64872616 - samples/sec: 50.80 - lr: 0.100000
+2021-07-08 08:16:42,621 epoch 30 - iter 2871/3198 - loss 10.66188593 - samples/sec: 49.35 - lr: 0.100000
+2021-07-08 08:18:26,121 epoch 30 - iter 3190/3198 - loss 10.67397113 - samples/sec: 49.34 - lr: 0.100000
+2021-07-08 08:18:29,035 ----------------------------------------------------------------------------------------------------
+2021-07-08 08:18:29,035 EPOCH 30 done: loss 10.6732 - lr 0.1000000
+2021-07-08 08:22:25,276 DEV : loss 5.549332618713379 - score 0.9049
+2021-07-08 08:22:25,612 BAD EPOCHS (no improvement): 1
+2021-07-08 08:22:25,612 ----------------------------------------------------------------------------------------------------
+2021-07-08 08:24:07,265 epoch 31 - iter 319/3198 - loss 10.61884333 - samples/sec: 50.24 - lr: 0.100000
+2021-07-08 08:25:50,147 epoch 31 - iter 638/3198 - loss 10.66659716 - samples/sec: 49.63 - lr: 0.100000
+2021-07-08 08:27:36,963 epoch 31 - iter 957/3198 - loss 10.70071563 - samples/sec: 47.80 - lr: 0.100000
+2021-07-08 08:29:20,953 epoch 31 - iter 1276/3198 - loss 10.73462279 - samples/sec: 49.10 - lr: 0.100000
+2021-07-08 08:31:01,358 epoch 31 - iter 1595/3198 - loss 10.71996009 - samples/sec: 50.86 - lr: 0.100000
+2021-07-08 08:32:43,850 epoch 31 - iter 1914/3198 - loss 10.67052083 - samples/sec: 49.82 - lr: 0.100000
+2021-07-08 08:34:27,697 epoch 31 - iter 2233/3198 - loss 10.67641214 - samples/sec: 49.17 - lr: 0.100000
+2021-07-08 08:36:13,244 epoch 31 - iter 2552/3198 - loss 10.69500486 - samples/sec: 48.38 - lr: 0.100000
+2021-07-08 08:37:56,743 epoch 31 - iter 2871/3198 - loss 10.68893174 - samples/sec: 49.34 - lr: 0.100000
+2021-07-08 08:39:40,183 epoch 31 - iter 3190/3198 - loss 10.68315748 - samples/sec: 49.37 - lr: 0.100000
+2021-07-08 08:39:42,735 ----------------------------------------------------------------------------------------------------
+2021-07-08 08:39:42,736 EPOCH 31 done: loss 10.6850 - lr 0.1000000
+2021-07-08 08:43:37,115 DEV : loss 5.553334712982178 - score 0.9056
+2021-07-08 08:43:37,452 BAD EPOCHS (no improvement): 2
+2021-07-08 08:43:37,452 ----------------------------------------------------------------------------------------------------
+2021-07-08 08:45:21,844 epoch 32 - iter 319/3198 - loss 10.50497691 - samples/sec: 48.92 - lr: 0.100000
+2021-07-08 08:47:06,261 epoch 32 - iter 638/3198 - loss 10.61459854 - samples/sec: 48.90 - lr: 0.100000
+2021-07-08 08:48:50,008 epoch 32 - iter 957/3198 - loss 10.69242312 - samples/sec: 49.22 - lr: 0.100000
+2021-07-08 08:50:34,329 epoch 32 - iter 1276/3198 - loss 10.63101941 - samples/sec: 48.95 - lr: 0.100000
+2021-07-08 08:52:17,795 epoch 32 - iter 1595/3198 - loss 10.61286493 - samples/sec: 49.35 - lr: 0.100000
+2021-07-08 08:54:01,373 epoch 32 - iter 1914/3198 - loss 10.64004027 - samples/sec: 49.30 - lr: 0.100000
+2021-07-08 08:55:44,546 epoch 32 - iter 2233/3198 - loss 10.64899243 - samples/sec: 49.49 - lr: 0.100000
+2021-07-08 08:57:29,480 epoch 32 - iter 2552/3198 - loss 10.68406286 - samples/sec: 48.66 - lr: 0.100000
+2021-07-08 08:59:12,657 epoch 32 - iter 2871/3198 - loss 10.63877738 - samples/sec: 49.49 - lr: 0.100000
+2021-07-08 09:00:54,361 epoch 32 - iter 3190/3198 - loss 10.63082984 - samples/sec: 50.21 - lr: 0.100000
+2021-07-08 09:00:56,591 ----------------------------------------------------------------------------------------------------
+2021-07-08 09:00:56,591 EPOCH 32 done: loss 10.6325 - lr 0.1000000
+2021-07-08 09:04:52,687 DEV : loss 5.482235431671143 - score 0.9067
+2021-07-08 09:04:53,035 BAD EPOCHS (no improvement): 0
+2021-07-08 09:04:54,227 ----------------------------------------------------------------------------------------------------
+2021-07-08 09:06:39,791 epoch 33 - iter 319/3198 - loss 10.62979901 - samples/sec: 48.37 - lr: 0.100000
+2021-07-08 09:08:23,534 epoch 33 - iter 638/3198 - loss 10.53629117 - samples/sec: 49.22 - lr: 0.100000
+2021-07-08 09:10:06,326 epoch 33 - iter 957/3198 - loss 10.50316786 - samples/sec: 49.68 - lr: 0.100000
+2021-07-08 09:11:48,808 epoch 33 - iter 1276/3198 - loss 10.46632141 - samples/sec: 49.83 - lr: 0.100000
+2021-07-08 09:13:35,284 epoch 33 - iter 1595/3198 - loss 10.51576747 - samples/sec: 47.96 - lr: 0.100000
+2021-07-08 09:15:17,436 epoch 33 - iter 1914/3198 - loss 10.53825047 - samples/sec: 49.99 - lr: 0.100000
+2021-07-08 09:17:00,913 epoch 33 - iter 2233/3198 - loss 10.55894507 - samples/sec: 49.35 - lr: 0.100000
+2021-07-08 09:18:46,217 epoch 33 - iter 2552/3198 - loss 10.59973312 - samples/sec: 48.49 - lr: 0.100000
+2021-07-08 09:20:29,917 epoch 33 - iter 2871/3198 - loss 10.59553167 - samples/sec: 49.24 - lr: 0.100000
+2021-07-08 09:22:10,763 epoch 33 - iter 3190/3198 - loss 10.58253046 - samples/sec: 50.64 - lr: 0.100000
+2021-07-08 09:22:13,242 ----------------------------------------------------------------------------------------------------
+2021-07-08 09:22:13,242 EPOCH 33 done: loss 10.5825 - lr 0.1000000
+2021-07-08 09:26:03,002 DEV : loss 5.47683048248291 - score 0.9065
+2021-07-08 09:26:03,345 BAD EPOCHS (no improvement): 1
+2021-07-08 09:26:03,345 ----------------------------------------------------------------------------------------------------
+2021-07-08 09:27:46,407 epoch 34 - iter 319/3198 - loss 10.33853325 - samples/sec: 49.55 - lr: 0.100000
+2021-07-08 09:29:30,245 epoch 34 - iter 638/3198 - loss 10.46451826 - samples/sec: 49.18 - lr: 0.100000
+2021-07-08 09:31:13,531 epoch 34 - iter 957/3198 - loss 10.48760924 - samples/sec: 49.44 - lr: 0.100000
+2021-07-08 09:32:59,169 epoch 34 - iter 1276/3198 - loss 10.54768212 - samples/sec: 48.34 - lr: 0.100000
+2021-07-08 09:34:43,499 epoch 34 - iter 1595/3198 - loss 10.54138266 - samples/sec: 48.94 - lr: 0.100000
+2021-07-08 09:36:24,282 epoch 34 - iter 1914/3198 - loss 10.51917667 - samples/sec: 50.67 - lr: 0.100000
+2021-07-08 09:38:05,727 epoch 34 - iter 2233/3198 - loss 10.54081661 - samples/sec: 50.34 - lr: 0.100000
+2021-07-08 09:39:51,960 epoch 34 - iter 2552/3198 - loss 10.56566904 - samples/sec: 48.07 - lr: 0.100000
+2021-07-08 09:41:33,431 epoch 34 - iter 2871/3198 - loss 10.55707093 - samples/sec: 50.32 - lr: 0.100000
+2021-07-08 09:43:17,409 epoch 34 - iter 3190/3198 - loss 10.57420968 - samples/sec: 49.11 - lr: 0.100000
+2021-07-08 09:43:19,735 ----------------------------------------------------------------------------------------------------
+2021-07-08 09:43:19,735 EPOCH 34 done: loss 10.5695 - lr 0.1000000
+2021-07-08 09:47:17,986 DEV : loss 5.4359354972839355 - score 0.9074
+2021-07-08 09:47:18,317 BAD EPOCHS (no improvement): 0
+2021-07-08 09:47:19,572 ----------------------------------------------------------------------------------------------------
+2021-07-08 09:49:04,804 epoch 35 - iter 319/3198 - loss 10.57846357 - samples/sec: 48.53 - lr: 0.100000
+2021-07-08 09:50:46,700 epoch 35 - iter 638/3198 - loss 10.51651240 - samples/sec: 50.11 - lr: 0.100000
+2021-07-08 09:52:31,912 epoch 35 - iter 957/3198 - loss 10.49316856 - samples/sec: 48.53 - lr: 0.100000
+2021-07-08 09:54:18,154 epoch 35 - iter 1276/3198 - loss 10.52040669 - samples/sec: 48.06 - lr: 0.100000
+2021-07-08 09:55:58,819 epoch 35 - iter 1595/3198 - loss 10.49784121 - samples/sec: 50.73 - lr: 0.100000
+2021-07-08 09:57:41,457 epoch 35 - iter 1914/3198 - loss 10.52129676 - samples/sec: 49.75 - lr: 0.100000
+2021-07-08 09:59:23,517 epoch 35 - iter 2233/3198 - loss 10.48575451 - samples/sec: 50.03 - lr: 0.100000
+2021-07-08 10:01:03,461 epoch 35 - iter 2552/3198 - loss 10.49719063 - samples/sec: 51.09 - lr: 0.100000
+2021-07-08 10:02:43,743 epoch 35 - iter 2871/3198 - loss 10.47102505 - samples/sec: 50.92 - lr: 0.100000
+2021-07-08 10:04:27,736 epoch 35 - iter 3190/3198 - loss 10.49221940 - samples/sec: 49.10 - lr: 0.100000
+2021-07-08 10:04:30,162 ----------------------------------------------------------------------------------------------------
+2021-07-08 10:04:30,162 EPOCH 35 done: loss 10.4936 - lr 0.1000000
+2021-07-08 10:08:21,969 DEV : loss 5.453710079193115 - score 0.9058
+2021-07-08 10:08:22,307 BAD EPOCHS (no improvement): 1
+2021-07-08 10:08:22,307 ----------------------------------------------------------------------------------------------------
+2021-07-08 10:10:05,378 epoch 36 - iter 319/3198 - loss 10.59185664 - samples/sec: 49.54 - lr: 0.100000
+2021-07-08 10:11:48,066 epoch 36 - iter 638/3198 - loss 10.51034911 - samples/sec: 49.73 - lr: 0.100000
+2021-07-08 10:13:30,125 epoch 36 - iter 957/3198 - loss 10.49679048 - samples/sec: 50.03 - lr: 0.100000
+2021-07-08 10:15:13,181 epoch 36 - iter 1276/3198 - loss 10.45679033 - samples/sec: 49.55 - lr: 0.100000
+2021-07-08 10:16:58,589 epoch 36 - iter 1595/3198 - loss 10.46641835 - samples/sec: 48.44 - lr: 0.100000
+2021-07-08 10:18:44,762 epoch 36 - iter 1914/3198 - loss 10.48176078 - samples/sec: 48.09 - lr: 0.100000
+2021-07-08 10:20:27,019 epoch 36 - iter 2233/3198 - loss 10.45405425 - samples/sec: 49.94 - lr: 0.100000
+2021-07-08 10:22:09,311 epoch 36 - iter 2552/3198 - loss 10.44997338 - samples/sec: 49.92 - lr: 0.100000
+2021-07-08 10:23:52,819 epoch 36 - iter 2871/3198 - loss 10.43299423 - samples/sec: 49.33 - lr: 0.100000
+2021-07-08 10:25:37,053 epoch 36 - iter 3190/3198 - loss 10.46961296 - samples/sec: 48.99 - lr: 0.100000
+2021-07-08 10:25:39,964 ----------------------------------------------------------------------------------------------------
+2021-07-08 10:25:39,964 EPOCH 36 done: loss 10.4727 - lr 0.1000000
+2021-07-08 10:29:33,597 DEV : loss 5.353569030761719 - score 0.9074
+2021-07-08 10:29:33,932 BAD EPOCHS (no improvement): 0
+2021-07-08 10:29:35,130 ----------------------------------------------------------------------------------------------------
+2021-07-08 10:31:19,098 epoch 37 - iter 319/3198 - loss 10.56220259 - samples/sec: 49.12 - lr: 0.100000
+2021-07-08 10:33:01,756 epoch 37 - iter 638/3198 - loss 10.53739377 - samples/sec: 49.74 - lr: 0.100000
+2021-07-08 10:34:42,735 epoch 37 - iter 957/3198 - loss 10.48068361 - samples/sec: 50.57 - lr: 0.100000
+2021-07-08 10:36:27,264 epoch 37 - iter 1276/3198 - loss 10.49014458 - samples/sec: 48.85 - lr: 0.100000
+2021-07-08 10:38:09,724 epoch 37 - iter 1595/3198 - loss 10.50136775 - samples/sec: 49.84 - lr: 0.100000
+2021-07-08 10:39:54,359 epoch 37 - iter 1914/3198 - loss 10.50272302 - samples/sec: 48.80 - lr: 0.100000
+2021-07-08 10:41:36,269 epoch 37 - iter 2233/3198 - loss 10.51663853 - samples/sec: 50.11 - lr: 0.100000
+2021-07-08 10:43:17,644 epoch 37 - iter 2552/3198 - loss 10.49333889 - samples/sec: 50.37 - lr: 0.100000
+2021-07-08 10:44:59,870 epoch 37 - iter 2871/3198 - loss 10.46322257 - samples/sec: 49.95 - lr: 0.100000
+2021-07-08 10:46:45,448 epoch 37 - iter 3190/3198 - loss 10.47699665 - samples/sec: 48.37 - lr: 0.100000
+2021-07-08 10:46:47,772 ----------------------------------------------------------------------------------------------------
+2021-07-08 10:46:47,772 EPOCH 37 done: loss 10.4778 - lr 0.1000000
+2021-07-08 10:50:38,882 DEV : loss 5.428191184997559 - score 0.9076
+2021-07-08 10:50:39,217 BAD EPOCHS (no improvement): 0
+2021-07-08 10:50:40,384 ----------------------------------------------------------------------------------------------------
+2021-07-08 10:52:22,161 epoch 38 - iter 319/3198 - loss 10.31811368 - samples/sec: 50.17 - lr: 0.100000
+2021-07-08 10:54:05,513 epoch 38 - iter 638/3198 - loss 10.45276575 - samples/sec: 49.41 - lr: 0.100000
+2021-07-08 10:55:48,225 epoch 38 - iter 957/3198 - loss 10.36172670 - samples/sec: 49.72 - lr: 0.100000
+2021-07-08 10:57:32,533 epoch 38 - iter 1276/3198 - loss 10.43246782 - samples/sec: 48.96 - lr: 0.100000
+2021-07-08 10:59:17,071 epoch 38 - iter 1595/3198 - loss 10.41997206 - samples/sec: 48.85 - lr: 0.100000
+2021-07-08 11:01:00,418 epoch 38 - iter 1914/3198 - loss 10.40522722 - samples/sec: 49.41 - lr: 0.100000
+2021-07-08 11:02:45,585 epoch 38 - iter 2233/3198 - loss 10.41250041 - samples/sec: 48.56 - lr: 0.100000
+2021-07-08 11:04:27,006 epoch 38 - iter 2552/3198 - loss 10.39129077 - samples/sec: 50.35 - lr: 0.100000
+2021-07-08 11:06:07,841 epoch 38 - iter 2871/3198 - loss 10.38240925 - samples/sec: 50.64 - lr: 0.100000
+2021-07-08 11:07:51,917 epoch 38 - iter 3190/3198 - loss 10.41192410 - samples/sec: 49.06 - lr: 0.100000
+2021-07-08 11:07:54,007 ----------------------------------------------------------------------------------------------------
+2021-07-08 11:07:54,007 EPOCH 38 done: loss 10.4112 - lr 0.1000000
+2021-07-08 11:11:43,567 DEV : loss 5.393846035003662 - score 0.9073
+2021-07-08 11:11:43,895 BAD EPOCHS (no improvement): 1
+2021-07-08 11:11:43,895 ----------------------------------------------------------------------------------------------------
+2021-07-08 11:13:27,235 epoch 39 - iter 319/3198 - loss 10.38853347 - samples/sec: 49.41 - lr: 0.100000
+2021-07-08 11:15:10,139 epoch 39 - iter 638/3198 - loss 10.40598802 - samples/sec: 49.62 - lr: 0.100000
+2021-07-08 11:16:51,513 epoch 39 - iter 957/3198 - loss 10.38163548 - samples/sec: 50.37 - lr: 0.100000
+2021-07-08 11:18:35,102 epoch 39 - iter 1276/3198 - loss 10.40433842 - samples/sec: 49.29 - lr: 0.100000
+2021-07-08 11:20:16,218 epoch 39 - iter 1595/3198 - loss 10.39047189 - samples/sec: 50.50 - lr: 0.100000
+2021-07-08 11:22:00,119 epoch 39 - iter 1914/3198 - loss 10.36836070 - samples/sec: 49.15 - lr: 0.100000
+2021-07-08 11:23:45,997 epoch 39 - iter 2233/3198 - loss 10.37923295 - samples/sec: 48.23 - lr: 0.100000
+2021-07-08 11:25:29,243 epoch 39 - iter 2552/3198 - loss 10.38055214 - samples/sec: 49.46 - lr: 0.100000
+2021-07-08 11:27:11,639 epoch 39 - iter 2871/3198 - loss 10.37779531 - samples/sec: 49.87 - lr: 0.100000
+2021-07-08 11:29:00,271 epoch 39 - iter 3190/3198 - loss 10.37907034 - samples/sec: 47.00 - lr: 0.100000
+2021-07-08 11:29:02,518 ----------------------------------------------------------------------------------------------------
+2021-07-08 11:29:02,519 EPOCH 39 done: loss 10.3762 - lr 0.1000000
+2021-07-08 11:32:53,693 DEV : loss 5.389727592468262 - score 0.9062
+2021-07-08 11:32:54,024 BAD EPOCHS (no improvement): 2
+2021-07-08 11:32:54,024 ----------------------------------------------------------------------------------------------------
+2021-07-08 11:34:35,255 epoch 40 - iter 319/3198 - loss 10.20421164 - samples/sec: 50.44 - lr: 0.100000
+2021-07-08 11:36:18,813 epoch 40 - iter 638/3198 - loss 10.38289393 - samples/sec: 49.31 - lr: 0.100000
+2021-07-08 11:38:02,256 epoch 40 - iter 957/3198 - loss 10.37387952 - samples/sec: 49.36 - lr: 0.100000
+2021-07-08 11:39:44,893 epoch 40 - iter 1276/3198 - loss 10.36343356 - samples/sec: 49.75 - lr: 0.100000
+2021-07-08 11:41:28,016 epoch 40 - iter 1595/3198 - loss 10.35512177 - samples/sec: 49.52 - lr: 0.100000
+2021-07-08 11:43:16,563 epoch 40 - iter 1914/3198 - loss 10.36575486 - samples/sec: 47.04 - lr: 0.100000
+2021-07-08 11:44:58,589 epoch 40 - iter 2233/3198 - loss 10.38200374 - samples/sec: 50.05 - lr: 0.100000
+2021-07-08 11:46:40,425 epoch 40 - iter 2552/3198 - loss 10.41252684 - samples/sec: 50.14 - lr: 0.100000
+2021-07-08 11:48:23,270 epoch 40 - iter 2871/3198 - loss 10.41045323 - samples/sec: 49.65 - lr: 0.100000
+2021-07-08 11:50:06,344 epoch 40 - iter 3190/3198 - loss 10.41823866 - samples/sec: 49.54 - lr: 0.100000
+2021-07-08 11:50:08,774 ----------------------------------------------------------------------------------------------------
+2021-07-08 11:50:08,775 EPOCH 40 done: loss 10.4163 - lr 0.1000000
+2021-07-08 11:54:00,120 DEV : loss 5.342241287231445 - score 0.9093
+2021-07-08 11:54:00,456 BAD EPOCHS (no improvement): 0
+2021-07-08 11:54:01,639 ----------------------------------------------------------------------------------------------------
+2021-07-08 11:55:45,204 epoch 41 - iter 319/3198 - loss 10.18262785 - samples/sec: 49.31 - lr: 0.100000
+2021-07-08 11:57:29,824 epoch 41 - iter 638/3198 - loss 10.32374006 - samples/sec: 48.81 - lr: 0.100000
+2021-07-08 11:59:12,733 epoch 41 - iter 957/3198 - loss 10.35050407 - samples/sec: 49.62 - lr: 0.100000
+2021-07-08 12:00:57,745 epoch 41 - iter 1276/3198 - loss 10.31234145 - samples/sec: 48.63 - lr: 0.100000
+2021-07-08 12:02:39,561 epoch 41 - iter 1595/3198 - loss 10.33134051 - samples/sec: 50.15 - lr: 0.100000
+2021-07-08 12:04:20,430 epoch 41 - iter 1914/3198 - loss 10.29273665 - samples/sec: 50.62 - lr: 0.100000
+2021-07-08 12:06:04,018 epoch 41 - iter 2233/3198 - loss 10.30373508 - samples/sec: 49.30 - lr: 0.100000
+2021-07-08 12:07:49,485 epoch 41 - iter 2552/3198 - loss 10.32433202 - samples/sec: 48.42 - lr: 0.100000
+2021-07-08 12:09:32,869 epoch 41 - iter 2871/3198 - loss 10.32869511 - samples/sec: 49.39 - lr: 0.100000
+2021-07-08 12:11:17,860 epoch 41 - iter 3190/3198 - loss 10.34376439 - samples/sec: 48.64 - lr: 0.100000
+2021-07-08 12:11:20,690 ----------------------------------------------------------------------------------------------------
+2021-07-08 12:11:20,690 EPOCH 41 done: loss 10.3427 - lr 0.1000000
+2021-07-08 12:15:09,628 DEV : loss 5.362857818603516 - score 0.9078
+2021-07-08 12:15:09,956 BAD EPOCHS (no improvement): 1
+2021-07-08 12:15:09,956 ----------------------------------------------------------------------------------------------------
+2021-07-08 12:16:53,213 epoch 42 - iter 319/3198 - loss 10.34913185 - samples/sec: 49.46 - lr: 0.100000
+2021-07-08 12:18:35,215 epoch 42 - iter 638/3198 - loss 10.35641075 - samples/sec: 50.06 - lr: 0.100000
+2021-07-08 12:20:17,915 epoch 42 - iter 957/3198 - loss 10.32775265 - samples/sec: 49.72 - lr: 0.100000
+2021-07-08 12:22:04,270 epoch 42 - iter 1276/3198 - loss 10.31235009 - samples/sec: 48.01 - lr: 0.100000
+2021-07-08 12:23:46,955 epoch 42 - iter 1595/3198 - loss 10.30590880 - samples/sec: 49.73 - lr: 0.100000
+2021-07-08 12:25:31,850 epoch 42 - iter 1914/3198 - loss 10.33550767 - samples/sec: 48.68 - lr: 0.100000
+2021-07-08 12:27:13,094 epoch 42 - iter 2233/3198 - loss 10.33733243 - samples/sec: 50.44 - lr: 0.100000
+2021-07-08 12:28:58,367 epoch 42 - iter 2552/3198 - loss 10.32792324 - samples/sec: 48.51 - lr: 0.100000
+2021-07-08 12:30:40,156 epoch 42 - iter 2871/3198 - loss 10.31854892 - samples/sec: 50.17 - lr: 0.100000
+2021-07-08 12:32:23,398 epoch 42 - iter 3190/3198 - loss 10.31203343 - samples/sec: 49.46 - lr: 0.100000
+2021-07-08 12:32:25,806 ----------------------------------------------------------------------------------------------------
+2021-07-08 12:32:25,807 EPOCH 42 done: loss 10.3116 - lr 0.1000000
+2021-07-08 12:36:18,800 DEV : loss 5.33824348449707 - score 0.9086
+2021-07-08 12:36:19,141 BAD EPOCHS (no improvement): 2
+2021-07-08 12:36:19,141 ----------------------------------------------------------------------------------------------------
+2021-07-08 12:38:02,441 epoch 43 - iter 319/3198 - loss 9.93963915 - samples/sec: 49.44 - lr: 0.100000
+2021-07-08 12:39:46,568 epoch 43 - iter 638/3198 - loss 10.04177218 - samples/sec: 49.04 - lr: 0.100000
+2021-07-08 12:41:31,927 epoch 43 - iter 957/3198 - loss 10.16406498 - samples/sec: 48.47 - lr: 0.100000
+2021-07-08 12:43:13,783 epoch 43 - iter 1276/3198 - loss 10.17058219 - samples/sec: 50.13 - lr: 0.100000
+2021-07-08 12:44:54,405 epoch 43 - iter 1595/3198 - loss 10.21074498 - samples/sec: 50.75 - lr: 0.100000
+2021-07-08 12:46:39,824 epoch 43 - iter 1914/3198 - loss 10.28656105 - samples/sec: 48.44 - lr: 0.100000
+2021-07-08 12:48:23,247 epoch 43 - iter 2233/3198 - loss 10.31090305 - samples/sec: 49.37 - lr: 0.100000
+2021-07-08 12:50:06,229 epoch 43 - iter 2552/3198 - loss 10.31168398 - samples/sec: 49.59 - lr: 0.100000
+2021-07-08 12:51:49,917 epoch 43 - iter 2871/3198 - loss 10.33802423 - samples/sec: 49.25 - lr: 0.100000
+2021-07-08 12:53:35,104 epoch 43 - iter 3190/3198 - loss 10.32397923 - samples/sec: 48.55 - lr: 0.100000
+2021-07-08 12:53:37,830 ----------------------------------------------------------------------------------------------------
+2021-07-08 12:53:37,831 EPOCH 43 done: loss 10.3268 - lr 0.1000000
+2021-07-08 12:57:32,049 DEV : loss 5.360605239868164 - score 0.9084
+2021-07-08 12:57:32,380 BAD EPOCHS (no improvement): 3
+2021-07-08 12:57:32,380 ----------------------------------------------------------------------------------------------------
+2021-07-08 12:59:18,129 epoch 44 - iter 319/3198 - loss 10.24025317 - samples/sec: 48.29 - lr: 0.100000
+2021-07-08 13:01:01,745 epoch 44 - iter 638/3198 - loss 10.26373981 - samples/sec: 49.28 - lr: 0.100000
+2021-07-08 13:02:48,499 epoch 44 - iter 957/3198 - loss 10.25741383 - samples/sec: 47.83 - lr: 0.100000
+2021-07-08 13:04:30,961 epoch 44 - iter 1276/3198 - loss 10.25321082 - samples/sec: 49.84 - lr: 0.100000
+2021-07-08 13:06:12,190 epoch 44 - iter 1595/3198 - loss 10.21261554 - samples/sec: 50.45 - lr: 0.100000
+2021-07-08 13:07:57,733 epoch 44 - iter 1914/3198 - loss 10.24707417 - samples/sec: 48.38 - lr: 0.100000
+2021-07-08 13:09:40,629 epoch 44 - iter 2233/3198 - loss 10.26347033 - samples/sec: 49.63 - lr: 0.100000
+2021-07-08 13:11:22,351 epoch 44 - iter 2552/3198 - loss 10.27185644 - samples/sec: 50.20 - lr: 0.100000
+2021-07-08 13:13:02,907 epoch 44 - iter 2871/3198 - loss 10.26842414 - samples/sec: 50.78 - lr: 0.100000
+2021-07-08 13:14:48,033 epoch 44 - iter 3190/3198 - loss 10.26752933 - samples/sec: 48.57 - lr: 0.100000
+2021-07-08 13:14:50,664 ----------------------------------------------------------------------------------------------------
+2021-07-08 13:14:50,664 EPOCH 44 done: loss 10.2711 - lr 0.1000000
+2021-07-08 13:18:41,352 DEV : loss 5.3029303550720215 - score 0.908
+2021-07-08 13:18:41,690 BAD EPOCHS (no improvement): 4
+2021-07-08 13:18:41,690 ----------------------------------------------------------------------------------------------------
+2021-07-08 13:20:25,751 epoch 45 - iter 319/3198 - loss 10.23092125 - samples/sec: 49.07 - lr: 0.050000
+2021-07-08 13:22:09,284 epoch 45 - iter 638/3198 - loss 10.06713585 - samples/sec: 49.32 - lr: 0.050000
+2021-07-08 13:23:53,631 epoch 45 - iter 957/3198 - loss 10.06615951 - samples/sec: 48.94 - lr: 0.050000
+2021-07-08 13:25:37,161 epoch 45 - iter 1276/3198 - loss 10.04642512 - samples/sec: 49.32 - lr: 0.050000
+2021-07-08 13:27:22,434 epoch 45 - iter 1595/3198 - loss 10.04962698 - samples/sec: 48.51 - lr: 0.050000
+2021-07-08 13:29:03,447 epoch 45 - iter 1914/3198 - loss 9.99370919 - samples/sec: 50.55 - lr: 0.050000
+2021-07-08 13:30:45,610 epoch 45 - iter 2233/3198 - loss 9.96758620 - samples/sec: 49.98 - lr: 0.050000
+2021-07-08 13:32:28,168 epoch 45 - iter 2552/3198 - loss 9.94291209 - samples/sec: 49.79 - lr: 0.050000
+2021-07-08 13:34:08,865 epoch 45 - iter 2871/3198 - loss 9.90581205 - samples/sec: 50.71 - lr: 0.050000
+2021-07-08 13:35:54,130 epoch 45 - iter 3190/3198 - loss 9.91603834 - samples/sec: 48.51 - lr: 0.050000
+2021-07-08 13:35:56,992 ----------------------------------------------------------------------------------------------------
+2021-07-08 13:35:56,993 EPOCH 45 done: loss 9.9192 - lr 0.0500000
+2021-07-08 13:39:49,225 DEV : loss 5.185214996337891 - score 0.911
+2021-07-08 13:39:49,566 BAD EPOCHS (no improvement): 0
+2021-07-08 13:39:50,743 ----------------------------------------------------------------------------------------------------
+2021-07-08 13:41:37,569 epoch 46 - iter 319/3198 - loss 9.65142955 - samples/sec: 47.80 - lr: 0.050000
+2021-07-08 13:43:21,014 epoch 46 - iter 638/3198 - loss 9.70571971 - samples/sec: 49.36 - lr: 0.050000
+2021-07-08 13:45:06,151 epoch 46 - iter 957/3198 - loss 9.75104396 - samples/sec: 48.57 - lr: 0.050000
+2021-07-08 13:46:47,742 epoch 46 - iter 1276/3198 - loss 9.68868732 - samples/sec: 50.27 - lr: 0.050000
+2021-07-08 13:48:32,534 epoch 46 - iter 1595/3198 - loss 9.69961551 - samples/sec: 48.73 - lr: 0.050000
+2021-07-08 13:50:13,100 epoch 46 - iter 1914/3198 - loss 9.67247389 - samples/sec: 50.78 - lr: 0.050000
+2021-07-08 13:51:56,590 epoch 46 - iter 2233/3198 - loss 9.69791640 - samples/sec: 49.34 - lr: 0.050000
+2021-07-08 13:53:39,172 epoch 46 - iter 2552/3198 - loss 9.71420603 - samples/sec: 49.78 - lr: 0.050000
+2021-07-08 13:55:22,534 epoch 46 - iter 2871/3198 - loss 9.71086847 - samples/sec: 49.40 - lr: 0.050000
+2021-07-08 13:57:07,586 epoch 46 - iter 3190/3198 - loss 9.72051055 - samples/sec: 48.61 - lr: 0.050000
+2021-07-08 13:57:09,713 ----------------------------------------------------------------------------------------------------
+2021-07-08 13:57:09,713 EPOCH 46 done: loss 9.7164 - lr 0.0500000
+2021-07-08 14:01:06,203 DEV : loss 5.140173435211182 - score 0.9117
+2021-07-08 14:01:06,532 BAD EPOCHS (no improvement): 0
+2021-07-08 14:01:07,703 ----------------------------------------------------------------------------------------------------
+2021-07-08 14:02:50,909 epoch 47 - iter 319/3198 - loss 9.77008887 - samples/sec: 49.48 - lr: 0.050000
+2021-07-08 14:04:33,233 epoch 47 - iter 638/3198 - loss 9.71849317 - samples/sec: 49.90 - lr: 0.050000
+2021-07-08 14:06:15,736 epoch 47 - iter 957/3198 - loss 9.62616481 - samples/sec: 49.82 - lr: 0.050000
+2021-07-08 14:07:57,271 epoch 47 - iter 1276/3198 - loss 9.64170539 - samples/sec: 50.29 - lr: 0.050000
+2021-07-08 14:09:41,997 epoch 47 - iter 1595/3198 - loss 9.62665717 - samples/sec: 48.76 - lr: 0.050000
+2021-07-08 14:11:25,769 epoch 47 - iter 1914/3198 - loss 9.62758317 - samples/sec: 49.21 - lr: 0.050000
+2021-07-08 14:13:13,401 epoch 47 - iter 2233/3198 - loss 9.64696291 - samples/sec: 47.44 - lr: 0.050000
+2021-07-08 14:14:56,743 epoch 47 - iter 2552/3198 - loss 9.63623838 - samples/sec: 49.41 - lr: 0.050000
+2021-07-08 14:16:40,838 epoch 47 - iter 2871/3198 - loss 9.64373287 - samples/sec: 49.05 - lr: 0.050000
+2021-07-08 14:18:24,663 epoch 47 - iter 3190/3198 - loss 9.62799489 - samples/sec: 49.18 - lr: 0.050000
+2021-07-08 14:18:27,147 ----------------------------------------------------------------------------------------------------
+2021-07-08 14:18:27,147 EPOCH 47 done: loss 9.6284 - lr 0.0500000
+2021-07-08 14:22:16,920 DEV : loss 5.085428714752197 - score 0.9127
+2021-07-08 14:22:17,249 BAD EPOCHS (no improvement): 0
+2021-07-08 14:22:18,427 ----------------------------------------------------------------------------------------------------
+2021-07-08 14:23:59,735 epoch 48 - iter 319/3198 - loss 9.21643674 - samples/sec: 50.41 - lr: 0.050000
+2021-07-08 14:25:45,230 epoch 48 - iter 638/3198 - loss 9.47499736 - samples/sec: 48.40 - lr: 0.050000
+2021-07-08 14:27:30,397 epoch 48 - iter 957/3198 - loss 9.51823124 - samples/sec: 48.56 - lr: 0.050000
+2021-07-08 14:29:12,008 epoch 48 - iter 1276/3198 - loss 9.48872890 - samples/sec: 50.25 - lr: 0.050000
+2021-07-08 14:30:54,837 epoch 48 - iter 1595/3198 - loss 9.48005608 - samples/sec: 49.66 - lr: 0.050000
+2021-07-08 14:32:38,959 epoch 48 - iter 1914/3198 - loss 9.52027626 - samples/sec: 49.04 - lr: 0.050000
+2021-07-08 14:34:24,484 epoch 48 - iter 2233/3198 - loss 9.53219064 - samples/sec: 48.39 - lr: 0.050000
+2021-07-08 14:36:09,114 epoch 48 - iter 2552/3198 - loss 9.51280951 - samples/sec: 48.81 - lr: 0.050000
+2021-07-08 14:37:52,760 epoch 48 - iter 2871/3198 - loss 9.54225475 - samples/sec: 49.27 - lr: 0.050000
+2021-07-08 14:39:38,870 epoch 48 - iter 3190/3198 - loss 9.55779874 - samples/sec: 48.12 - lr: 0.050000
+2021-07-08 14:39:41,174 ----------------------------------------------------------------------------------------------------
+2021-07-08 14:39:41,174 EPOCH 48 done: loss 9.5577 - lr 0.0500000
+2021-07-08 14:43:34,651 DEV : loss 5.063357353210449 - score 0.9134
+2021-07-08 14:43:34,990 BAD EPOCHS (no improvement): 0
+2021-07-08 14:43:36,226 ----------------------------------------------------------------------------------------------------
+2021-07-08 14:45:20,135 epoch 49 - iter 319/3198 - loss 9.49649949 - samples/sec: 49.14 - lr: 0.050000
+2021-07-08 14:47:02,276 epoch 49 - iter 638/3198 - loss 9.49146250 - samples/sec: 49.99 - lr: 0.050000
+2021-07-08 14:48:44,562 epoch 49 - iter 957/3198 - loss 9.49529939 - samples/sec: 49.92 - lr: 0.050000
+2021-07-08 14:50:27,621 epoch 49 - iter 1276/3198 - loss 9.46735832 - samples/sec: 49.55 - lr: 0.050000
+2021-07-08 14:52:11,581 epoch 49 - iter 1595/3198 - loss 9.50397808 - samples/sec: 49.12 - lr: 0.050000
+2021-07-08 14:53:56,841 epoch 49 - iter 1914/3198 - loss 9.51284090 - samples/sec: 48.51 - lr: 0.050000
+2021-07-08 14:55:39,210 epoch 49 - iter 2233/3198 - loss 9.52061551 - samples/sec: 49.88 - lr: 0.050000
+2021-07-08 14:57:26,006 epoch 49 - iter 2552/3198 - loss 9.52801724 - samples/sec: 47.81 - lr: 0.050000
+2021-07-08 14:59:08,381 epoch 49 - iter 2871/3198 - loss 9.52317677 - samples/sec: 49.88 - lr: 0.050000
+2021-07-08 15:00:53,357 epoch 49 - iter 3190/3198 - loss 9.51280257 - samples/sec: 48.64 - lr: 0.050000
+2021-07-08 15:00:55,846 ----------------------------------------------------------------------------------------------------
+2021-07-08 15:00:55,846 EPOCH 49 done: loss 9.5137 - lr 0.0500000
+2021-07-08 15:04:49,287 DEV : loss 5.031982421875 - score 0.9135
+2021-07-08 15:04:49,626 BAD EPOCHS (no improvement): 0
+2021-07-08 15:04:50,883 ----------------------------------------------------------------------------------------------------
+2021-07-08 15:06:36,863 epoch 50 - iter 319/3198 - loss 9.48573102 - samples/sec: 48.18 - lr: 0.050000
+2021-07-08 15:08:17,984 epoch 50 - iter 638/3198 - loss 9.46572635 - samples/sec: 50.50 - lr: 0.050000
+2021-07-08 15:10:02,933 epoch 50 - iter 957/3198 - loss 9.48872150 - samples/sec: 48.66 - lr: 0.050000
+2021-07-08 15:11:49,853 epoch 50 - iter 1276/3198 - loss 9.51939294 - samples/sec: 47.76 - lr: 0.050000
+2021-07-08 15:13:35,044 epoch 50 - iter 1595/3198 - loss 9.47347839 - samples/sec: 48.54 - lr: 0.050000
+2021-07-08 15:15:19,503 epoch 50 - iter 1914/3198 - loss 9.46165089 - samples/sec: 48.88 - lr: 0.050000
+2021-07-08 15:17:06,605 epoch 50 - iter 2233/3198 - loss 9.49920647 - samples/sec: 47.68 - lr: 0.050000
+2021-07-08 15:18:50,105 epoch 50 - iter 2552/3198 - loss 9.48542922 - samples/sec: 49.34 - lr: 0.050000
+2021-07-08 15:20:36,784 epoch 50 - iter 2871/3198 - loss 9.49117823 - samples/sec: 47.87 - lr: 0.050000
+2021-07-08 15:22:18,378 epoch 50 - iter 3190/3198 - loss 9.48099610 - samples/sec: 50.26 - lr: 0.050000
+2021-07-08 15:22:20,882 ----------------------------------------------------------------------------------------------------
+2021-07-08 15:22:20,882 EPOCH 50 done: loss 9.4792 - lr 0.0500000
+2021-07-08 15:26:14,711 DEV : loss 5.007386207580566 - score 0.9142
+2021-07-08 15:26:15,039 BAD EPOCHS (no improvement): 0
+2021-07-08 15:26:16,300 ----------------------------------------------------------------------------------------------------
+2021-07-08 15:28:03,751 epoch 51 - iter 319/3198 - loss 9.43863493 - samples/sec: 47.53 - lr: 0.050000
+2021-07-08 15:29:47,503 epoch 51 - iter 638/3198 - loss 9.38299545 - samples/sec: 49.22 - lr: 0.050000
+2021-07-08 15:31:33,441 epoch 51 - iter 957/3198 - loss 9.43382708 - samples/sec: 48.20 - lr: 0.050000
+2021-07-08 15:33:20,055 epoch 51 - iter 1276/3198 - loss 9.43038940 - samples/sec: 47.90 - lr: 0.050000
+2021-07-08 15:35:04,678 epoch 51 - iter 1595/3198 - loss 9.42789956 - samples/sec: 48.81 - lr: 0.050000
+2021-07-08 15:36:51,755 epoch 51 - iter 1914/3198 - loss 9.45123379 - samples/sec: 47.69 - lr: 0.050000
+2021-07-08 15:38:37,811 epoch 51 - iter 2233/3198 - loss 9.44460971 - samples/sec: 48.15 - lr: 0.050000
+2021-07-08 15:40:21,492 epoch 51 - iter 2552/3198 - loss 9.44464434 - samples/sec: 49.25 - lr: 0.050000
+2021-07-08 15:42:06,366 epoch 51 - iter 2871/3198 - loss 9.44154262 - samples/sec: 48.69 - lr: 0.050000
+2021-07-08 15:43:50,124 epoch 51 - iter 3190/3198 - loss 9.43828085 - samples/sec: 49.21 - lr: 0.050000
+2021-07-08 15:43:52,656 ----------------------------------------------------------------------------------------------------
+2021-07-08 15:43:52,656 EPOCH 51 done: loss 9.4411 - lr 0.0500000
+2021-07-08 15:47:48,622 DEV : loss 4.98665714263916 - score 0.9151
+2021-07-08 15:47:48,963 BAD EPOCHS (no improvement): 0
+2021-07-08 15:47:50,096 ----------------------------------------------------------------------------------------------------
+2021-07-08 15:49:31,830 epoch 52 - iter 319/3198 - loss 9.18372677 - samples/sec: 50.19 - lr: 0.050000
+2021-07-08 15:51:14,671 epoch 52 - iter 638/3198 - loss 9.33653741 - samples/sec: 49.65 - lr: 0.050000
+2021-07-08 15:52:59,746 epoch 52 - iter 957/3198 - loss 9.34726446 - samples/sec: 48.60 - lr: 0.050000
+2021-07-08 15:54:43,182 epoch 52 - iter 1276/3198 - loss 9.33429291 - samples/sec: 49.37 - lr: 0.050000
+2021-07-08 15:56:25,416 epoch 52 - iter 1595/3198 - loss 9.32733649 - samples/sec: 49.95 - lr: 0.050000
+2021-07-08 15:58:08,581 epoch 52 - iter 1914/3198 - loss 9.36300253 - samples/sec: 49.50 - lr: 0.050000
+2021-07-08 15:59:52,725 epoch 52 - iter 2233/3198 - loss 9.39874958 - samples/sec: 49.03 - lr: 0.050000
+2021-07-08 16:01:36,877 epoch 52 - iter 2552/3198 - loss 9.39301426 - samples/sec: 49.03 - lr: 0.050000
+2021-07-08 16:03:17,855 epoch 52 - iter 2871/3198 - loss 9.38286679 - samples/sec: 50.57 - lr: 0.050000
+2021-07-08 16:05:00,502 epoch 52 - iter 3190/3198 - loss 9.36690364 - samples/sec: 49.75 - lr: 0.050000
+2021-07-08 16:05:02,978 ----------------------------------------------------------------------------------------------------
+2021-07-08 16:05:02,978 EPOCH 52 done: loss 9.3679 - lr 0.0500000
+2021-07-08 16:08:56,312 DEV : loss 5.010206699371338 - score 0.9144
+2021-07-08 16:08:56,644 BAD EPOCHS (no improvement): 1
+2021-07-08 16:08:56,644 ----------------------------------------------------------------------------------------------------
+2021-07-08 16:10:37,933 epoch 53 - iter 319/3198 - loss 9.21903753 - samples/sec: 50.42 - lr: 0.050000
+2021-07-08 16:12:23,633 epoch 53 - iter 638/3198 - loss 9.36375780 - samples/sec: 48.31 - lr: 0.050000
+2021-07-08 16:14:05,570 epoch 53 - iter 957/3198 - loss 9.32531056 - samples/sec: 50.09 - lr: 0.050000
+2021-07-08 16:15:49,685 epoch 53 - iter 1276/3198 - loss 9.36850898 - samples/sec: 49.05 - lr: 0.050000
+2021-07-08 16:17:34,416 epoch 53 - iter 1595/3198 - loss 9.34800650 - samples/sec: 48.76 - lr: 0.050000
+2021-07-08 16:19:17,202 epoch 53 - iter 1914/3198 - loss 9.33628494 - samples/sec: 49.68 - lr: 0.050000
+2021-07-08 16:21:00,590 epoch 53 - iter 2233/3198 - loss 9.34291853 - samples/sec: 49.39 - lr: 0.050000
+2021-07-08 16:22:43,379 epoch 53 - iter 2552/3198 - loss 9.33001392 - samples/sec: 49.68 - lr: 0.050000
+2021-07-08 16:24:26,295 epoch 53 - iter 2871/3198 - loss 9.34114371 - samples/sec: 49.62 - lr: 0.050000
+2021-07-08 16:26:11,892 epoch 53 - iter 3190/3198 - loss 9.35435523 - samples/sec: 48.36 - lr: 0.050000
+2021-07-08 16:26:14,179 ----------------------------------------------------------------------------------------------------
+2021-07-08 16:26:14,179 EPOCH 53 done: loss 9.3545 - lr 0.0500000
+2021-07-08 16:30:04,024 DEV : loss 4.960159778594971 - score 0.9152
+2021-07-08 16:30:04,361 BAD EPOCHS (no improvement): 0
+2021-07-08 16:30:05,637 ----------------------------------------------------------------------------------------------------
+2021-07-08 16:31:50,277 epoch 54 - iter 319/3198 - loss 9.35447058 - samples/sec: 48.80 - lr: 0.050000
+2021-07-08 16:33:33,799 epoch 54 - iter 638/3198 - loss 9.24584827 - samples/sec: 49.33 - lr: 0.050000
+2021-07-08 16:35:16,547 epoch 54 - iter 957/3198 - loss 9.18433539 - samples/sec: 49.70 - lr: 0.050000
+2021-07-08 16:36:59,261 epoch 54 - iter 1276/3198 - loss 9.20695171 - samples/sec: 49.72 - lr: 0.050000
+2021-07-08 16:38:46,860 epoch 54 - iter 1595/3198 - loss 9.27631259 - samples/sec: 47.46 - lr: 0.050000
+2021-07-08 16:40:31,662 epoch 54 - iter 1914/3198 - loss 9.28494072 - samples/sec: 48.72 - lr: 0.050000
+2021-07-08 16:42:13,970 epoch 54 - iter 2233/3198 - loss 9.29681001 - samples/sec: 49.91 - lr: 0.050000
+2021-07-08 16:43:55,834 epoch 54 - iter 2552/3198 - loss 9.28235830 - samples/sec: 50.13 - lr: 0.050000
+2021-07-08 16:45:39,683 epoch 54 - iter 2871/3198 - loss 9.29770051 - samples/sec: 49.17 - lr: 0.050000
+2021-07-08 16:47:22,579 epoch 54 - iter 3190/3198 - loss 9.29321671 - samples/sec: 49.63 - lr: 0.050000
+2021-07-08 16:47:24,855 ----------------------------------------------------------------------------------------------------
+2021-07-08 16:47:24,855 EPOCH 54 done: loss 9.2952 - lr 0.0500000
+2021-07-08 16:51:21,790 DEV : loss 4.972082614898682 - score 0.9146
+2021-07-08 16:51:22,126 BAD EPOCHS (no improvement): 1
+2021-07-08 16:51:22,126 ----------------------------------------------------------------------------------------------------
+2021-07-08 16:53:06,970 epoch 55 - iter 319/3198 - loss 9.23502092 - samples/sec: 48.71 - lr: 0.050000
+2021-07-08 16:54:50,927 epoch 55 - iter 638/3198 - loss 9.28197689 - samples/sec: 49.12 - lr: 0.050000
+2021-07-08 16:56:36,233 epoch 55 - iter 957/3198 - loss 9.34868678 - samples/sec: 48.49 - lr: 0.050000
+2021-07-08 16:58:20,051 epoch 55 - iter 1276/3198 - loss 9.40284320 - samples/sec: 49.19 - lr: 0.050000
+2021-07-08 17:00:02,097 epoch 55 - iter 1595/3198 - loss 9.34667644 - samples/sec: 50.04 - lr: 0.050000
+2021-07-08 17:01:47,694 epoch 55 - iter 1914/3198 - loss 9.32029264 - samples/sec: 48.36 - lr: 0.050000
+2021-07-08 17:03:30,696 epoch 55 - iter 2233/3198 - loss 9.33316196 - samples/sec: 49.58 - lr: 0.050000
+2021-07-08 17:05:16,088 epoch 55 - iter 2552/3198 - loss 9.33526042 - samples/sec: 48.45 - lr: 0.050000
+2021-07-08 17:06:58,754 epoch 55 - iter 2871/3198 - loss 9.30810625 - samples/sec: 49.74 - lr: 0.050000
+2021-07-08 17:08:42,062 epoch 55 - iter 3190/3198 - loss 9.30231498 - samples/sec: 49.43 - lr: 0.050000
+2021-07-08 17:08:44,234 ----------------------------------------------------------------------------------------------------
+2021-07-08 17:08:44,234 EPOCH 55 done: loss 9.3010 - lr 0.0500000
+2021-07-08 17:12:38,217 DEV : loss 4.972426891326904 - score 0.9143
+2021-07-08 17:12:38,556 BAD EPOCHS (no improvement): 2
+2021-07-08 17:12:38,556 ----------------------------------------------------------------------------------------------------
+2021-07-08 17:14:23,457 epoch 56 - iter 319/3198 - loss 9.14253475 - samples/sec: 48.68 - lr: 0.050000
+2021-07-08 17:16:06,045 epoch 56 - iter 638/3198 - loss 9.09184669 - samples/sec: 49.78 - lr: 0.050000
+2021-07-08 17:17:50,548 epoch 56 - iter 957/3198 - loss 9.19321974 - samples/sec: 48.86 - lr: 0.050000
+2021-07-08 17:19:33,195 epoch 56 - iter 1276/3198 - loss 9.16091646 - samples/sec: 49.75 - lr: 0.050000
+2021-07-08 17:21:16,318 epoch 56 - iter 1595/3198 - loss 9.17763194 - samples/sec: 49.52 - lr: 0.050000
+2021-07-08 17:22:57,142 epoch 56 - iter 1914/3198 - loss 9.18538171 - samples/sec: 50.65 - lr: 0.050000
+2021-07-08 17:24:42,567 epoch 56 - iter 2233/3198 - loss 9.23521323 - samples/sec: 48.44 - lr: 0.050000
+2021-07-08 17:26:27,845 epoch 56 - iter 2552/3198 - loss 9.25856277 - samples/sec: 48.50 - lr: 0.050000
+2021-07-08 17:28:13,707 epoch 56 - iter 2871/3198 - loss 9.27915465 - samples/sec: 48.24 - lr: 0.050000
+2021-07-08 17:29:59,080 epoch 56 - iter 3190/3198 - loss 9.28290319 - samples/sec: 48.46 - lr: 0.050000
+2021-07-08 17:30:01,416 ----------------------------------------------------------------------------------------------------
+2021-07-08 17:30:01,416 EPOCH 56 done: loss 9.2813 - lr 0.0500000
+2021-07-08 17:33:57,202 DEV : loss 4.975923538208008 - score 0.9143
+2021-07-08 17:33:57,541 BAD EPOCHS (no improvement): 3
+2021-07-08 17:33:57,542 ----------------------------------------------------------------------------------------------------
+2021-07-08 17:35:41,657 epoch 57 - iter 319/3198 - loss 9.05235375 - samples/sec: 49.05 - lr: 0.050000
+2021-07-08 17:37:24,391 epoch 57 - iter 638/3198 - loss 9.01908170 - samples/sec: 49.71 - lr: 0.050000
+2021-07-08 17:39:09,310 epoch 57 - iter 957/3198 - loss 9.08674492 - samples/sec: 48.67 - lr: 0.050000
+2021-07-08 17:40:58,489 epoch 57 - iter 1276/3198 - loss 9.14889965 - samples/sec: 46.77 - lr: 0.050000
+2021-07-08 17:42:45,077 epoch 57 - iter 1595/3198 - loss 9.20718059 - samples/sec: 47.91 - lr: 0.050000
+2021-07-08 17:44:29,251 epoch 57 - iter 1914/3198 - loss 9.25007183 - samples/sec: 49.02 - lr: 0.050000
+2021-07-08 17:46:12,435 epoch 57 - iter 2233/3198 - loss 9.23179534 - samples/sec: 49.49 - lr: 0.050000
+2021-07-08 17:47:57,362 epoch 57 - iter 2552/3198 - loss 9.22033851 - samples/sec: 48.67 - lr: 0.050000
+2021-07-08 17:49:44,623 epoch 57 - iter 2871/3198 - loss 9.23592995 - samples/sec: 47.61 - lr: 0.050000
+2021-07-08 17:51:28,248 epoch 57 - iter 3190/3198 - loss 9.23312171 - samples/sec: 49.28 - lr: 0.050000
+2021-07-08 17:51:30,958 ----------------------------------------------------------------------------------------------------
+2021-07-08 17:51:30,959 EPOCH 57 done: loss 9.2349 - lr 0.0500000
+2021-07-08 17:55:25,229 DEV : loss 4.9310712814331055 - score 0.9156
+2021-07-08 17:55:25,568 BAD EPOCHS (no improvement): 0
+2021-07-08 17:55:26,838 ----------------------------------------------------------------------------------------------------
+2021-07-08 17:57:11,466 epoch 58 - iter 319/3198 - loss 9.32042966 - samples/sec: 48.81 - lr: 0.050000
+2021-07-08 17:58:55,623 epoch 58 - iter 638/3198 - loss 9.23928397 - samples/sec: 49.03 - lr: 0.050000
+2021-07-08 18:00:39,720 epoch 58 - iter 957/3198 - loss 9.21577041 - samples/sec: 49.05 - lr: 0.050000
+2021-07-08 18:02:23,183 epoch 58 - iter 1276/3198 - loss 9.18555301 - samples/sec: 49.35 - lr: 0.050000
+2021-07-08 18:04:09,588 epoch 58 - iter 1595/3198 - loss 9.18387581 - samples/sec: 47.99 - lr: 0.050000
+2021-07-08 18:05:52,293 epoch 58 - iter 1914/3198 - loss 9.23228757 - samples/sec: 49.72 - lr: 0.050000
+2021-07-08 18:07:37,395 epoch 58 - iter 2233/3198 - loss 9.24195670 - samples/sec: 48.58 - lr: 0.050000
+2021-07-08 18:09:18,659 epoch 58 - iter 2552/3198 - loss 9.22407823 - samples/sec: 50.43 - lr: 0.050000
+2021-07-08 18:11:04,731 epoch 58 - iter 2871/3198 - loss 9.23677066 - samples/sec: 48.14 - lr: 0.050000
+2021-07-08 18:12:47,324 epoch 58 - iter 3190/3198 - loss 9.22193122 - samples/sec: 49.77 - lr: 0.050000
+2021-07-08 18:12:49,633 ----------------------------------------------------------------------------------------------------
+2021-07-08 18:12:49,634 EPOCH 58 done: loss 9.2205 - lr 0.0500000
+2021-07-08 18:16:45,070 DEV : loss 4.924646854400635 - score 0.9156
+2021-07-08 18:16:45,412 BAD EPOCHS (no improvement): 0
+2021-07-08 18:16:46,678 ----------------------------------------------------------------------------------------------------
+2021-07-08 18:18:31,735 epoch 59 - iter 319/3198 - loss 9.12520662 - samples/sec: 48.61 - lr: 0.050000
+2021-07-08 18:20:18,451 epoch 59 - iter 638/3198 - loss 9.19493053 - samples/sec: 47.85 - lr: 0.050000
+2021-07-08 18:22:03,508 epoch 59 - iter 957/3198 - loss 9.18469516 - samples/sec: 48.61 - lr: 0.050000
+2021-07-08 18:23:50,082 epoch 59 - iter 1276/3198 - loss 9.20407070 - samples/sec: 47.91 - lr: 0.050000
+2021-07-08 18:25:33,791 epoch 59 - iter 1595/3198 - loss 9.17378527 - samples/sec: 49.24 - lr: 0.050000
+2021-07-08 18:27:15,946 epoch 59 - iter 1914/3198 - loss 9.18112123 - samples/sec: 49.99 - lr: 0.050000
+2021-07-08 18:29:00,746 epoch 59 - iter 2233/3198 - loss 9.19593105 - samples/sec: 48.73 - lr: 0.050000
+2021-07-08 18:30:42,291 epoch 59 - iter 2552/3198 - loss 9.18652032 - samples/sec: 50.29 - lr: 0.050000
+2021-07-08 18:32:25,734 epoch 59 - iter 2871/3198 - loss 9.18663748 - samples/sec: 49.36 - lr: 0.050000
+2021-07-08 18:34:09,630 epoch 59 - iter 3190/3198 - loss 9.20890627 - samples/sec: 49.15 - lr: 0.050000
+2021-07-08 18:34:11,757 ----------------------------------------------------------------------------------------------------
+2021-07-08 18:34:11,758 EPOCH 59 done: loss 9.2068 - lr 0.0500000
+2021-07-08 18:38:02,636 DEV : loss 4.907260894775391 - score 0.9154
+2021-07-08 18:38:02,967 BAD EPOCHS (no improvement): 1
+2021-07-08 18:38:02,967 ----------------------------------------------------------------------------------------------------
+2021-07-08 18:39:46,209 epoch 60 - iter 319/3198 - loss 9.27579086 - samples/sec: 49.46 - lr: 0.050000
+2021-07-08 18:41:26,531 epoch 60 - iter 638/3198 - loss 9.07885757 - samples/sec: 50.90 - lr: 0.050000
+2021-07-08 18:43:09,114 epoch 60 - iter 957/3198 - loss 9.06680541 - samples/sec: 49.78 - lr: 0.050000
+2021-07-08 18:44:53,754 epoch 60 - iter 1276/3198 - loss 9.09258397 - samples/sec: 48.80 - lr: 0.050000
+2021-07-08 18:46:38,171 epoch 60 - iter 1595/3198 - loss 9.15452558 - samples/sec: 48.90 - lr: 0.050000
+2021-07-08 18:48:21,711 epoch 60 - iter 1914/3198 - loss 9.16313854 - samples/sec: 49.32 - lr: 0.050000
+2021-07-08 18:50:06,306 epoch 60 - iter 2233/3198 - loss 9.20389487 - samples/sec: 48.82 - lr: 0.050000
+2021-07-08 18:51:49,292 epoch 60 - iter 2552/3198 - loss 9.18830345 - samples/sec: 49.58 - lr: 0.050000
+2021-07-08 18:53:33,528 epoch 60 - iter 2871/3198 - loss 9.18334130 - samples/sec: 48.99 - lr: 0.050000
+2021-07-08 18:55:18,424 epoch 60 - iter 3190/3198 - loss 9.19367756 - samples/sec: 48.68 - lr: 0.050000
+2021-07-08 18:55:20,870 ----------------------------------------------------------------------------------------------------
+2021-07-08 18:55:20,871 EPOCH 60 done: loss 9.1913 - lr 0.0500000
+2021-07-08 18:59:13,335 DEV : loss 4.901594161987305 - score 0.9158
+2021-07-08 18:59:13,666 BAD EPOCHS (no improvement): 0
+2021-07-08 18:59:14,790 ----------------------------------------------------------------------------------------------------
+2021-07-08 19:00:59,389 epoch 61 - iter 319/3198 - loss 8.94570319 - samples/sec: 48.82 - lr: 0.050000
+2021-07-08 19:02:43,613 epoch 61 - iter 638/3198 - loss 9.02053977 - samples/sec: 48.99 - lr: 0.050000
+2021-07-08 19:04:27,331 epoch 61 - iter 957/3198 - loss 9.06321542 - samples/sec: 49.23 - lr: 0.050000
+2021-07-08 19:06:13,558 epoch 61 - iter 1276/3198 - loss 9.09298497 - samples/sec: 48.07 - lr: 0.050000
+2021-07-08 19:07:57,388 epoch 61 - iter 1595/3198 - loss 9.09500182 - samples/sec: 49.18 - lr: 0.050000
+2021-07-08 19:09:43,683 epoch 61 - iter 1914/3198 - loss 9.17291838 - samples/sec: 48.04 - lr: 0.050000
+2021-07-08 19:11:28,237 epoch 61 - iter 2233/3198 - loss 9.18809304 - samples/sec: 48.84 - lr: 0.050000
+2021-07-08 19:13:10,646 epoch 61 - iter 2552/3198 - loss 9.16286990 - samples/sec: 49.86 - lr: 0.050000
+2021-07-08 19:14:56,227 epoch 61 - iter 2871/3198 - loss 9.14206641 - samples/sec: 48.37 - lr: 0.050000
+2021-07-08 19:16:38,935 epoch 61 - iter 3190/3198 - loss 9.15701566 - samples/sec: 49.72 - lr: 0.050000
+2021-07-08 19:16:41,323 ----------------------------------------------------------------------------------------------------
+2021-07-08 19:16:41,323 EPOCH 61 done: loss 9.1556 - lr 0.0500000
+2021-07-08 19:20:41,428 DEV : loss 4.8889851570129395 - score 0.9154
+2021-07-08 19:20:41,763 BAD EPOCHS (no improvement): 1
+2021-07-08 19:20:41,764 ----------------------------------------------------------------------------------------------------
+2021-07-08 19:22:28,914 epoch 62 - iter 319/3198 - loss 9.37988041 - samples/sec: 47.66 - lr: 0.050000
+2021-07-08 19:24:14,528 epoch 62 - iter 638/3198 - loss 9.29249499 - samples/sec: 48.35 - lr: 0.050000
+2021-07-08 19:25:58,450 epoch 62 - iter 957/3198 - loss 9.21381078 - samples/sec: 49.14 - lr: 0.050000
+2021-07-08 19:27:41,988 epoch 62 - iter 1276/3198 - loss 9.14933306 - samples/sec: 49.32 - lr: 0.050000
+2021-07-08 19:29:24,986 epoch 62 - iter 1595/3198 - loss 9.14034262 - samples/sec: 49.58 - lr: 0.050000
+2021-07-08 19:31:09,196 epoch 62 - iter 1914/3198 - loss 9.15113858 - samples/sec: 49.00 - lr: 0.050000
+2021-07-08 19:32:56,301 epoch 62 - iter 2233/3198 - loss 9.16449271 - samples/sec: 47.68 - lr: 0.050000
+2021-07-08 19:34:41,266 epoch 62 - iter 2552/3198 - loss 9.16572252 - samples/sec: 48.65 - lr: 0.050000
+2021-07-08 19:36:23,351 epoch 62 - iter 2871/3198 - loss 9.14667081 - samples/sec: 50.02 - lr: 0.050000
+2021-07-08 19:38:08,311 epoch 62 - iter 3190/3198 - loss 9.15519208 - samples/sec: 48.65 - lr: 0.050000
+2021-07-08 19:38:10,468 ----------------------------------------------------------------------------------------------------
+2021-07-08 19:38:10,468 EPOCH 62 done: loss 9.1535 - lr 0.0500000
+2021-07-08 19:42:04,636 DEV : loss 4.894896030426025 - score 0.9159
+2021-07-08 19:42:04,971 BAD EPOCHS (no improvement): 0
+2021-07-08 19:42:06,154 ----------------------------------------------------------------------------------------------------
+2021-07-08 19:43:49,482 epoch 63 - iter 319/3198 - loss 8.99836651 - samples/sec: 49.42 - lr: 0.050000
+2021-07-08 19:45:35,034 epoch 63 - iter 638/3198 - loss 9.06311716 - samples/sec: 48.38 - lr: 0.050000
+2021-07-08 19:47:20,279 epoch 63 - iter 957/3198 - loss 9.06506481 - samples/sec: 48.52 - lr: 0.050000
+2021-07-08 19:49:04,119 epoch 63 - iter 1276/3198 - loss 9.03980592 - samples/sec: 49.18 - lr: 0.050000
+2021-07-08 19:50:50,218 epoch 63 - iter 1595/3198 - loss 9.10150464 - samples/sec: 48.13 - lr: 0.050000
+2021-07-08 19:52:36,990 epoch 63 - iter 1914/3198 - loss 9.09956787 - samples/sec: 47.83 - lr: 0.050000
+2021-07-08 19:54:20,393 epoch 63 - iter 2233/3198 - loss 9.13239687 - samples/sec: 49.38 - lr: 0.050000
+2021-07-08 19:56:04,970 epoch 63 - iter 2552/3198 - loss 9.12215471 - samples/sec: 48.83 - lr: 0.050000
+2021-07-08 19:57:49,093 epoch 63 - iter 2871/3198 - loss 9.11022442 - samples/sec: 49.04 - lr: 0.050000
+2021-07-08 19:59:33,612 epoch 63 - iter 3190/3198 - loss 9.10498431 - samples/sec: 48.86 - lr: 0.050000
+2021-07-08 19:59:35,924 ----------------------------------------------------------------------------------------------------
+2021-07-08 19:59:35,925 EPOCH 63 done: loss 9.1027 - lr 0.0500000
+2021-07-08 20:03:30,541 DEV : loss 4.874129295349121 - score 0.9172
+2021-07-08 20:03:30,885 BAD EPOCHS (no improvement): 0
+2021-07-08 20:03:32,055 ----------------------------------------------------------------------------------------------------
+2021-07-08 20:05:17,490 epoch 64 - iter 319/3198 - loss 9.14189746 - samples/sec: 48.43 - lr: 0.050000
+2021-07-08 20:06:59,021 epoch 64 - iter 638/3198 - loss 9.09293872 - samples/sec: 50.29 - lr: 0.050000
+2021-07-08 20:08:42,196 epoch 64 - iter 957/3198 - loss 9.06482014 - samples/sec: 49.49 - lr: 0.050000
+2021-07-08 20:10:28,995 epoch 64 - iter 1276/3198 - loss 9.11662941 - samples/sec: 47.81 - lr: 0.050000
+2021-07-08 20:12:13,040 epoch 64 - iter 1595/3198 - loss 9.12993170 - samples/sec: 49.08 - lr: 0.050000
+2021-07-08 20:14:00,254 epoch 64 - iter 1914/3198 - loss 9.15363600 - samples/sec: 47.63 - lr: 0.050000
+2021-07-08 20:15:41,283 epoch 64 - iter 2233/3198 - loss 9.14417373 - samples/sec: 50.55 - lr: 0.050000
+2021-07-08 20:17:28,339 epoch 64 - iter 2552/3198 - loss 9.15755829 - samples/sec: 47.70 - lr: 0.050000
+2021-07-08 20:19:11,905 epoch 64 - iter 2871/3198 - loss 9.15502238 - samples/sec: 49.31 - lr: 0.050000
+2021-07-08 20:20:54,374 epoch 64 - iter 3190/3198 - loss 9.12999948 - samples/sec: 49.83 - lr: 0.050000
+2021-07-08 20:20:56,689 ----------------------------------------------------------------------------------------------------
+2021-07-08 20:20:56,689 EPOCH 64 done: loss 9.1277 - lr 0.0500000
+2021-07-08 20:24:50,568 DEV : loss 4.859216213226318 - score 0.9169
+2021-07-08 20:24:50,912 BAD EPOCHS (no improvement): 1
+2021-07-08 20:24:50,912 ----------------------------------------------------------------------------------------------------
+2021-07-08 20:26:37,617 epoch 65 - iter 319/3198 - loss 9.10099199 - samples/sec: 47.86 - lr: 0.050000
+2021-07-08 20:28:19,008 epoch 65 - iter 638/3198 - loss 8.99566990 - samples/sec: 50.36 - lr: 0.050000
+2021-07-08 20:30:02,897 epoch 65 - iter 957/3198 - loss 8.99222323 - samples/sec: 49.15 - lr: 0.050000
+2021-07-08 20:31:45,809 epoch 65 - iter 1276/3198 - loss 8.96212420 - samples/sec: 49.62 - lr: 0.050000
+2021-07-08 20:33:28,877 epoch 65 - iter 1595/3198 - loss 8.96775783 - samples/sec: 49.54 - lr: 0.050000
+2021-07-08 20:35:12,150 epoch 65 - iter 1914/3198 - loss 8.95520628 - samples/sec: 49.45 - lr: 0.050000
+2021-07-08 20:36:55,571 epoch 65 - iter 2233/3198 - loss 8.96409830 - samples/sec: 49.37 - lr: 0.050000
+2021-07-08 20:38:44,121 epoch 65 - iter 2552/3198 - loss 9.00787574 - samples/sec: 47.04 - lr: 0.050000
+2021-07-08 20:40:28,871 epoch 65 - iter 2871/3198 - loss 9.04350675 - samples/sec: 48.75 - lr: 0.050000
+2021-07-08 20:42:15,390 epoch 65 - iter 3190/3198 - loss 9.07739342 - samples/sec: 47.94 - lr: 0.050000
+2021-07-08 20:42:17,472 ----------------------------------------------------------------------------------------------------
+2021-07-08 20:42:17,472 EPOCH 65 done: loss 9.0762 - lr 0.0500000
+2021-07-08 20:46:09,042 DEV : loss 4.835086345672607 - score 0.9169
+2021-07-08 20:46:09,387 BAD EPOCHS (no improvement): 2
+2021-07-08 20:46:09,387 ----------------------------------------------------------------------------------------------------
+2021-07-08 20:47:56,755 epoch 66 - iter 319/3198 - loss 8.94098168 - samples/sec: 47.56 - lr: 0.050000
+2021-07-08 20:49:38,854 epoch 66 - iter 638/3198 - loss 8.96068456 - samples/sec: 50.01 - lr: 0.050000
+2021-07-08 20:51:21,862 epoch 66 - iter 957/3198 - loss 8.90941244 - samples/sec: 49.57 - lr: 0.050000
+2021-07-08 20:53:11,163 epoch 66 - iter 1276/3198 - loss 9.00767071 - samples/sec: 46.72 - lr: 0.050000
+2021-07-08 20:54:56,702 epoch 66 - iter 1595/3198 - loss 9.00129944 - samples/sec: 48.39 - lr: 0.050000
+2021-07-08 20:56:40,977 epoch 66 - iter 1914/3198 - loss 8.99043426 - samples/sec: 48.97 - lr: 0.050000
+2021-07-08 20:58:22,101 epoch 66 - iter 2233/3198 - loss 8.98616430 - samples/sec: 50.50 - lr: 0.050000
+2021-07-08 21:00:08,247 epoch 66 - iter 2552/3198 - loss 9.02407900 - samples/sec: 48.11 - lr: 0.050000
+2021-07-08 21:01:55,513 epoch 66 - iter 2871/3198 - loss 9.03375588 - samples/sec: 47.61 - lr: 0.050000
+2021-07-08 21:03:39,300 epoch 66 - iter 3190/3198 - loss 9.03738840 - samples/sec: 49.20 - lr: 0.050000
+2021-07-08 21:03:41,882 ----------------------------------------------------------------------------------------------------
+2021-07-08 21:03:41,883 EPOCH 66 done: loss 9.0434 - lr 0.0500000
+2021-07-08 21:07:36,719 DEV : loss 4.885233402252197 - score 0.9168
+2021-07-08 21:07:37,056 BAD EPOCHS (no improvement): 3
+2021-07-08 21:07:37,057 ----------------------------------------------------------------------------------------------------
+2021-07-08 21:09:23,848 epoch 67 - iter 319/3198 - loss 9.14782290 - samples/sec: 47.82 - lr: 0.050000
+2021-07-08 21:11:09,365 epoch 67 - iter 638/3198 - loss 9.11835704 - samples/sec: 48.39 - lr: 0.050000
+2021-07-08 21:12:54,285 epoch 67 - iter 957/3198 - loss 9.11063354 - samples/sec: 48.67 - lr: 0.050000
+2021-07-08 21:14:37,617 epoch 67 - iter 1276/3198 - loss 9.06468438 - samples/sec: 49.42 - lr: 0.050000
+2021-07-08 21:16:22,582 epoch 67 - iter 1595/3198 - loss 9.06814419 - samples/sec: 48.65 - lr: 0.050000
+2021-07-08 21:18:08,334 epoch 67 - iter 1914/3198 - loss 9.07009062 - samples/sec: 48.29 - lr: 0.050000
+2021-07-08 21:19:51,605 epoch 67 - iter 2233/3198 - loss 9.08803064 - samples/sec: 49.45 - lr: 0.050000
+2021-07-08 21:21:31,623 epoch 67 - iter 2552/3198 - loss 9.06818991 - samples/sec: 51.06 - lr: 0.050000
+2021-07-08 21:23:13,981 epoch 67 - iter 2871/3198 - loss 9.05802354 - samples/sec: 49.89 - lr: 0.050000
+2021-07-08 21:24:58,378 epoch 67 - iter 3190/3198 - loss 9.05450356 - samples/sec: 48.91 - lr: 0.050000
+2021-07-08 21:25:00,796 ----------------------------------------------------------------------------------------------------
+2021-07-08 21:25:00,797 EPOCH 67 done: loss 9.0566 - lr 0.0500000
+2021-07-08 21:28:57,508 DEV : loss 4.839151859283447 - score 0.9169
+2021-07-08 21:28:57,846 BAD EPOCHS (no improvement): 4
+2021-07-08 21:28:57,847 ----------------------------------------------------------------------------------------------------
+2021-07-08 21:30:40,633 epoch 68 - iter 319/3198 - loss 8.80171478 - samples/sec: 49.68 - lr: 0.025000
+2021-07-08 21:32:23,450 epoch 68 - iter 638/3198 - loss 8.75089976 - samples/sec: 49.67 - lr: 0.025000
+2021-07-08 21:34:07,803 epoch 68 - iter 957/3198 - loss 8.78542183 - samples/sec: 48.93 - lr: 0.025000
+2021-07-08 21:35:50,662 epoch 68 - iter 1276/3198 - loss 8.78362485 - samples/sec: 49.65 - lr: 0.025000
+2021-07-08 21:37:36,559 epoch 68 - iter 1595/3198 - loss 8.81388180 - samples/sec: 48.22 - lr: 0.025000
+2021-07-08 21:39:21,843 epoch 68 - iter 1914/3198 - loss 8.84152986 - samples/sec: 48.50 - lr: 0.025000
+2021-07-08 21:41:05,359 epoch 68 - iter 2233/3198 - loss 8.83734657 - samples/sec: 49.33 - lr: 0.025000
+2021-07-08 21:42:51,139 epoch 68 - iter 2552/3198 - loss 8.84995654 - samples/sec: 48.27 - lr: 0.025000
+2021-07-08 21:44:36,913 epoch 68 - iter 2871/3198 - loss 8.86139794 - samples/sec: 48.28 - lr: 0.025000
+2021-07-08 21:46:20,900 epoch 68 - iter 3190/3198 - loss 8.84987781 - samples/sec: 49.11 - lr: 0.025000
+2021-07-08 21:46:23,334 ----------------------------------------------------------------------------------------------------
+2021-07-08 21:46:23,334 EPOCH 68 done: loss 8.8494 - lr 0.0250000
+2021-07-08 21:50:17,336 DEV : loss 4.778801918029785 - score 0.9185
+2021-07-08 21:50:17,674 BAD EPOCHS (no improvement): 0
+2021-07-08 21:50:18,875 ----------------------------------------------------------------------------------------------------
+2021-07-08 21:52:04,581 epoch 69 - iter 319/3198 - loss 8.68145546 - samples/sec: 48.31 - lr: 0.025000
+2021-07-08 21:53:51,032 epoch 69 - iter 638/3198 - loss 8.78839779 - samples/sec: 47.97 - lr: 0.025000
+2021-07-08 21:55:33,937 epoch 69 - iter 957/3198 - loss 8.79475428 - samples/sec: 49.62 - lr: 0.025000
+2021-07-08 21:57:19,507 epoch 69 - iter 1276/3198 - loss 8.81125627 - samples/sec: 48.37 - lr: 0.025000
+2021-07-08 21:59:01,746 epoch 69 - iter 1595/3198 - loss 8.81879099 - samples/sec: 49.95 - lr: 0.025000
+2021-07-08 22:00:42,026 epoch 69 - iter 1914/3198 - loss 8.78006353 - samples/sec: 50.92 - lr: 0.025000
+2021-07-08 22:02:28,448 epoch 69 - iter 2233/3198 - loss 8.80247557 - samples/sec: 47.98 - lr: 0.025000
+2021-07-08 22:04:11,685 epoch 69 - iter 2552/3198 - loss 8.79553034 - samples/sec: 49.46 - lr: 0.025000
+2021-07-08 22:05:56,539 epoch 69 - iter 2871/3198 - loss 8.78686828 - samples/sec: 48.70 - lr: 0.025000
+2021-07-08 22:07:42,750 epoch 69 - iter 3190/3198 - loss 8.79145015 - samples/sec: 48.08 - lr: 0.025000
+2021-07-08 22:07:45,038 ----------------------------------------------------------------------------------------------------
+2021-07-08 22:07:45,038 EPOCH 69 done: loss 8.7910 - lr 0.0250000
+2021-07-08 22:11:38,254 DEV : loss 4.770750522613525 - score 0.9184
+2021-07-08 22:11:38,590 BAD EPOCHS (no improvement): 1
+2021-07-08 22:11:38,590 ----------------------------------------------------------------------------------------------------
+2021-07-08 22:13:22,394 epoch 70 - iter 319/3198 - loss 8.60133400 - samples/sec: 49.19 - lr: 0.025000
+2021-07-08 22:15:06,224 epoch 70 - iter 638/3198 - loss 8.62093043 - samples/sec: 49.18 - lr: 0.025000
+2021-07-08 22:16:50,948 epoch 70 - iter 957/3198 - loss 8.67857986 - samples/sec: 48.76 - lr: 0.025000
+2021-07-08 22:18:34,727 epoch 70 - iter 1276/3198 - loss 8.66762033 - samples/sec: 49.20 - lr: 0.025000
+2021-07-08 22:20:19,059 epoch 70 - iter 1595/3198 - loss 8.67328873 - samples/sec: 48.94 - lr: 0.025000
+2021-07-08 22:22:04,274 epoch 70 - iter 1914/3198 - loss 8.70233942 - samples/sec: 48.53 - lr: 0.025000
+2021-07-08 22:23:49,164 epoch 70 - iter 2233/3198 - loss 8.71905250 - samples/sec: 48.68 - lr: 0.025000
+2021-07-08 22:25:35,380 epoch 70 - iter 2552/3198 - loss 8.73715092 - samples/sec: 48.08 - lr: 0.025000
+2021-07-08 22:27:17,618 epoch 70 - iter 2871/3198 - loss 8.72623529 - samples/sec: 49.95 - lr: 0.025000
+2021-07-08 22:29:03,108 epoch 70 - iter 3190/3198 - loss 8.73940699 - samples/sec: 48.41 - lr: 0.025000
+2021-07-08 22:29:05,405 ----------------------------------------------------------------------------------------------------
+2021-07-08 22:29:05,405 EPOCH 70 done: loss 8.7375 - lr 0.0250000
+2021-07-08 22:33:05,264 DEV : loss 4.752305507659912 - score 0.9192
+2021-07-08 22:33:05,600 BAD EPOCHS (no improvement): 0
+2021-07-08 22:33:06,849 ----------------------------------------------------------------------------------------------------
+2021-07-08 22:34:51,151 epoch 71 - iter 319/3198 - loss 8.68855918 - samples/sec: 48.96 - lr: 0.025000
+2021-07-08 22:36:35,558 epoch 71 - iter 638/3198 - loss 8.71972420 - samples/sec: 48.91 - lr: 0.025000
+2021-07-08 22:38:18,613 epoch 71 - iter 957/3198 - loss 8.70994923 - samples/sec: 49.55 - lr: 0.025000
+2021-07-08 22:40:03,387 epoch 71 - iter 1276/3198 - loss 8.72061024 - samples/sec: 48.74 - lr: 0.025000
+2021-07-08 22:41:46,101 epoch 71 - iter 1595/3198 - loss 8.69931391 - samples/sec: 49.71 - lr: 0.025000
+2021-07-08 22:43:31,411 epoch 71 - iter 1914/3198 - loss 8.72876307 - samples/sec: 48.49 - lr: 0.025000
+2021-07-08 22:45:14,150 epoch 71 - iter 2233/3198 - loss 8.73614661 - samples/sec: 49.70 - lr: 0.025000
+2021-07-08 22:46:57,967 epoch 71 - iter 2552/3198 - loss 8.72176261 - samples/sec: 49.19 - lr: 0.025000
+2021-07-08 22:48:43,020 epoch 71 - iter 2871/3198 - loss 8.71891672 - samples/sec: 48.61 - lr: 0.025000
+2021-07-08 22:50:26,774 epoch 71 - iter 3190/3198 - loss 8.72184815 - samples/sec: 49.22 - lr: 0.025000
+2021-07-08 22:50:29,473 ----------------------------------------------------------------------------------------------------
+2021-07-08 22:50:29,474 EPOCH 71 done: loss 8.7206 - lr 0.0250000
+2021-07-08 22:54:22,216 DEV : loss 4.766315460205078 - score 0.9185
+2021-07-08 22:54:22,542 BAD EPOCHS (no improvement): 1
+2021-07-08 22:54:22,543 ----------------------------------------------------------------------------------------------------
+2021-07-08 22:56:08,811 epoch 72 - iter 319/3198 - loss 8.92170990 - samples/sec: 48.05 - lr: 0.025000
+2021-07-08 22:57:52,418 epoch 72 - iter 638/3198 - loss 8.76920300 - samples/sec: 49.29 - lr: 0.025000
+2021-07-08 22:59:33,052 epoch 72 - iter 957/3198 - loss 8.67279000 - samples/sec: 50.74 - lr: 0.025000
+2021-07-08 23:01:17,234 epoch 72 - iter 1276/3198 - loss 8.70903029 - samples/sec: 49.01 - lr: 0.025000
+2021-07-08 23:02:59,722 epoch 72 - iter 1595/3198 - loss 8.72555388 - samples/sec: 49.82 - lr: 0.025000
+2021-07-08 23:04:43,456 epoch 72 - iter 1914/3198 - loss 8.70436142 - samples/sec: 49.23 - lr: 0.025000
+2021-07-08 23:06:26,583 epoch 72 - iter 2233/3198 - loss 8.69447884 - samples/sec: 49.52 - lr: 0.025000
+2021-07-08 23:08:10,355 epoch 72 - iter 2552/3198 - loss 8.67527656 - samples/sec: 49.21 - lr: 0.025000
+2021-07-08 23:09:56,043 epoch 72 - iter 2871/3198 - loss 8.67958294 - samples/sec: 48.32 - lr: 0.025000
+2021-07-08 23:11:41,175 epoch 72 - iter 3190/3198 - loss 8.68284952 - samples/sec: 48.57 - lr: 0.025000
+2021-07-08 23:11:43,643 ----------------------------------------------------------------------------------------------------
+2021-07-08 23:11:43,643 EPOCH 72 done: loss 8.6823 - lr 0.0250000
+2021-07-08 23:15:34,287 DEV : loss 4.735114574432373 - score 0.9191
+2021-07-08 23:15:34,623 BAD EPOCHS (no improvement): 2
+2021-07-08 23:15:34,624 ----------------------------------------------------------------------------------------------------
+2021-07-08 23:17:17,457 epoch 73 - iter 319/3198 - loss 8.49676770 - samples/sec: 49.66 - lr: 0.025000
+2021-07-08 23:19:01,423 epoch 73 - iter 638/3198 - loss 8.66637231 - samples/sec: 49.12 - lr: 0.025000
+2021-07-08 23:20:45,338 epoch 73 - iter 957/3198 - loss 8.66683387 - samples/sec: 49.14 - lr: 0.025000
+2021-07-08 23:22:31,541 epoch 73 - iter 1276/3198 - loss 8.70737552 - samples/sec: 48.08 - lr: 0.025000
+2021-07-08 23:24:14,659 epoch 73 - iter 1595/3198 - loss 8.66993382 - samples/sec: 49.52 - lr: 0.025000
+2021-07-08 23:25:58,907 epoch 73 - iter 1914/3198 - loss 8.65937384 - samples/sec: 48.98 - lr: 0.025000
+2021-07-08 23:27:43,107 epoch 73 - iter 2233/3198 - loss 8.65645641 - samples/sec: 49.01 - lr: 0.025000
+2021-07-08 23:29:29,374 epoch 73 - iter 2552/3198 - loss 8.69406772 - samples/sec: 48.05 - lr: 0.025000
+2021-07-08 23:31:15,962 epoch 73 - iter 2871/3198 - loss 8.70641148 - samples/sec: 47.91 - lr: 0.025000
+2021-07-08 23:32:58,569 epoch 73 - iter 3190/3198 - loss 8.68895838 - samples/sec: 49.77 - lr: 0.025000
+2021-07-08 23:33:01,283 ----------------------------------------------------------------------------------------------------
+2021-07-08 23:33:01,284 EPOCH 73 done: loss 8.6890 - lr 0.0250000
+2021-07-08 23:36:56,797 DEV : loss 4.700587749481201 - score 0.9196
+2021-07-08 23:36:57,149 BAD EPOCHS (no improvement): 0
+2021-07-08 23:36:58,400 ----------------------------------------------------------------------------------------------------
+2021-07-08 23:38:42,362 epoch 74 - iter 319/3198 - loss 8.48806382 - samples/sec: 49.12 - lr: 0.025000
+2021-07-08 23:40:25,645 epoch 74 - iter 638/3198 - loss 8.55145569 - samples/sec: 49.44 - lr: 0.025000
+2021-07-08 23:42:10,554 epoch 74 - iter 957/3198 - loss 8.54407482 - samples/sec: 48.68 - lr: 0.025000
+2021-07-08 23:43:53,032 epoch 74 - iter 1276/3198 - loss 8.57945762 - samples/sec: 49.83 - lr: 0.025000
+2021-07-08 23:45:38,504 epoch 74 - iter 1595/3198 - loss 8.62959194 - samples/sec: 48.41 - lr: 0.025000
+2021-07-08 23:47:24,730 epoch 74 - iter 1914/3198 - loss 8.67484342 - samples/sec: 48.07 - lr: 0.025000
+2021-07-08 23:49:07,116 epoch 74 - iter 2233/3198 - loss 8.66310451 - samples/sec: 49.88 - lr: 0.025000
+2021-07-08 23:50:51,247 epoch 74 - iter 2552/3198 - loss 8.66765572 - samples/sec: 49.04 - lr: 0.025000
+2021-07-08 23:52:36,011 epoch 74 - iter 2871/3198 - loss 8.66494917 - samples/sec: 48.74 - lr: 0.025000
+2021-07-08 23:54:18,622 epoch 74 - iter 3190/3198 - loss 8.64765997 - samples/sec: 49.77 - lr: 0.025000
+2021-07-08 23:54:21,452 ----------------------------------------------------------------------------------------------------
+2021-07-08 23:54:21,452 EPOCH 74 done: loss 8.6497 - lr 0.0250000
+2021-07-08 23:58:17,189 DEV : loss 4.7078070640563965 - score 0.9191
+2021-07-08 23:58:17,527 BAD EPOCHS (no improvement): 1
+2021-07-08 23:58:17,527 ----------------------------------------------------------------------------------------------------
+2021-07-09 00:00:07,413 epoch 75 - iter 319/3198 - loss 8.62641204 - samples/sec: 46.47 - lr: 0.025000
+2021-07-09 00:01:50,228 epoch 75 - iter 638/3198 - loss 8.59812489 - samples/sec: 49.67 - lr: 0.025000
+2021-07-09 00:03:31,421 epoch 75 - iter 957/3198 - loss 8.58432411 - samples/sec: 50.46 - lr: 0.025000
+2021-07-09 00:05:15,947 epoch 75 - iter 1276/3198 - loss 8.65759619 - samples/sec: 48.85 - lr: 0.025000
+2021-07-09 00:07:02,831 epoch 75 - iter 1595/3198 - loss 8.68708903 - samples/sec: 47.77 - lr: 0.025000
+2021-07-09 00:08:47,440 epoch 75 - iter 1914/3198 - loss 8.68735754 - samples/sec: 48.81 - lr: 0.025000
+2021-07-09 00:10:32,997 epoch 75 - iter 2233/3198 - loss 8.67276689 - samples/sec: 48.38 - lr: 0.025000
+2021-07-09 00:12:15,077 epoch 75 - iter 2552/3198 - loss 8.66676249 - samples/sec: 50.02 - lr: 0.025000
+2021-07-09 00:13:59,420 epoch 75 - iter 2871/3198 - loss 8.65669894 - samples/sec: 48.94 - lr: 0.025000
+2021-07-09 00:15:42,236 epoch 75 - iter 3190/3198 - loss 8.63191612 - samples/sec: 49.67 - lr: 0.025000
+2021-07-09 00:15:44,833 ----------------------------------------------------------------------------------------------------
+2021-07-09 00:15:44,833 EPOCH 75 done: loss 8.6352 - lr 0.0250000
+2021-07-09 00:19:37,091 DEV : loss 4.691561698913574 - score 0.9193
+2021-07-09 00:19:37,438 BAD EPOCHS (no improvement): 2
+2021-07-09 00:19:37,439 ----------------------------------------------------------------------------------------------------
+2021-07-09 00:21:21,625 epoch 76 - iter 319/3198 - loss 8.60002426 - samples/sec: 49.01 - lr: 0.025000
+2021-07-09 00:23:04,571 epoch 76 - iter 638/3198 - loss 8.58689909 - samples/sec: 49.60 - lr: 0.025000
+2021-07-09 00:24:49,860 epoch 76 - iter 957/3198 - loss 8.57264227 - samples/sec: 48.50 - lr: 0.025000
+2021-07-09 00:26:31,856 epoch 76 - iter 1276/3198 - loss 8.55869386 - samples/sec: 50.07 - lr: 0.025000
+2021-07-09 00:28:17,433 epoch 76 - iter 1595/3198 - loss 8.56904490 - samples/sec: 48.37 - lr: 0.025000
+2021-07-09 00:30:01,543 epoch 76 - iter 1914/3198 - loss 8.58616544 - samples/sec: 49.05 - lr: 0.025000
+2021-07-09 00:31:48,183 epoch 76 - iter 2233/3198 - loss 8.57590927 - samples/sec: 47.88 - lr: 0.025000
+2021-07-09 00:33:33,247 epoch 76 - iter 2552/3198 - loss 8.62300141 - samples/sec: 48.60 - lr: 0.025000
+2021-07-09 00:35:17,075 epoch 76 - iter 2871/3198 - loss 8.61918679 - samples/sec: 49.18 - lr: 0.025000
+2021-07-09 00:37:00,589 epoch 76 - iter 3190/3198 - loss 8.63604664 - samples/sec: 49.33 - lr: 0.025000
+2021-07-09 00:37:02,896 ----------------------------------------------------------------------------------------------------
+2021-07-09 00:37:02,896 EPOCH 76 done: loss 8.6357 - lr 0.0250000
+2021-07-09 00:40:56,351 DEV : loss 4.679108619689941 - score 0.9202
+2021-07-09 00:40:56,695 BAD EPOCHS (no improvement): 0
+2021-07-09 00:40:57,849 ----------------------------------------------------------------------------------------------------
+2021-07-09 00:42:40,762 epoch 77 - iter 319/3198 - loss 8.38905312 - samples/sec: 49.62 - lr: 0.025000
+2021-07-09 00:44:23,669 epoch 77 - iter 638/3198 - loss 8.39061002 - samples/sec: 49.62 - lr: 0.025000
+2021-07-09 00:46:08,181 epoch 77 - iter 957/3198 - loss 8.51153747 - samples/sec: 48.86 - lr: 0.025000
+2021-07-09 00:47:52,569 epoch 77 - iter 1276/3198 - loss 8.55021052 - samples/sec: 48.92 - lr: 0.025000
+2021-07-09 00:49:36,495 epoch 77 - iter 1595/3198 - loss 8.56024651 - samples/sec: 49.14 - lr: 0.025000
+2021-07-09 00:51:21,538 epoch 77 - iter 1914/3198 - loss 8.55414920 - samples/sec: 48.62 - lr: 0.025000
+2021-07-09 00:53:04,346 epoch 77 - iter 2233/3198 - loss 8.55918265 - samples/sec: 49.67 - lr: 0.025000
+2021-07-09 00:54:51,525 epoch 77 - iter 2552/3198 - loss 8.58267761 - samples/sec: 47.64 - lr: 0.025000
+2021-07-09 00:56:34,961 epoch 77 - iter 2871/3198 - loss 8.58837174 - samples/sec: 49.37 - lr: 0.025000
+2021-07-09 00:58:19,437 epoch 77 - iter 3190/3198 - loss 8.60042238 - samples/sec: 48.88 - lr: 0.025000
+2021-07-09 00:58:21,958 ----------------------------------------------------------------------------------------------------
+2021-07-09 00:58:21,959 EPOCH 77 done: loss 8.6022 - lr 0.0250000
+2021-07-09 01:02:16,787 DEV : loss 4.682106971740723 - score 0.9203
+2021-07-09 01:02:17,128 BAD EPOCHS (no improvement): 0
+2021-07-09 01:02:18,312 ----------------------------------------------------------------------------------------------------
+2021-07-09 01:04:05,331 epoch 78 - iter 319/3198 - loss 8.64062061 - samples/sec: 47.72 - lr: 0.025000
+2021-07-09 01:05:52,421 epoch 78 - iter 638/3198 - loss 8.61138093 - samples/sec: 47.68 - lr: 0.025000
+2021-07-09 01:07:37,418 epoch 78 - iter 957/3198 - loss 8.58901204 - samples/sec: 48.63 - lr: 0.025000
+2021-07-09 01:09:22,082 epoch 78 - iter 1276/3198 - loss 8.58917992 - samples/sec: 48.79 - lr: 0.025000
+2021-07-09 01:11:05,764 epoch 78 - iter 1595/3198 - loss 8.64136670 - samples/sec: 49.25 - lr: 0.025000
+2021-07-09 01:12:49,157 epoch 78 - iter 1914/3198 - loss 8.62781727 - samples/sec: 49.39 - lr: 0.025000
+2021-07-09 01:14:29,965 epoch 78 - iter 2233/3198 - loss 8.60118738 - samples/sec: 50.66 - lr: 0.025000
+2021-07-09 01:16:13,940 epoch 78 - iter 2552/3198 - loss 8.59829397 - samples/sec: 49.11 - lr: 0.025000
+2021-07-09 01:17:59,120 epoch 78 - iter 2871/3198 - loss 8.61554137 - samples/sec: 48.55 - lr: 0.025000
+2021-07-09 01:19:42,808 epoch 78 - iter 3190/3198 - loss 8.61224948 - samples/sec: 49.25 - lr: 0.025000
+2021-07-09 01:19:45,097 ----------------------------------------------------------------------------------------------------
+2021-07-09 01:19:45,098 EPOCH 78 done: loss 8.6131 - lr 0.0250000
+2021-07-09 01:23:39,414 DEV : loss 4.695791721343994 - score 0.9195
+2021-07-09 01:23:39,746 BAD EPOCHS (no improvement): 1
+2021-07-09 01:23:39,746 ----------------------------------------------------------------------------------------------------
+2021-07-09 01:25:23,503 epoch 79 - iter 319/3198 - loss 8.61720685 - samples/sec: 49.22 - lr: 0.025000
+2021-07-09 01:27:07,193 epoch 79 - iter 638/3198 - loss 8.55754536 - samples/sec: 49.25 - lr: 0.025000
+2021-07-09 01:28:51,359 epoch 79 - iter 957/3198 - loss 8.58481392 - samples/sec: 49.02 - lr: 0.025000
+2021-07-09 01:30:35,213 epoch 79 - iter 1276/3198 - loss 8.55694045 - samples/sec: 49.17 - lr: 0.025000
+2021-07-09 01:32:20,656 epoch 79 - iter 1595/3198 - loss 8.59245125 - samples/sec: 48.43 - lr: 0.025000
+2021-07-09 01:34:04,012 epoch 79 - iter 1914/3198 - loss 8.56606743 - samples/sec: 49.41 - lr: 0.025000
+2021-07-09 01:35:51,901 epoch 79 - iter 2233/3198 - loss 8.57059719 - samples/sec: 47.33 - lr: 0.025000
+2021-07-09 01:37:35,229 epoch 79 - iter 2552/3198 - loss 8.56038140 - samples/sec: 49.42 - lr: 0.025000
+2021-07-09 01:39:17,497 epoch 79 - iter 2871/3198 - loss 8.56694234 - samples/sec: 49.93 - lr: 0.025000
+2021-07-09 01:40:59,677 epoch 79 - iter 3190/3198 - loss 8.57012063 - samples/sec: 49.97 - lr: 0.025000
+2021-07-09 01:41:02,087 ----------------------------------------------------------------------------------------------------
+2021-07-09 01:41:02,087 EPOCH 79 done: loss 8.5697 - lr 0.0250000
+2021-07-09 01:45:03,108 DEV : loss 4.675381660461426 - score 0.9202
+2021-07-09 01:45:03,449 BAD EPOCHS (no improvement): 2
+2021-07-09 01:45:03,449 ----------------------------------------------------------------------------------------------------
+2021-07-09 01:46:48,137 epoch 80 - iter 319/3198 - loss 8.58080827 - samples/sec: 48.78 - lr: 0.025000
+2021-07-09 01:48:31,414 epoch 80 - iter 638/3198 - loss 8.61511032 - samples/sec: 49.44 - lr: 0.025000
+2021-07-09 01:50:14,040 epoch 80 - iter 957/3198 - loss 8.50810217 - samples/sec: 49.76 - lr: 0.025000
+2021-07-09 01:51:57,261 epoch 80 - iter 1276/3198 - loss 8.49539916 - samples/sec: 49.47 - lr: 0.025000
+2021-07-09 01:53:38,269 epoch 80 - iter 1595/3198 - loss 8.49372131 - samples/sec: 50.56 - lr: 0.025000
+2021-07-09 01:55:20,659 epoch 80 - iter 1914/3198 - loss 8.49146268 - samples/sec: 49.87 - lr: 0.025000
+2021-07-09 01:57:06,903 epoch 80 - iter 2233/3198 - loss 8.52514707 - samples/sec: 48.06 - lr: 0.025000
+2021-07-09 01:58:54,553 epoch 80 - iter 2552/3198 - loss 8.55629860 - samples/sec: 47.44 - lr: 0.025000
+2021-07-09 02:00:40,159 epoch 80 - iter 2871/3198 - loss 8.56033389 - samples/sec: 48.35 - lr: 0.025000
+2021-07-09 02:02:21,059 epoch 80 - iter 3190/3198 - loss 8.54637713 - samples/sec: 50.61 - lr: 0.025000
+2021-07-09 02:02:23,430 ----------------------------------------------------------------------------------------------------
+2021-07-09 02:02:23,430 EPOCH 80 done: loss 8.5465 - lr 0.0250000
+2021-07-09 02:06:18,504 DEV : loss 4.699150085449219 - score 0.9194
+2021-07-09 02:06:18,846 BAD EPOCHS (no improvement): 3
+2021-07-09 02:06:19,594 ----------------------------------------------------------------------------------------------------
+2021-07-09 02:06:19,594 Testing using best model ...
+2021-07-09 02:06:19,595 loading file SuperPeitho-FLAIR-v2/best-model.pt
+2021-07-09 02:11:56,850 	0.0415
+2021-07-09 02:11:56,850 
+Results:
+- F-score (micro): 0.043
+- F-score (macro): 0.001
+- Accuracy (incl. no class): 0.0415
+
+By class:
+              precision    recall  f1-score   support
+
+   a-s---na-     0.0000    0.0000    0.0000       784
+   i--------     0.0015    0.0088    0.0026       228
+   p1s---cd-     0.0000    0.0000    0.0000       272
+   v2spma---     0.0000    0.0000    0.0000       129
+   v3saia---     0.0128    0.0067    0.0088      1346
+   b--------     0.0062    0.0001    0.0003      6784
+   u--------     0.1964    0.2646    0.2254     13645
+   v2spme---     0.0000    0.0000    0.0000        46
+   n-s---fg-     0.0067    0.0069    0.0068      1596
+   n-s---nn-     0.0035    0.0026    0.0030       387
+   r--------     0.0452    0.0125    0.0196      6628
+   d--------     0.1687    0.0370    0.0607     13351
+   p-s---fg-     0.0035    0.0062    0.0045       162
+   n-s---fn-     0.0140    0.0275    0.0185       874
+   a-s---fn-     0.0000    0.0000    0.0000       325
+   v-sppang-     0.0000    0.0000    0.0000        18
+   n-s---fa-     0.0099    0.0017    0.0029      2328
+   l-p---ng-     0.0013    0.0033    0.0018       301
+   a-p---ng-     0.0000    0.0000    0.0000       189
+   c--------     0.0450    0.0743    0.0561      2300
+   v-sppafn-     0.0000    0.0000    0.0000       100
+   v-papmmg-     0.0000    0.0000    0.0000        18
+   n-p---ng-     0.0011    0.0030    0.0017       330
+   v3pfim---     0.0000    0.0000    0.0000        37
+   v3siie---     0.0000    0.0000    0.0000       356
+   v-srpefg-     0.0000    0.0000    0.0000        13
+   p-p---ng-     0.0044    0.0088    0.0059       226
+   l-s---nd-     0.0000    0.0000    0.0000       168
+   v--pne---     0.0000    0.0000    0.0000       371
+   v--ana---     0.0000    0.0000    0.0000       661
+   n-s---mg-     0.0071    0.0777    0.0130      1544
+   n-s---ma-     0.0139    0.0061    0.0085      1958
+   v2ppma---     0.0000    0.0000    0.0000        57
+   a-s---ma-     0.0000    0.0000    0.0000       599
+   v1sria---     0.0000    0.0000    0.0000        57
+   l-s---fg-     0.0075    0.0212    0.0110       803
+   v2pasa---     0.0000    0.0000    0.0000        24
+   l-s---ma-     0.0000    0.0000    0.0000       778
+   v-sppemg-     0.0000    0.0000    0.0000        35
+   v-papann-     0.0000    0.0000    0.0000         2
+   v3saim---     0.0000    0.0000    0.0000       331
+   v3ppia---     0.0048    0.0093    0.0063       430
+   v3saip---     0.0000    0.0000    0.0000       161
+   a-p---mg-     0.0015    0.0016    0.0015       634
+   a-s---fnc     0.0000    0.0000    0.0000        10
+   p1p---cg-     0.0007    0.0606    0.0014        66
+   n-p---cn-     0.0000    0.0000    0.0000        17
+   d-------c     0.0000    0.0000    0.0000       136
+   n-p---mg-     0.0028    0.0070    0.0040       853
+   p-p---ma-     0.0000    0.0000    0.0000       257
+   n-p---ma-     0.0000    0.0000    0.0000       737
+   a-s---mg-     0.0010    0.0043    0.0017       231
+   v-sapamn-     0.0000    0.0000    0.0000       653
+   v3siia---     0.0350    0.0161    0.0220      1120
+   n-s---mn-     0.0618    0.0130    0.0215      2080
+   n-p---fa-     0.0000    0.0000    0.0000       737
+   n-p---nn-     0.0000    0.0000    0.0000       154
+   v-sppama-     0.0000    0.0000    0.0000       177
+   l-p---mn-     0.0000    0.0000    0.0000       579
+   n-s---na-     0.0075    0.0011    0.0019       903
+   v1ppie---     0.0000    0.0000    0.0000        24
+   v3spia---     0.0142    0.0024    0.0041      1251
+   n-s---ca-     0.0000    0.0000    0.0000        34
+   p3s---mg-     0.0000    0.0000    0.0000        12
+   p-p---mg-     0.0060    0.0090    0.0072       333
+   a-s---fg-     0.0023    0.0035    0.0028       283
+   n-s---fd-     0.0189    0.0065    0.0096       775
+   v-sppamn-     0.0000    0.0000    0.0000       677
+   a-p---ma-     1.0000    0.0000    0.0000       565
+   v-sppamg-     0.0000    0.0000    0.0000        95
+   l-p---mg-     0.0023    0.0039    0.0029       767
+   n-s---cg-     0.0000    0.0000    0.0000        18
+   l-s---mg-     0.0069    0.0187    0.0101       589
+   a-s---mn-     0.0000    0.0000    0.0000       889
+   v--pna---     0.0000    0.0000    0.0000      1236
+   p-s---cn-     0.0000    0.0000    0.0000       261
+   p-s---mn-     0.0000    0.0000    0.0000       508
+   v3sasa---     0.0000    0.0000    0.0000       159
+   a-s---nv-     0.0000    0.0000    0.0000        14
+   n-s---nv-     0.0000    0.0000    0.0000        18
+   p-p---mn-     0.0000    0.0000    0.0000       300
+   p-s---na-     0.0100    0.0039    0.0056       765
+   p-s---ma-     0.0000    0.0000    0.0000       699
+   n-p---cg-     0.0000    0.0000    0.0000        16
+   v--anm---     0.0000    0.0000    0.0000       235
+   a-p---mn-     0.0000    0.0000    0.0000       686
+   v-pppamn-     0.0000    0.0000    0.0000       370
+   v2proa---     1.0000    0.0000    0.0000         1
+   p2p---cn-     0.0000    0.0000    0.0000        48
+   v3plip---     0.0000    0.0000    0.0000         3
+   v3paoa---     0.0000    0.0000    0.0000        21
+   a-p---na-     0.0000    0.0000    0.0000       603
+   v1saim---     0.0000    0.0000    0.0000        31
+   p-p---na-     0.0000    0.0000    0.0000       504
+   v2dfim---     0.0000    1.0000    0.0000         0
+   v-papmng-     0.0000    0.0000    0.0000         2
+   l-p---ma-     0.0000    0.0000    0.0000       654
+   v3spoe---     0.0000    0.0000    0.0000        38
+   v2samp---     0.0000    0.0000    0.0000         7
+   v1saia---     0.0000    0.0000    0.0000       191
+   v-pppefd-     0.0000    0.0000    0.0000         5
+   v2saia---     0.0000    0.0000    0.0000        56
+   p-s---cg-     0.0000    0.0000    0.0000        25
+   n-s---ng-     0.0023    0.0026    0.0024       391
+   v-srpena-     0.0000    0.0000    0.0000        12
+   a-s---ng-     0.0000    0.0000    0.0000       150
+   v-pppang-     0.0000    0.0000    0.0000        21
+   v-sapmfg-     0.0000    0.0000    0.0000        24
+   v2spia---     0.0000    0.0000    0.0000       173
+   n-p---md-     0.0064    0.0024    0.0035       409
+   n-p---mn-     0.0524    0.0178    0.0266       562
+   v2ppia---     0.0000    0.0000    0.0000        76
+   v3paia---     0.0000    0.0000    0.0000       556
+   v3sfim---     0.0000    0.0000    0.0000       103
+   l-p---fa-     0.0000    0.0000    0.0000       349
+   a-p---fa-     1.0000    0.0000    0.0000       183
+   v-sappfn-     0.0000    0.0000    0.0000        13
+   v2sasa---     0.0000    0.0000    0.0000        47
+   p1p---ca-     0.0000    0.0000    0.0000        58
+   v3pria---     0.0000    0.0000    0.0000        30
+   l-s---fd-     0.0033    0.0033    0.0033       303
+   v-papamn-     0.0000    0.0000    0.0000       279
+   p-d---mn-     0.0000    0.0000    0.0000        15
+   v-sapafg-     0.0000    0.0000    0.0000        13
+   a-s---fas     0.0000    0.0000    0.0000        24
+   v2sasm---     0.0000    0.0000    0.0000        14
+   v1paim---     0.0000    0.0000    0.0000        15
+   v2pasm---     0.0000    0.0000    0.0000         4
+   l-s---mn-     0.0000    0.0000    0.0000       914
+   m-s---fg-     0.0000    0.0000    0.0000        11
+   a-p---md-     0.0000    0.0000    0.0000       390
+   a-s---mgs     0.0000    0.0000    0.0000         2
+   p-p---fd-     0.0000    0.0000    0.0000        39
+   v1ppia---     0.0000    0.0000    0.0000        63
+   l-s---ng-     0.0000    0.0000    0.0000       260
+   n-s---md-     0.0127    0.0035    0.0055       849
+   p2s---cg-     0.0013    0.0299    0.0025        67
+   n-p---na-     0.0000    0.0000    0.0000       618
+   a-p---nas     1.0000    0.0000    0.0000        66
+   p-s---nd-     0.0000    0.0000    0.0000        77
+   a-s---mv-     0.0000    0.0000    0.0000        57
+   v3daip---     0.0000    1.0000    0.0000         0
+   p-s---nn-     0.0000    0.0000    0.0000       235
+   v-pappfg-     0.0000    0.0000    0.0000         2
+   v-sapmmg-     0.0000    0.0000    0.0000         9
+   l-p---nd-     0.0000    0.0000    0.0000       140
+   v3pama---     0.0000    0.0000    0.0000         4
+   p-s---md-     0.0000    0.0000    0.0000       403
+   p-s---ng-     0.0000    0.0000    0.0000       128
+   v1siie---     0.0000    0.0000    0.0000        40
+   l-s---fa-     0.0000    0.0000    0.0000      1122
+   v-pppenn-     0.0000    0.0000    0.0000         6
+   p1d---cn-     0.0000    0.0000    0.0000         4
+   m--------     0.0000    0.0000    0.0000       282
+   p1s---cg-     0.0305    0.0314    0.0310       159
+   p2p---cg-     0.0000    0.0000    0.0000        88
+   l-p---na-     0.0185    0.0022    0.0040       445
+   v3sfia---     0.0000    0.0000    0.0000        90
+   a-s---fa-     0.0000    0.0000    0.0000       601
+   a-s---fv-     0.0000    0.0000    0.0000        15
+   n-p---fg-     0.0013    0.0039    0.0020       256
+   v-srpafa-     0.0000    0.0000    0.0000         4
+   v3saom---     0.0000    0.0000    0.0000        48
+   v2spoa---     0.0000    0.0000    0.0000        11
+   m-p---ma-     1.0000    0.0000    0.0000        31
+   v3piia---     0.0061    0.0042    0.0050       480
+   p3p---ma-     0.0000    0.0000    0.0000         2
+   v1slie---     0.0000    0.0000    0.0000         1
+   l-p---md-     0.0000    0.0000    0.0000       385
+   v2pasp---     0.0000    0.0000    0.0000         4
+   v-sapmng-     0.0000    0.0000    0.0000         5
+   a-p---mnc     0.0000    0.0000    0.0000        29
+   v3slip---     0.0000    0.0000    0.0000         8
+   l-p---fg-     0.0000    0.0000    0.0000       122
+   n-s---cv-     0.0000    0.0000    0.0000        11
+   p1p---cn-     0.0000    0.0000    0.0000        47
+   n-p---fv-     0.0000    0.0000    0.0000         9
+   n-s---mv-     0.0014    0.0050    0.0022       200
+   p1s---cn-     0.0000    0.0000    0.0000       241
+   v3pasa---     0.0000    0.0000    0.0000        52
+   v3slia---     0.0000    0.0000    0.0000        45
+   v2sfim---     0.0000    0.0000    0.0000        24
+   v3paim---     0.0000    0.0000    0.0000       150
+   v-prpama-     0.0000    0.0000    0.0000        26
+   n-p---mv-     0.0000    0.0000    0.0000       109
+   a-p---mv-     0.0000    0.0000    0.0000        45
+   v-srpamg-     0.0000    0.0000    0.0000         8
+   v3piie---     0.0021    0.0054    0.0030       185
+   a-s---mgc     0.0000    0.0000    0.0000         3
+   v2siie---     0.0000    0.0000    0.0000         7
+   v-srpemg-     0.0000    0.0000    0.0000         8
+   p2p---ca-     0.0000    0.0000    0.0000        99
+   v-sppeng-     0.0000    0.0000    0.0000        11
+   v-sppemn-     1.0000    0.0000    0.0000       203
+   v-papama-     0.0000    0.0000    0.0000        43
+   n-s---fv-     0.0000    0.0000    0.0000        45
+   l-s---na-     0.0000    0.0000    0.0000       624
+   v-srpama-     0.0000    0.0000    0.0000        28
+   l-s---md-     0.0000    0.0000    0.0000       316
+   v1saoa---     0.0000    0.0000    0.0000        22
+   v1paom---     0.0000    0.0000    0.0000         5
+   n-p---nd-     0.0000    0.0000    0.0000       278
+   v2pfim---     0.0000    0.0000    0.0000        19
+   v3spie---     0.0000    0.0000    0.0000       319
+   v1spoe---     0.0000    0.0000    0.0000        13
+   v2paia---     0.0000    0.0000    0.0000        24
+   v-pppemn-     0.0000    0.0000    0.0000       146
+   v2ppse---     0.0000    0.0000    0.0000         6
+   n--------     0.0000    0.0000    0.0000       114
+   a-p---fn-     0.0000    0.0000    0.0000        98
+   v3ppsa---     0.0000    0.0000    0.0000        56
+   p-p---fn-     0.0000    0.0000    0.0000        42
+   l-p---fn-     0.0000    0.0000    0.0000        75
+   n-p---fn-     0.0000    0.0000    0.0000       214
+   p3p---cg-     0.0000    0.0000    0.0000        17
+   v3spsa---     0.0000    0.0000    0.0000       105
+   p2d---cg-     0.0000    1.0000    0.0000         0
+   a-s----g-     0.0000    0.0000    0.0000         9
+   v-pppend-     1.0000    0.0000    0.0000        10
+   v-srpemn-     0.0000    0.0000    0.0000        54
+   v3daia---     0.0000    0.0000    0.0000         8
+   a-s---mnc     0.0000    0.0000    0.0000        31
+   a-s---fgs     0.0000    0.0000    0.0000         8
+   v-sppafg-     0.0000    0.0000    0.0000        43
+   n-s---nd-     0.0217    0.0034    0.0060       290
+   p2s---fg-     0.0000    1.0000    0.0000         0
+   p2s---cn-     0.0000    0.0000    0.0000       106
+   v-prpamn-     0.0000    0.0000    0.0000        49
+   v-papmfg-     0.0000    0.0000    0.0000         2
+   v--fna---     0.0000    0.0000    0.0000        84
+   v2dpme---     0.0000    1.0000    0.0000         0
+   v1plie---     0.0000    0.0000    0.0000         2
+   p-s---mg-     0.0000    0.0000    0.0000       386
+   v1piia---     0.0000    0.0000    0.0000        18
+   v-papamg-     0.0000    0.0000    0.0000        50
+   m-s---mg-     0.0000    0.0000    0.0000         4
+   v--anp---     0.0000    0.0000    0.0000        73
+   l-s---nn-     0.0000    0.0000    0.0000       259
+   v-sapamg-     0.0000    0.0000    0.0000        70
+   v-srpamn-     0.0000    0.0000    0.0000        68
+   a-s---fns     0.0000    0.0000    0.0000        15
+   a-p---mac     0.0000    0.0000    0.0000        27
+   p-d---mg-     0.0000    0.0000    0.0000         4
+   p-s---fa-     0.0000    0.0000    0.0000       233
+   v2paoa---     0.0000    0.0000    0.0000         4
+   v3spoa---     0.0000    0.0000    0.0000        92
+   v--rna---     0.0000    0.0000    0.0000        60
+   v1pfia---     0.0000    0.0000    0.0000        34
+   p1s---ca-     0.0000    0.0000    0.0000       235
+   v1saip---     0.0000    0.0000    0.0000        12
+   v3ppie---     0.0000    0.0000    0.0000       129
+   n-p---fd-     0.0000    0.0000    0.0000       370
+   a-p---fd-     0.0000    0.0000    0.0000       114
+   a-p---mns     0.0000    0.0000    0.0000        17
+   n-d---ca-     0.0000    1.0000    0.0000         0
+   a-s----gc     0.0000    1.0000    0.0000         0
+   v3sria---     0.0000    0.0000    0.0000       104
+   a-p---nd-     0.0000    0.0000    0.0000       114
+   v2sria---     0.0000    0.0000    0.0000        23
+   v2spie---     0.0000    0.0000    0.0000        53
+   l-s---fn-     0.0000    0.0000    0.0000       305
+   v1spoa---     0.0000    0.0000    0.0000        23
+   v2sama---     0.0000    0.0000    0.0000       121
+   p1p---cd-     0.0000    0.0000    0.0000        58
+   v-sappmn-     1.0000    0.0000    0.0000       122
+   v-sppafa-     0.0000    0.0000    0.0000        55
+   v3paip---     0.0000    0.0000    0.0000        72
+   p2s---cd-     0.0000    0.0000    0.0000       151
+   a-s---md-     0.0000    0.0000    0.0000       184
+   n-s---cd-     0.0000    0.0000    0.0000         9
+   v2saim---     0.0000    0.0000    0.0000        11
+   p-p---fa-     0.0000    0.0000    0.0000        61
+   n-d---mv-     0.0000    0.0000    0.0000         1
+   v3ppoe---     0.0000    0.0000    0.0000         7
+   a-s---ngs     0.0000    0.0000    0.0000         5
+   v3saoa---     0.0526    0.0204    0.0294        98
+   v2saom---     0.0000    0.0000    0.0000         5
+   v3daim---     0.0000    0.0000    0.0000         7
+   v-prpamd-     0.0000    0.0000    0.0000        12
+   p-p---md-     0.0000    0.0000    0.0000       297
+   p-s---fn-     0.0341    0.0283    0.0309       106
+   v-sapafn-     0.0000    0.0000    0.0000        75
+   p3s---cd-     0.0000    0.0000    0.0000       102
+   a-s---mns     0.0000    0.0000    0.0000        33
+   p-s---fd-     0.0000    0.0000    0.0000       112
+   n-p---ca-     0.0000    0.0000    0.0000        29
+   p3p---mg-     0.0000    0.0000    0.0000         4
+   v-pfpmmg-     0.0000    0.0000    0.0000         1
+   a-s---nn-     0.0000    0.0000    0.0000       416
+   a-s---mas     1.0000    0.0000    0.0000        22
+   v1spia---     0.0190    0.0094    0.0126       318
+   v1pasm---     0.0000    0.0000    0.0000         6
+   m-s---fn-     0.0000    0.0000    0.0000         7
+   v-pfpama-     0.0000    0.0000    0.0000         9
+   p2s---mg-     0.0000    0.0000    0.0000         8
+   n-d---na-     0.0000    0.0000    0.0000         5
+   v2paip---     0.0000    0.0000    0.0000         6
+   v--rne---     0.0000    0.0000    0.0000        57
+   v-srpenn-     0.0000    0.0000    0.0000        22
+   v3sasm---     0.0000    0.0000    0.0000        55
+   v1sasm---     0.0000    0.0000    0.0000         9
+   v2ppme---     0.0000    0.0000    0.0000        17
+   v2dama---     0.0000    0.0000    0.0000         1
+   v2piie---     0.0000    0.0000    0.0000         7
+   p2p---cd-     0.0000    0.0000    0.0000       127
+   v1sfim---     0.0000    0.0000    0.0000        45
+   v1piie---     0.0000    0.0000    0.0000         5
+   v2ppoe---     0.0000    0.0000    0.0000         1
+   p-s---ca-     0.0000    0.0000    0.0000        81
+   v1sfia---     0.0000    0.0000    0.0000       107
+   v-pppemg-     0.0000    0.0000    0.0000        55
+   v1saom---     0.0000    0.0000    0.0000         8
+   a-p---fg-     0.0000    0.0000    0.0000        45
+   a-s---fd-     0.0000    0.0000    0.0000       175
+   n-s---cn-     0.0000    0.0000    0.0000        25
+   v-sapmmn-     1.0000    0.0000    0.0000       143
+   v-sppamd-     0.0000    0.0000    0.0000        56
+   v2pama---     0.0000    0.0000    0.0000        45
+   v-prpamg-     0.0000    0.0000    0.0000        24
+   m-s---fa-     0.0000    0.0000    0.0000        18
+   v3spma---     0.0000    0.0000    0.0000        28
+   v3spse---     0.0000    0.0000    0.0000        27
+   v1sasa---     0.0000    0.0000    0.0000        43
+   v3ppse---     0.0000    0.0000    0.0000        26
+   p2s---ca-     0.0556    0.0216    0.0311       139
+   a-p---nn-     0.0000    0.0000    0.0000       202
+   v2paoe---     0.0000    1.0000    0.0000         0
+   v3paom---     0.0000    0.0000    0.0000         5
+   v-sapama-     0.0000    0.0000    0.0000        71
+   v3pfia---     0.0000    0.0000    0.0000        42
+   v-pappng-     0.0000    0.0000    0.0000        15
+   v1pfim---     0.0000    0.0000    0.0000        18
+   v-s-g-nn-     0.0000    0.0000    0.0000         5
+   v2piia---     0.0000    0.0000    0.0000         8
+   v-papafn-     1.0000    0.0000    0.0000         9
+   v2ppoa---     0.0000    0.0000    0.0000         4
+   v1paip---     0.0000    0.0000    0.0000         8
+   v1paia---     0.0000    0.0000    0.0000        41
+   v-sppema-     0.0000    0.0000    0.0000        76
+   p1s---md-     0.0000    1.0000    0.0000         0
+   v3paop---     0.0000    0.0000    0.0000         3
+   a-p---ndp     1.0000    0.0000    0.0000         1
+   v-dppamn-     0.0000    0.0000    0.0000         4
+   v-sppmmn-     0.0000    0.0000    0.0000         3
+   v-pppeng-     0.0000    0.0000    0.0000        26
+   v-sppefd-     0.0000    0.0000    0.0000         6
+   m-s---fd-     0.0000    0.0000    0.0000         9
+   d-------s     0.0000    0.0000    0.0000        83
+   v-papmna-     1.0000    0.0000    0.0000         3
+   a-s---nac     0.0000    0.0000    0.0000        81
+   v-pappma-     1.0000    0.0000    0.0000        20
+   v-pppema-     0.0000    0.0000    0.0000        62
+   v-sappfd-     0.0000    1.0000    0.0000         0
+   v-prpemg-     0.0000    0.0000    0.0000        29
+   n-p----d-     1.0000    0.0000    0.0000         1
+   v3slie---     0.0000    0.0000    0.0000        49
+   v2ppie---     0.0000    0.0000    0.0000        24
+   v2siia---     0.0000    0.0000    0.0000        14
+   p-p---nn-     0.0000    0.0000    0.0000       119
+   l-p---fd-     0.0000    0.0000    0.0000       112
+   v-prpena-     0.0000    0.0000    0.0000        25
+   v-sfpmmg-     0.0000    1.0000    0.0000         0
+   p1d---cd-     0.0000    0.0000    0.0000         2
+   v-sapafa-     0.0000    0.0000    0.0000        10
+   v2prie---     0.0000    0.0000    0.0000         3
+   v2paim---     0.0000    0.0000    0.0000        11
+   v-sapmna-     0.0000    0.0000    0.0000         4
+   a-s---nnc     0.0000    0.0000    0.0000        35
+   v-srpmma-     0.0000    1.0000    0.0000         0
+   m-p---fg-     0.0000    0.0000    0.0000         5
+   n-d---ma-     0.0000    0.0000    0.0000         5
+   v-srpeng-     0.0000    0.0000    0.0000         7
+   a-p---fas     1.0000    0.0000    0.0000         9
+   v-prpemn-     0.0000    0.0000    0.0000        43
+   v-prpefa-     0.0000    0.0000    0.0000        15
+   v-sapmma-     0.0000    0.0000    0.0000        24
+   v1srie---     0.0000    0.0000    0.0000        10
+   v-pppamg-     0.0000    0.0000    0.0000       141
+   v--fnm---     0.0000    0.0000    0.0000        52
+   v2pria---     0.0000    0.0000    0.0000        11
+   v3pasm---     0.0000    0.0000    0.0000        16
+   a-p---nnc     0.0000    0.0000    0.0000         5
+   p-p---nd-     0.0000    0.0000    0.0000        87
+   v-srpefn-     0.0000    0.0000    0.0000        11
+   v2sfia---     0.0000    0.0000    0.0000        36
+   v-papmmn-     0.0000    0.0000    0.0000        82
+   v-sfpmfg-     0.0000    0.0000    0.0000         1
+   v-sapmnn-     0.0000    0.0000    0.0000         2
+   v-srpand-     0.0000    0.0000    0.0000         2
+   v-pappmn-     0.0000    0.0000    0.0000        42
+   v1pasp---     0.0000    0.0000    0.0000         5
+   v-sapmfn-     0.0000    0.0000    0.0000        18
+   v3ppma---     0.0000    0.0000    0.0000         5
+   v-sfpafn-     0.0000    0.0000    0.0000         4
+   v3diie---     0.0000    0.0000    0.0000         4
+   v2saip---     0.0000    0.0000    0.0000         4
+   v-pppafa-     0.0000    0.0000    0.0000        28
+   v1ppse---     0.0000    0.0000    0.0000        12
+   v3ppme---     0.0000    0.0000    0.0000         2
+   v2saoa---     0.0000    0.0000    0.0000        10
+   v1siia---     0.0000    0.0000    0.0000        60
+   v-srpana-     0.0000    0.0000    0.0000         5
+   a-p---fgs     0.0000    0.0000    0.0000         1
+   p3p---cd-     0.0000    0.0000    0.0000        63
+   v2daia---     0.0000    1.0000    0.0000         0
+   a-s---nas     1.0000    0.0000    0.0000        25
+   v-pppafn-     1.0000    0.0000    0.0000        20
+   v1sasp---     0.0000    0.0000    0.0000         2
+   v-papmmd-     0.0000    0.0000    0.0000         2
+    v-sppemn     1.0000    0.0000    0.0000         2
+   m-p---ng-     0.0000    0.0000    0.0000         6
+   m-s---na-     0.0000    0.0000    0.0000         6
+   m-p---na-     0.0000    0.0000    0.0000        18
+   v-pppemv-     0.0000    1.0000    0.0000         0
+   v-sappna-     1.0000    0.0000    0.0000        15
+   v-papang-     0.0000    0.0000    0.0000         5
+   v-sfpmma-     0.0000    0.0000    0.0000         4
+   v-sapmfa-     0.0000    0.0000    0.0000        10
+   m-p---mg-     0.0000    0.0000    0.0000         9
+   v1spie---     0.0000    0.0000    0.0000       128
+   v-srpafg-     0.0000    0.0000    0.0000         1
+   p-p---fg-     0.0000    0.0000    0.0000        38
+   v3plia---     0.0000    0.0000    0.0000        30
+   v-pppann-     0.0000    0.0000    0.0000        16
+   v-pfpmmd-     0.0000    0.0000    0.0000         2
+   v-sppefg-     0.0000    0.0000    0.0000        35
+   v-prpend-     0.0000    0.0000    0.0000         5
+   v-sppafd-     0.0000    0.0000    0.0000        12
+   v-pppena-     0.0000    0.0000    0.0000        19
+   v-pfpann-     0.0000    1.0000    0.0000         0
+   l-p---nn-     0.1000    0.0090    0.0165       111
+   v3sasp---     0.0000    0.0000    0.0000        29
+   m-p---fn-     1.0000    0.0000    0.0000         5
+   v1pasa---     0.0000    0.0000    0.0000        36
+   p-p---ca-     0.0000    0.0000    0.0000        29
+   p2p---mg-     0.0000    1.0000    0.0000         0
+   v-pppamd-     0.0000    0.0000    0.0000        63
+   z--------     0.0000    0.0000    0.0000         9
+   v1pria---     0.0000    0.0000    0.0000        15
+   v3srme---     0.0000    0.0000    0.0000         5
+   v2srme---     0.0000    0.0000    0.0000         4
+   v2dpma---     0.0000    1.0000    0.0000         0
+   p-p---cn-     0.0000    0.0000    0.0000        39
+   v-sfpamg-     0.0000    1.0000    0.0000         0
+   a-p---ngc     0.0000    1.0000    0.0000         0
+   v-prpang-     0.0000    0.0000    0.0000        12
+   a-p---mgc     0.0000    0.0000    0.0000         9
+   a-d---fn-     0.0000    1.0000    0.0000         0
+   p-p---cd-     0.0000    0.0000    0.0000         9
+   v-sppefn-     0.0000    0.0000    0.0000        41
+   a-p---fnc     0.0000    0.0000    0.0000         3
+   v-pfpamg-     0.0000    0.0000    0.0000         2
+   a-p---mgs     0.0000    0.0000    0.0000         5
+   v-pppama-     0.0000    0.0000    0.0000       120
+   n-d---mn-     0.0000    0.0000    0.0000         4
+   m-p---fa-     1.0000    0.0000    0.0000        13
+   a-s---nds     0.0000    0.0000    0.0000         3
+   v3srie---     0.0000    0.0000    0.0000        85
+   v-pppemd-     0.0000    0.0000    0.0000        28
+   v-srpema-     0.0000    0.0000    0.0000        34
+   n-p---cd-     0.0000    0.0000    0.0000        11
+   a-s----d-     0.0000    0.0000    0.0000         9
+   v-srpann-     0.0000    0.0000    0.0000        17
+   v-pappmg-     0.0000    0.0000    0.0000        24
+   v-papmma-     0.0000    0.0000    0.0000        21
+   p3p---ca-     0.0000    0.0000    0.0000        28
+   v-pappna-     0.0000    0.0000    0.0000         7
+   a-p---nap     1.0000    0.0000    0.0000         1
+   v3plie---     0.0000    0.0000    0.0000        12
+   v1pfip---     0.0000    0.0000    0.0000         2
+   v-sppena-     1.0000    0.0000    0.0000        25
+   v2srma---     0.0000    0.0000    0.0000        13
+   m-p---nn-     0.0000    0.0000    0.0000         6
+   v-sppefa-     0.0000    0.0000    0.0000        26
+   v2pfip---     0.0000    0.0000    0.0000         3
+   a-p---nns     1.0000    0.0000    0.0000        13
+   p3s---fg-     0.0000    0.0000    0.0000         3
+   v-pfpafa-     1.0000    0.0000    0.0000         3
+   v-dapamn-     0.0000    0.0000    0.0000         3
+   v1ppoa---     0.0000    0.0000    0.0000         8
+   a-d---mn-     0.0000    0.0000    0.0000        12
+   a-s---nd-     0.0000    0.0000    0.0000       142
+   v2slie---     0.0000    0.0000    0.0000         1
+   v2pamm---     0.0000    0.0000    0.0000        13
+   v3ppoa---     0.0000    0.0000    0.0000        29
+   v-dapafn-     1.0000    0.0000    0.0000         1
+   v-srpamd-     0.0000    0.0000    0.0000        11
+   v-srpemd-     0.0000    0.0000    0.0000         7
+   p-p---mv-     0.0000    0.0000    0.0000         4
+   v2prma---     0.0000    0.0000    0.0000         4
+   v-sappma-     1.0000    0.0000    0.0000        14
+   v2pamp---     0.0000    0.0000    0.0000         3
+   v3sfip---     0.0000    0.0000    0.0000        22
+   v-sppafv-     0.0000    1.0000    0.0000         0
+   v3spme---     0.0000    0.0000    0.0000         9
+   v-pfpmma-     0.0000    0.0000    0.0000         9
+   v2srie---     0.0000    0.0000    0.0000         6
+   v-srpefd-     0.0000    0.0000    0.0000         2
+   p2s---md-     0.0000    0.0000    0.0000         4
+   v3pfom---     0.0000    1.0000    0.0000         0
+   v3dpie---     0.0000    1.0000    0.0000         0
+   v-sappmg-     0.0000    0.0000    0.0000        15
+   v2sasp---     0.0000    0.0000    0.0000         6
+   v1sfip---     0.0000    0.0000    0.0000         5
+   p-s---cd-     0.0000    0.0000    0.0000        20
+   a-s---mdc     0.0000    0.0000    0.0000         2
+   v2spsa---     0.0000    0.0000    0.0000        14
+         καὶ     0.0000    0.0000    0.0000         1
+   v-prpeng-     0.0000    0.0000    0.0000        18
+   v-sapang-     0.0000    0.0000    0.0000         8
+   p3s---ma-     0.0000    0.0000    0.0000        19
+   v-srpafn-     0.0000    0.0000    0.0000         9
+   v-srpang-     0.0000    0.0000    0.0000         1
+   v-pfpmnd-     0.0000    0.0000    0.0000         2
+   v2samm---     0.0000    0.0000    0.0000        27
+   v-sappfg-     0.0000    0.0000    0.0000         9
+   a-p---nac     0.0000    0.0000    0.0000        17
+   v-sppend-     0.0000    0.0000    0.0000         2
+   v-prpema-     0.0000    0.0000    0.0000        25
+   v-pappnn-     0.0000    0.0000    0.0000         2
+   m-s---ng-     0.0000    0.0000    0.0000         2
+   v-srpefa-     0.0000    0.0000    0.0000        25
+   v3srma---     0.0000    0.0000    0.0000         3
+   v-sappnn-     0.0000    0.0000    0.0000         7
+   v2pfia---     0.0000    0.0000    0.0000        19
+   n-p---nv-     0.0000    0.0000    0.0000         2
+   m-s---md-     0.0000    0.0000    0.0000         5
+   v-sppana-     0.0000    0.0000    0.0000        41
+   v3saop---     0.0000    0.0000    0.0000         8
+   p-d---ng-     1.0000    0.0000    0.0000         5
+   v-prpenn-     0.0000    0.0000    0.0000         9
+   v-sppann-     1.0000    0.0000    0.0000        32
+   v-sfpamn-     0.0000    0.0000    0.0000        14
+   v3stie---     0.0000    0.0000    0.0000         4
+   v2pame---     0.0000    0.0000    0.0000         1
+   v-pppefn-     0.0000    0.0000    0.0000        18
+   p3s---fd-     0.0000    0.0000    0.0000         1
+   v-dppama-     0.0000    0.0000    0.0000         3
+   a-s---fgc     0.0000    0.0000    0.0000         6
+   v-sappnd-     0.0000    0.0000    0.0000         1
+   m-s---ma-     0.0000    0.0000    0.0000        21
+   v-pppana-     0.0000    0.0000    0.0000        36
+   v-sfpmmn-     1.0000    0.0000    0.0000         8
+   v3pasp---     0.0000    0.0000    0.0000         7
+   v2ppsa---     0.0000    0.0000    0.0000        13
+   v3prie---     0.0000    0.0000    0.0000         9
+   v--tna---     0.0000    0.0000    0.0000         1
+   v3sfom---     0.0000    0.0000    0.0000         2
+   p1d---cg-     0.0000    1.0000    0.0000         0
+   a-d---fg-     0.0000    0.0000    0.0000         1
+   n-d---fg-     0.0000    0.0000    0.0000         2
+   p3s---md-     0.0000    0.0000    0.0000         3
+   v-pppefg-     0.0000    0.0000    0.0000         5
+   v-srpamv-     0.0000    1.0000    0.0000         0
+   v2spoe---     0.0000    1.0000    0.0000         0
+   v3pfip---     0.0000    0.0000    0.0000         6
+   v-prpemd-     0.0000    0.0000    0.0000        13
+   v-sfpmfa-     0.0000    0.0000    0.0000         4
+   a-s---mac     0.0000    0.0000    0.0000        19
+   v3sroa---     1.0000    0.0000    0.0000         6
+   v-papamd-     0.0000    0.0000    0.0000        14
+   v-sppenn-     0.0000    0.0000    0.0000        26
+   v-sapamd-     0.0000    0.0000    0.0000        19
+   v2prsa---     0.0000    0.0000    0.0000         3
+   l-d---ng-     1.0000    0.0000    0.0000         3
+   n-d---ng-     1.0000    0.0000    0.0000         3
+   n-d---mg-     0.0000    0.0000    0.0000         6
+   a-p---nds     0.0000    0.0000    0.0000         2
+   v2dpie---     0.0000    1.0000    0.0000         0
+   v2sfip---     0.0000    0.0000    0.0000         1
+   v-pppamnc     0.0000    1.0000    0.0000         0
+   v3samp---     0.0000    0.0000    0.0000         5
+   v-dppemn-     0.0000    0.0000    0.0000         4
+   v-pfpamn-     0.0000    0.0000    0.0000         8
+   a-s---nns     0.0000    0.0000    0.0000        25
+   v-pappmd-     0.0000    0.0000    0.0000         4
+   v-sappmd-     0.0000    0.0000    0.0000         2
+   a-p---fns     1.0000    0.0000    0.0000         6
+   v1spse---     0.0000    0.0000    0.0000         5
+   v-sfppng-     0.0000    1.0000    0.0000         0
+   n-d---md-     1.0000    0.0000    0.0000         2
+   v-sppemd-     0.0000    0.0000    0.0000        16
+   v2paom---     0.0000    0.0000    0.0000         5
+   v-pppefa-     0.0000    0.0000    0.0000        11
+   a-s---ngc     0.0000    0.0000    0.0000         5
+   v1spsa---     0.0000    0.0000    0.0000        21
+   v3stim---     0.0000    1.0000    0.0000         0
+   n-d---fn-     0.0000    0.0000    0.0000         2
+   m-s---mn-     0.0000    0.0000    0.0000        17
+   v-prpafa-     0.0000    0.0000    0.0000         3
+   l-s---nv-     0.0000    0.0000    0.0000         2
+   v-sapafd-     0.0000    0.0000    0.0000         2
+   v-pfpmmn-     0.0000    0.0000    0.0000         5
+   a-s---nvc     0.0000    1.0000    0.0000         0
+   v-sapann-     1.0000    0.0000    0.0000         7
+   a-p---mas     0.0000    0.0000    0.0000        23
+   v2diia---     0.0000    0.0000    0.0000         1
+   v1prie---     0.0000    1.0000    0.0000         0
+   v1paoa---     0.0000    0.0000    0.0000         9
+   v3srsa---     0.0000    0.0000    0.0000         1
+   v2spse---     1.0000    0.0000    0.0000        10
+   v1ppsa---     0.0000    0.0000    0.0000        27
+   v2dpia---     0.0000    0.0000    0.0000         2
+   v3sama---     0.0000    0.0000    0.0000         6
+   v-papmnn-     1.0000    0.0000    0.0000         5
+   v1plia---     1.0000    0.0000    0.0000         2
+   v-sapmfd-     0.0000    0.0000    0.0000         1
+   v-prpann-     0.0000    0.0000    0.0000         3
+   v-sappfa-     0.0000    0.0000    0.0000         1
+   p1s---mg-     0.0000    0.0000    0.0000         4
+   v-sappng-     0.0000    0.0000    0.0000         7
+   m-p---fd-     0.0000    0.0000    0.0000         4
+   v-dppann-     0.0000    1.0000    0.0000         0
+   a-p---nnp     0.0000    0.0000    0.0000         2
+   v1paop---     0.0000    1.0000    0.0000         0
+   n-d---nn-     0.0000    0.0000    0.0000         3
+   a-p---mdc     0.0000    0.0000    0.0000         3
+   v-papmfn-     0.0000    0.0000    0.0000         5
+   n-s----g-     1.0000    0.0000    0.0000         1
+   v-srpafd-     0.0000    0.0000    0.0000         1
+   a-s---fds     0.0000    0.0000    0.0000         2
+   a-p---nvs     0.0000    1.0000    0.0000         0
+   v1srsa---     0.0000    0.0000    0.0000         2
+   l-d---mn-     0.0000    1.0000    0.0000         0
+   v-sppamv-     0.0000    0.0000    0.0000         6
+   a-s---fac     0.0000    0.0000    0.0000        15
+   p-p---cg-     0.0000    0.0000    0.0000        13
+   v2srsa---     0.0000    0.0000    0.0000         6
+   v3dfia---     0.0000    0.0000    0.0000         1
+   v-papana-     0.0000    0.0000    0.0000         3
+          τι     0.0000    0.0000    0.0000         1
+   a-s---nvs     0.0000    1.0000    0.0000         0
+   a-p---fv-     0.0000    0.0000    0.0000         1
+   v-dappmn-     0.0000    0.0000    0.0000         1
+   p2s---ng-     0.0000    0.0000    0.0000         1
+   v-papand-     1.0000    0.0000    0.0000         1
+   v-pppand-     1.0000    0.0000    0.0000         6
+   a-p---nv-     0.0000    0.0000    0.0000         1
+   a-p---ngs     0.0000    0.0000    0.0000         6
+   m-s---nn-     0.0000    0.0000    0.0000         6
+   v-pfpang-     0.0000    1.0000    0.0000         0
+   l-d---mg-     0.0000    0.0000    0.0000         3
+   m-p---nd-     1.0000    0.0000    0.0000         4
+   m-p---md-     0.0000    0.0000    0.0000         6
+   v-prpana-     1.0000    0.0000    0.0000         5
+   v-prpand-     0.0000    0.0000    0.0000         1
+   v-sfpama-     0.0000    0.0000    0.0000         7
+   n-d---fa-     0.0000    0.0000    0.0000         1
+   v-prpafn-     0.0000    0.0000    0.0000         6
+   n-p---cv-     0.0000    0.0000    0.0000         4
+   v2prme---     0.0000    0.0000    0.0000         1
+   v-pppafg-     0.0000    0.0000    0.0000         5
+ ἑβδομήκοντα     0.0000    1.0000    0.0000         0
+   v1drie---     0.0000    1.0000    0.0000         0
+   v--fnp---     0.0000    0.0000    0.0000         6
+   v-pfpmnn-     1.0000    0.0000    0.0000         2
+   v-prpefd-     1.0000    0.0000    0.0000         3
+   p1s---ma-     1.0000    0.0000    0.0000         5
+   m-d---ma-     0.0000    1.0000    0.0000         0
+   v-srpemv-     0.0000    0.0000    0.0000         1
+   a-s-g-na-     0.0000    0.0000    0.0000         1
+   a-p---fds     0.0000    0.0000    0.0000         2
+   v-sppand-     0.0000    0.0000    0.0000         4
+   v-sfpafa-     1.0000    0.0000    0.0000         2
+    n-s---na     0.0000    0.0000    0.0000         1
+   v-pappfa-     1.0000    0.0000    0.0000         4
+&quot;&quot;     0.0000    1.0000    0.0000         0
+   v_____---     0.0000    0.0000    0.0000         5
+   p-d---ma-     0.0000    0.0000    0.0000         2
+   p-d---cn-     1.0000    0.0000    0.0000         1
+   v-pppamv-     0.0000    1.0000    0.0000         0
+   a-s---mvs     0.0000    0.0000    0.0000         3
+   n2s---cg-     0.0000    1.0000    0.0000         0
+   v3dpme---     1.0000    0.0000    0.0000         1
+   v-pappfn-     0.0000    0.0000    0.0000         2
+   p2p---fa-     0.0000    1.0000    0.0000         0
+   a-p---fac     0.0000    0.0000    0.0000         5
+   v-prpefn-     0.0000    0.0000    0.0000         4
+   l-d---ma-     0.0000    1.0000    0.0000         0
+   m-p---mn-     0.0000    0.0000    0.0000        15
+   v1saop---     0.0000    0.0000    0.0000         1
+   p2d---cd-     0.0000    0.0000    0.0000         7
+   v3prsa---     0.0000    0.0000    0.0000         2
+   v1slia---     0.0000    0.0000    0.0000         6
+   v-sapmnd-     0.0000    1.0000    0.0000         0
+   v3dpia---     0.0000    0.0000    0.0000         1
+   v-dppema-     1.0000    0.0000    0.0000         2
+   v-dapmfn-     0.0000    1.0000    0.0000         0
+   a-d---nn-     1.0000    0.0000    0.0000         1
+   m-d---ng-     1.0000    0.0000    0.0000         1
+   v-sfpafd-     1.0000    0.0000    0.0000         1
+   v3dlie---     1.0000    0.0000    0.0000         1
+   p3p---md-     1.0000    0.0000    0.0000         1
+   v-pappfd-     0.0000    1.0000    0.0000         0
+   v-sfpmfn-     0.0000    0.0000    0.0000         3
+   p3p---na-     0.0000    0.0000    0.0000         4
+   v3sise---     0.0000    1.0000    0.0000         0
+   n-s---gn-     0.0000    1.0000    0.0000         0
+   a-s---fdc     0.0000    0.0000    0.0000         1
+   v3samm---     0.0000    0.0000    0.0000         2
+   v-sfppfg-     1.0000    0.0000    0.0000         1
+   v-pfpafn-     1.0000    0.0000    0.0000         2
+   v-papamv-     0.0000    1.0000    0.0000         0
+     Θαλάσσῃ     0.0000    1.0000    0.0000         0
+   a-d---md-     1.0000    0.0000    0.0000         2
+   v2dasa---     1.0000    0.0000    0.0000         1
+   a2p---na-     0.0000    1.0000    0.0000         0
+   p2s---ma-     0.0000    0.0000    0.0000         4
+   v1prsa---     0.0000    1.0000    0.0000         0
+   p2s---fa-     0.0000    1.0000    0.0000         0
+   v-dppemg-     0.0000    1.0000    0.0000         0
+   m-p---ca-     0.0000    0.0000    0.0000         4
+   v2slia---     0.0000    0.0000    0.0000         2
+   v-pfpmfg-     0.0000    0.0000    0.0000         1
+   v-pappnd-     0.0000    0.0000    0.0000         1
+   v-dapmmn-     0.0000    0.0000    0.0000         2
+   v3dria---     0.0000    1.0000    0.0000         0
+   v--------     0.0000    1.0000    0.0000         0
+   p1s---cv-     0.0000    1.0000    0.0000         0
+   a-p---ndc     1.0000    0.0000    0.0000         2
+   a-s---mds     0.0000    0.0000    0.0000         2
+   v2saop---     0.0000    1.0000    0.0000         0
+   p2d---cn-     0.0000    1.0000    0.0000         0
+   v-pfppng-     0.0000    0.0000    0.0000         1
+   p3s---fa-     1.0000    0.0000    0.0000         4
+   v3dlia---     0.0000    1.0000    0.0000         0
+   a-s---ndc     1.0000    0.0000    0.0000         2
+   v-dapafd-     0.0000    1.0000    0.0000         0
+   v-drpamn-     0.0000    0.0000    0.0000         1
+   n-d---fd-     1.0000    0.0000    0.0000         2
+   v-sfpmng-     0.0000    1.0000    0.0000         0
+   v-pfpmfa-     1.0000    0.0000    0.0000         3
+   v1sfom---     0.0000    1.0000    0.0000         0
+   p2d---cv-     0.0000    0.0000    0.0000         1
+   v-sapmmd-     0.0000    0.0000    0.0000         4
+    m-------     1.0000    0.0000    0.0000         1
+   a-p---mds     0.0000    0.0000    0.0000         3
+   v-prpefg-     0.0000    0.0000    0.0000         4
+   p2s---na-     1.0000    0.0000    0.0000         1
+   a-d----d-     0.0000    1.0000    0.0000         0
+   v-prppmg-     0.0000    1.0000    0.0000         0
+   v-prpmmg-     0.0000    0.0000    0.0000         1
+   a-d---na-     0.0000    0.0000    0.0000         1
+   v3diia---     0.0000    0.0000    0.0000         5
+   v-sfppma-     0.0000    0.0000    0.0000         1
+   v-pppafd-     1.0000    0.0000    0.0000         3
+   a-d---ma-     1.0000    0.0000    0.0000         3
+   v-sfpemg-     1.0000    0.0000    0.0000         1
+   v-dapama-     1.0000    0.0000    0.0000         1
+   n-_---__-     1.0000    0.0000    0.0000         1
+   m-p---cn-     1.0000    0.0000    0.0000         2
+   p1d---ca-     1.0000    0.0000    0.0000         1
+   v-dfpamn-     1.0000    0.0000    0.0000         1
+   n-s----n-     1.0000    0.0000    0.0000         1
+         δύο     0.0000    1.0000    0.0000         0
+   v-dppana-     1.0000    0.0000    0.0000         1
+   a-p---cd-     1.0000    0.0000    0.0000         1
+   v3pamp---     1.0000    0.0000    0.0000         1
+   v-prpafg-     1.0000    0.0000    0.0000         1
+   n-s---ga-     0.0000    1.0000    0.0000         0
+   a-p---mvc     1.0000    0.0000    0.0000         1
+   p-s---fv-     0.0000    1.0000    0.0000         0
+   v3stip---     1.0000    0.0000    0.0000         1
+   v2paop---     1.0000    0.0000    0.0000         1
+   a-d---mnc     1.0000    0.0000    0.0000         1
+   a-d---ng-     1.0000    0.0000    0.0000         1
+   v-sapmnv-     0.0000    1.0000    0.0000         0
+   v-drpama-     1.0000    0.0000    0.0000         1
+   v-sapana-     0.0000    0.0000    0.0000         2
+   v-papafg-     0.0000    1.0000    0.0000         0
+   a-d---fns     0.0000    1.0000    0.0000         0
+   l-p---mv-     0.0000    1.0000    0.0000         0
+   a-p----dc     1.0000    0.0000    0.0000         1
+   v-sfppfa-     1.0000    0.0000    0.0000         1
+   a-s---nap     0.0000    1.0000    0.0000         0
+   v1ppoe---     0.0000    0.0000    0.0000         2
+   n-d---cn-     0.0000    1.0000    0.0000         0
+   m-d---fd-     1.0000    0.0000    0.0000         1
+   v-pfpmng-     1.0000    0.0000    0.0000         2
+   p2s---cv-     1.0000    0.0000    0.0000         1
+   v-pfpmna-     0.0000    0.0000    0.0000         1
+   p3p---fg-     0.0000    1.0000    0.0000         0
+   v-sfppmn-     1.0000    0.0000    0.0000         1
+   v-srpend-     0.0000    1.0000    0.0000         0
+       πέντε     1.0000    0.0000    0.0000         1
+   v3pamm---     0.0000    1.0000    0.0000         0
+   v-pfpmfn-     1.0000    0.0000    0.0000         1
+   v-sapefg-     1.0000    0.0000    0.0000         1
+   v-pppafv-     1.0000    0.0000    0.0000         1
+   l-d---na-     0.0000    1.0000    0.0000         0
+   v3sfoa---     1.0000    0.0000    0.0000         1
+   v3proa---     0.0000    1.0000    0.0000         0
+   v2dria---     1.0000    0.0000    0.0000         1
+   a-p---fdc     1.0000    0.0000    0.0000         1
+   v3dpsa---     1.0000    0.0000    0.0000         1
+   p-d---fa-     0.0000    1.0000    0.0000         0
+   v-sfpana-     1.0000    0.0000    0.0000         1
+   v-sfpafg-     0.0000    1.0000    0.0000         0
+   v2stie---     0.0000    1.0000    0.0000         0
+   v-dappmg-     1.0000    0.0000    0.0000         1
+   v-sfpmna-     0.0000    1.0000    0.0000         0
+   v2dasm---     1.0000    0.0000    0.0000         1
+    τέσσαρες     1.0000    0.0000    0.0000         1
+        null     1.0000    0.0000    0.0000         1
+   m-s---nd-     1.0000    0.0000    0.0000         1
+   a-d---mg-     1.0000    0.0000    0.0000         1
+   n-d---cv-     0.0000    1.0000    0.0000         0
+   v1prse---     0.0000    1.0000    0.0000         0
+   v-papafa-     1.0000    0.0000    0.0000         1
+
+   micro avg     0.0444    0.0416    0.0430    112839
+   macro avg     0.1374    0.1099    0.0010    112839
+weighted avg     0.0669    0.0416    0.0390    112839
+
+2021-07-09 02:11:56,854 ----------------------------------------------------------------------------------------------------
