@@ -1,7 +1,7 @@
 
 # Ancient Greek BERT
 
-Note: The Morphological Analysis Tagger has issues loading on some machines and gives incorrect outputs, due to an issue with the FLAIR Toolkit. If you run into this problem, please open an issue and we can try to help!
+*Note: The Morphological Analysis Tagger has issues loading on some machines and gives incorrect outputs due to an issue with the FLAIR Toolkit. If you run into this problem, please open an issue and we can try to help!*
 
 <img src="https://ichef.bbci.co.uk/images/ic/832xn/p02m4gzb.jpg"/>
 
